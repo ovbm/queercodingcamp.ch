@@ -8,12 +8,12 @@ const Profile = ({ imageSrc, name, bio, twitter }) => {
         className='rounded-full grayscale'
         src={imageSrc}
         layout='fixed'
-        width={64}
-        height={64}
+        width={56}
+        height={56}
       />
       <div className="flex-1 ml-4">
-        <p className='text-left text-lg font-display'>{name}</p>
-        <p className='text-left text-lg'>{bio}</p>
+        <p className='text-left text-md font-display'>{name}</p>
+        <p className='text-left text-sm leading-tight'>{bio}</p>
       </div>
     </div>
   )

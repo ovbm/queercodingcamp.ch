@@ -4,10 +4,9 @@ import useActiveSection from './hooks/useActiveSection'
 import { classNames } from './utils/classNames'
 
 const navigation = [
-  { name: 'Home', id: 'home' },
-  { name: 'Middle', id: 'middle' },
-  { name: 'Bottom', id: 'bottom' },
-  { name: 'End', id: 'end' },
+  { name: 'Info', id: 'info' },
+  { name: 'Anmelden', id: 'signup' },
+  { name: 'Über', id: 'about' },
 ]
 
 export default function Navbar() {

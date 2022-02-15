@@ -26,20 +26,43 @@ export default function Layout({ children }) {
             color: #fff;
             background: linear-gradient(
               -45deg,
-              yellow,
-              #f97316,
-              #e73c7e,
+              #c2410c,
+              #db2777,
               #4f46e5,
+              #2563eb,
               #34d399
             );
             background-size: 100% 300%;
-            background-position: ${activeSection === 'home'
+            background-position: ${activeSection === 'top'
               ? '0% 10%'
-              : activeSection === 'middle'
+              : activeSection === 'info'
               ? '0% 45%'
-              : '0% 80%'};
+              : activeSection === 'signup'
+              ? '0% 70%'
+              : '0% 90%'};
             transition: background-position 1s ease-in-out;
           }
+          /* @media (prefers-color-scheme: dark) {
+            body {
+              background: linear-gradient(
+                -45deg,
+                #ca8a04,
+                #c2410c,
+                #831843,
+                #312e81,
+                #115e59
+              );
+              background-size: 100% 300%;
+              background-position: ${activeSection === 'top'
+            ? '0% 10%'
+            : activeSection === 'info'
+            ? '0% 45%'
+            : activeSection === 'signup'
+            ? '0% 70%'
+            : '0% 90%'};
+              transition: background-position 1s ease-in-out;
+            }
+          } */
         `}
       </style>
     </>
