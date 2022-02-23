@@ -14,7 +14,7 @@ const Ueber = ({ id }) => {
       <h2 className='text-2xl font-bold text-left font-display mt-12'>
         Verein Queer Coding Camp
       </h2>
-      <div className='flex flex-col sm:flex-row gap-4 p-4'>
+      <div className='flex flex-col sm:flex-row gap-4 mt-4'>
         <div className='flex-1 text-left'>
           <p>
             Ein Paragraph der erklärt wer wir sind und was unsere Ziele sind.
@@ -31,10 +31,7 @@ const Ueber = ({ id }) => {
           <br />
           <p>Möchtest du Mitglied werden und dich engagieren?</p>
           <p>
-            <A
-              taget='_blank'
-              href='mailto:hi@queercodingcamp.ch'
-            >
+            <A taget='_blank' href='mailto:hi@queercodingcamp.ch'>
               hi@queercodingcamp.ch
             </A>
           </p>
@@ -62,7 +59,7 @@ const Ueber = ({ id }) => {
       <h2 className='text-2xl font-bold text-left font-display mt-12'>
         Spenden
       </h2>
-      <div className='flex flex-col sm:flex-row gap-4 p-4'>
+      <div className='flex flex-col sm:flex-row gap-4 mt-4'>
         <div className='flex-1 text-left'>
           <p>
             Wollen Sie das Queer Coding Camp unterstützen? Sie können den Verein

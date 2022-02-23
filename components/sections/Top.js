@@ -1,10 +1,11 @@
 import React from 'react'
 import SectionContainer from './Container'
+import NewlsetterSignup from '../NewsletterSignup'
 
 const Top = ({ id }) => {
   return (
     <SectionContainer id={id}>
-      <div className='flex flex-col sm:flex-row items-center mt-36 gap-8'>
+      <div className='flex flex-col sm:flex-row items-center mt-24 gap-8'>
         <div className='bg-slate-700 rounded-full flex-1 flex justify-center items-center text-center'>
           <div className='text-6xl font-bold font-display h-24'>Bild</div>
         </div>
@@ -16,9 +17,9 @@ const Top = ({ id }) => {
             10. - 16. Oktober 2022
           </p>
           <p className='text-sm font-display mt-3  rounded-lg'>Save the Date</p>
+          <NewlsetterSignup />
         </div>
       </div>
-      <div style={{ height: 400 }}></div>
     </SectionContainer>
   )
 }
