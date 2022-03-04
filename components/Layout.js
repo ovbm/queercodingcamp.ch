@@ -86,8 +86,15 @@ export default function Layout({ children }) {
         />
         <link rel='manifest' href='/favicon/manifest.json' />
         <meta name='msapplication-TileColor' content='#ffffff' />
-        <meta name='msapplication-TileImage' content='/favicon/ms-icon-144x144.png' />
+        <meta
+          name='msapplication-TileImage'
+          content='/favicon/ms-icon-144x144.png'
+        />
         <meta name='theme-color' content='#ffffff' />
+        <meta
+          name='apple-mobile-web-app-status-bar-style'
+          content='black-translucent'
+        />
       </Head>
       <Navbar />
       {children}
@@ -96,6 +103,7 @@ export default function Layout({ children }) {
         {`
           body {
             color: #fff;
+            background-color: #0f172a;
             background: linear-gradient(
               -45deg,
               #c2410c,
@@ -113,8 +121,8 @@ export default function Layout({ children }) {
               ? '0% 70%'
               : activeSection === 'donate'
               ? '0% 90%'
-              // Fallback
-              : '0% 10%'};
+              : // Fallback
+                '0% 10%'};
             transition: background-position 1s ease-in-out;
           }
           /* @media (prefers-color-scheme: dark) {
