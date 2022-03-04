@@ -2,7 +2,7 @@ import React from 'react'
 import SectionContainer from './Container'
 import Profile from '../Profile'
 import olivier from '../../public/images/olivierbaumann.png'
-import Donate from '../Donate'
+import Donate from '../DonationBox'
 import A from '../Link'
 
 const Ueber = ({ id }) => {
@@ -11,15 +11,17 @@ const Ueber = ({ id }) => {
       <h1 className='text-6xl font-bold text-left font-display'>
         Wer sind wir?
       </h1>
-      <h2 className='text-2xl font-bold text-left font-display mt-12'>
-        Verein Queer Coding Camp
-      </h2>
-      <div className='flex flex-col sm:flex-row gap-4 mt-4'>
+      <div className='flex flex-col sm:flex-row gap-8 mt-4'>
         <div className='flex-1 text-left'>
-          <p>
-            Ein Paragraph der erklärt wer wir sind und was unsere Ziele sind.
+          <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
+            Queer Coding Tech!
+          </h2>
+          <p className='text-md mb-4'>
+            Die Tech-Branche ist heute für Personen die nicht cis, männlich,
+            weiss oder heterosexuell und für Personen, die von
+            Mehrfachdiskriminierungen betroffen sind, ausschliessend.
           </p>
-          <br />
+          <p className='text-md mb-4'>Das war nicht immer so!</p>
           <p>
             <A
               taget='_blank'
@@ -29,7 +31,7 @@ const Ueber = ({ id }) => {
             </A>
           </p>
           <br />
-          <p>Möchtest du Mitglied werden und dich engagieren?</p>
+          <p>Möchtest du dich engagieren?</p>
           <p>
             <A taget='_blank' href='mailto:hi@queercodingcamp.ch'>
               hi@queercodingcamp.ch
@@ -37,6 +39,9 @@ const Ueber = ({ id }) => {
           </p>
         </div>
         <div className='flex-1 text-left'>
+          <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
+            Verein
+          </h2>
           <div className='flex flex-col'>
             <Profile
               imageSrc={olivier}
@@ -54,21 +59,6 @@ const Ueber = ({ id }) => {
               bio='Ein Developer'
             />
           </div>
-        </div>
-      </div>
-      <h2 className='text-2xl font-bold text-left font-display mt-12'>
-        Spenden
-      </h2>
-      <div className='flex flex-col sm:flex-row gap-4 mt-4'>
-        <div className='flex-1 text-left'>
-          <p>
-            Wollen Sie das Queer Coding Camp unterstützen? Sie können den Verein
-            folgendermassen unterstützen.
-          </p>
-          <p>IBAN 234234 3434 343 2224</p>
-        </div>
-        <div className='flex-1 text-left'>
-          <Donate />
         </div>
       </div>
     </SectionContainer>
