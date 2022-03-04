@@ -90,7 +90,7 @@ export default function Layout({ children }) {
           name='msapplication-TileImage'
           content='/favicon/ms-icon-144x144.png'
         />
-        <meta name='theme-color' content='#ffffff' />
+        <meta name='theme-color' content='#0f172a' />
         <meta
           name='apple-mobile-web-app-status-bar-style'
           content='black-translucent'
