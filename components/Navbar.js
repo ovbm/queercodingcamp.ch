@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as='nav'
-      className={'fixed bottom-0 sm:bottom-auto w-full z-10'}
+      className={'fixed bottom-0 md:bottom-auto w-full z-10'}
     >
       {({ open }) => (
         <>
@@ -28,7 +28,7 @@ export default function Navbar() {
             leaveTo='transform translate-y-4 opacity-0'
             unmount={false}
           >
-            <Disclosure.Panel className='sm:hidden' unmount={false}>
+            <Disclosure.Panel className='md:hidden' unmount={false}>
               <div className='px-4 pt-2 pb-3 space-y-4 flex flex-col justify-end items-end'>
                 {navigation.map((item) => (
                   <Disclosure.Button
@@ -51,8 +51,8 @@ export default function Navbar() {
               </div>
             </Disclosure.Panel>
           </Transition>
-          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-            <div className='relative flex justify-between items-center h-20 sm:h-24'>
+          <div className='max-w-7xl mx-auto px-4 md:px-6 lg:px-8'>
+            <div className='relative flex justify-between items-center h-20 md:h-24'>
               <a
                 key='top'
                 href='#top'
@@ -61,7 +61,7 @@ export default function Navbar() {
                   'top' === activeSection
                     ? 'bg-gray-900/10'
                     : 'bg-gray-900/50 hover:bg-gray-700/50 hover:text-white',
-                  'hidden p-2 sm:block fill-white  rounded-full backdrop-blur-sm backdrop-saturate-200 transition-transform shadow-lg'
+                  'hidden p-2 md:block fill-white  rounded-full backdrop-blur-sm backdrop-saturate-200 transition-transform shadow-lg'
                 )}
                 aria-current={'top' === activeSection ? 'page' : undefined}
               >
@@ -72,7 +72,7 @@ export default function Navbar() {
                 </svg>
               </a>
 
-              <div className='absolute inset-y-0 right-0 flex items-center sm:hidden'>
+              <div className='absolute inset-y-0 right-0 flex items-center md:hidden'>
                 {/* Mobile menu button*/}
                 <Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-full bg-gray-900/50 hover:bg-gray-700/50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white backdrop-blur-sm backdrop-saturate-200 shadow-lg'>
                   <span className='sr-only'>Open main menu</span>
@@ -83,8 +83,8 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-end'>
-                <div className='hidden sm:block sm:ml-6'>
+              <div className='flex-1 flex items-center justify-center md:items-stretch md:justify-end'>
+                <div className='hidden md:block md:ml-6'>
                   <div className='flex space-x-4'>
                     {navigation.map((item) => (
                       <a

@@ -61,7 +61,7 @@ const NewsletterSignup = () => {
       >
         Anmeldung
       </label>
-      <div className='sm:flex'>
+      <div className='md:flex'>
         <input
           type='email'
           value={email}
@@ -88,7 +88,7 @@ const NewsletterSignup = () => {
           disabled={loading}
           className='
             border-solid border-2 border-white text-white 
-            sm:ml-4
+            md:ml-4
             hover:bg-white 
             hover:text-slate-900 transition-width ease-in-out
             disabled:bg-white disabled:text-slate-900

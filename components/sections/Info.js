@@ -6,7 +6,7 @@ import { ChevronUpIcon } from '@heroicons/react/solid'
 const FAQ = () => {
   return (
     <div className='w-full'>
-      <div className='w-full p-2 mx-auto bg-white rounded-2xl'>
+      <div className='w-full p-2 mx-auto bg-slate-900/20 rounded-2xl'>
         <Disclosure>
           {({ open }) => (
             <>
@@ -18,8 +18,8 @@ const FAQ = () => {
                   } w-5 h-5 text-indigo-500`}
                 />
               </Disclosure.Button>
-              <Disclosure.Panel className='px-4 pt-4 pb-2 text-left text-sm text-gray-500'>
-                Jugendliche und junge queere Personen ab 16 Jahren.
+              <Disclosure.Panel className='px-4 pt-4 pb-2 text-left text-sm'>
+                Queere Personen zwischen 16 - 25 Jahren.
               </Disclosure.Panel>
             </>
           )}
@@ -28,18 +28,16 @@ const FAQ = () => {
           {({ open }) => (
             <>
               <Disclosure.Button className='flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
-                <span>Wie viel ksotet das Queer Coding Camp?</span>
+                <span>Was kostet das Queer Coding Camp?</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'transform rotate-180' : ''
                   } w-5 h-5 text-indigo-500`}
                 />
               </Disclosure.Button>
-              <Disclosure.Panel className='text-left px-4 pt-4 pb-2 text-sm text-gray-500'>
-                Die Teilnahme am Queer Coding Camp ist dank Freiwilligenarbeit
-                und Unterstützung von Stiftungen und privaten Spenden gratis.
-                Einzig die Reise ins Tessin ist von den Teilnehmenden selbst zu
-                tragen.
+              <Disclosure.Panel className='text-left px-4 pt-4 pb-2 text-sm'>
+                Dank Unterstützung von Stiftungen und privaten Spenden ist
+                die Teilnahme gratis.
               </Disclosure.Panel>
             </>
           )}
@@ -55,8 +53,25 @@ const FAQ = () => {
                   } w-5 h-5 text-indigo-500`}
                 />
               </Disclosure.Button>
-              <Disclosure.Panel className='text-left px-4 pt-4 pb-2 text-sm text-gray-500'>
-                Nein
+              <Disclosure.Panel className='text-left px-4 pt-4 pb-2 text-sm'>
+                Nein. Du brauchst keine Programmier-Vorkenntnisse oder Affinität für IT. 
+              </Disclosure.Panel>
+            </>
+          )}
+        </Disclosure>
+        <Disclosure as='div' className='mt-2'>
+          {({ open }) => (
+            <>
+              <Disclosure.Button className='flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
+                <span>Wo und wann kann ich mich anmelden?</span>
+                <ChevronUpIcon
+                  className={`${
+                    open ? 'transform rotate-180' : ''
+                  } w-5 h-5 text-indigo-500`}
+                />
+              </Disclosure.Button>
+              <Disclosure.Panel className='text-left px-4 pt-4 pb-2 text-sm'>
+                Ab Mai. Hier auf dieser Seite.
               </Disclosure.Panel>
             </>
           )}
@@ -70,10 +85,10 @@ const CampInfo = ({ id }) => {
   return (
     <SectionContainer id={id}>
       <h1 className='text-6xl font-bold text-left font-display'>Info</h1>
-      <div className='flex flex-col sm:flex-row gap-12 mt-12'>
+      <div className='flex flex-col md:flex-row gap-12 mt-12'>
         <div className='flex-1 text-left'>
           <h2 className='text-2xl font-bold text-left font-display mb-4'>
-            Was ist das Queer Coding Camp?
+            Coding Camp
           </h2>
           <p>
             Das Queer Coding Camp ist ein einwöchiges Lager, an dem du erste
@@ -83,7 +98,7 @@ const CampInfo = ({ id }) => {
             bei.
           </p>
           <h2 className='text-2xl font-bold text-left font-display mt-12'>
-            Was lerne ich da?
+            Inhalt
           </h2>
           <p>
             Einführungen in Web und Game. Spannende Workshops und Inputs von
@@ -92,7 +107,7 @@ const CampInfo = ({ id }) => {
         </div>
         <div className='flex-1 text-left'>
           <h2 className='text-2xl font-bold text-left font-display mb-4'>
-            Wo findet es statt?
+            Location
           </h2>
           <p>Im Residency-Haus Cima Citta, in Dangio, Tessin.</p>
         </div>
@@ -100,7 +115,7 @@ const CampInfo = ({ id }) => {
       <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
         Weitere Fragen (FAQ)
       </h2>
-      <div className='flex flex-col sm:flex-row gap-8'>
+      <div className='flex flex-col md:flex-row gap-8'>
         <FAQ />
       </div>
     </SectionContainer>

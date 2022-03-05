@@ -11,7 +11,7 @@ const Ueber = ({ id }) => {
       <h1 className='text-6xl font-bold text-left font-display'>
         Wer sind wir?
       </h1>
-      <div className='flex flex-col sm:flex-row gap-8 mt-4'>
+      <div className='flex flex-col md:flex-row gap-8 mt-4'>
         <div className='flex-1 text-left'>
           <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
             Queer Coding Tech!

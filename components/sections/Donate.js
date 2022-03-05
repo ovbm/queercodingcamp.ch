@@ -9,7 +9,7 @@ const Donate = ({ id }) => {
       <h2 className='text-2xl font-bold text-left font-display mt-12'>
         Hilf uns die Tech-Welt zu queeren!
       </h2>
-      <div className='flex flex-col sm:flex-row gap-8 mt-4'>
+      <div className='flex flex-col md:flex-row gap-8 mt-4'>
         <div className='flex-1 text-left'>
           <p>
             Willst du das Queer Coding Camp unterstützen? Sie können den Verein
