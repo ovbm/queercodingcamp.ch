@@ -39,7 +39,7 @@ export default function Navbar() {
                       item.id === activeSection
                         ? 'bg-gray-900/10 -translate-x-5'
                         : 'bg-gray-900/50 hover:bg-gray-700/50',
-                      'text-white px-6 py-1 pt-2 rounded-xl font-display text-xl backdrop-blur-sm backdrop-saturate-200 transition-transform shadow-lg'
+                      'text-white px-6 py-1 pt-2 rounded-xl font-display font-bold text-xl backdrop-blur-sm backdrop-saturate-200 transition-transform shadow-lg'
                     )}
                     aria-current={
                       item.id === activeSection ? 'page' : undefined
@@ -95,7 +95,7 @@ export default function Navbar() {
                           item.id === activeSection
                             ? 'bg-gray-900/10 translate-y-1'
                             : 'bg-gray-900/50 hover:bg-gray-700/50 hover:text-white',
-                          'text-white px-6 py-1 pt-2 rounded-xl font-display text-xl backdrop-blur-sm backdrop-saturate-200 transition-transform shadow-lg'
+                          'text-white px-6 py-1 pt-2 rounded-xl font-display font-bold text-xl backdrop-blur-sm backdrop-saturate-200 transition-transform shadow-lg'
                         )}
                         aria-current={
                           item.id === activeSection ? 'page' : undefined
