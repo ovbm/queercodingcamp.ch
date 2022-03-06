@@ -55,12 +55,6 @@ const NewsletterSignup = () => {
   
   return (
     <form onSubmit={handleSubmit}>
-      <label
-        htmlFor='email'
-        className='form-label inline-block mb-1 text-white'
-      >
-        Anmeldung
-      </label>
       <div className='md:flex'>
         <input
           type='email'

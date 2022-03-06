@@ -3,7 +3,6 @@ import Image from 'next/image'
 import placeholder from '../../public/images/filler.jpeg'
 
 import SectionContainer from './Container'
-import NewlsetterSignup from '../NewsletterSignup'
 
 const Top = ({ id }) => {
   return (
@@ -16,15 +15,14 @@ const Top = ({ id }) => {
           <h1 className='text-5xl md:text-6xl font-bold font-display'>
             Queer Coding Camp
           </h1>
-          <p className='text-2xl font-display mt-3  rounded-lg'>
-            Programmieren lernen, von mit und für junge queere Menschen.
+          <p className='text-2xl font-display font-normal mt-3'>
+            Programmieren lernen, von queeren Menschen für junge queere
+            Menschen.
           </p>
           <p className='text-xl md:text-xl font-regular mt-4'>
             10. - 16. Oktober 2022 <br />
             Cima Citta, Dangio - Tessin
           </p>
-
-          {/* <NewlsetterSignup /> */}
         </div>
       </div>
     </SectionContainer>

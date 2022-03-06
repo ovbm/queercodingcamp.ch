@@ -5,7 +5,7 @@ import { classNames } from './utils/classNames'
 
 const navigation = [
   { name: 'Infos', id: 'info' },
-  // { name: 'Anmelden', id: 'signup' },
+  { name: 'Anmelden', id: 'anmelden' },
   { name: 'Über uns', id: 'about' },
   { name: 'Spenden', id: 'donate' },
 ]
@@ -51,7 +51,7 @@ export default function Navbar() {
               </div>
             </Disclosure.Panel>
           </Transition>
-          <div className='max-w-7xl mx-auto px-4 md:px-6 lg:px-8'>
+          <div className='max-w-6xl mx-auto px-4 md:px-6 lg:px-8'>
             <div className='relative flex justify-between items-center h-20 md:h-24'>
               <a
                 key='top'

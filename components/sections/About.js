@@ -1,8 +1,8 @@
 import React from 'react'
+import { ExternalLinkIcon } from '@heroicons/react/solid'
 import SectionContainer from './Container'
 import Profile from '../Profile'
 import olivier from '../../public/images/olivierbaumann.png'
-import Donate from '../DonationBox'
 import A from '../Link'
 
 const Ueber = ({ id }) => {
@@ -25,6 +25,7 @@ const Ueber = ({ id }) => {
           <p>
             <A
               taget='_blank'
+              Icon={ExternalLinkIcon}
               href='https://queercodecamp.notion.site/Statuten-des-Vereins-Queer-Coding-Camp-45b6ed0a758b4be59ebb5afcc5b5d6a7'
             >
               Unsere Statuten

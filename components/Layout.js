@@ -12,7 +12,7 @@ export default function Layout({ children }) {
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' />
         <link
-          href='https://fonts.googleapis.com/css2?&family=Grandstander:wght@800&family=Signika:wght@500;700&display=swap'
+          href='https://fonts.googleapis.com/css2?&family=Grandstander:wght@500;800&family=Signika:wght@500;700&display=swap'
           rel='stylesheet'
         />
         <link
@@ -114,13 +114,15 @@ export default function Layout({ children }) {
             );
             background-size: 100% 300%;
             background-position: ${activeSection === 'top'
-              ? '0% 10%'
+              ? '0% 0%'
               : activeSection === 'info'
-              ? '0% 45%'
+              ? '0% 25%'
+              : activeSection === 'anmelden'
+              ? '0% 50%'
               : activeSection === 'about'
-              ? '0% 70%'
+              ? '0% 75%'
               : activeSection === 'donate'
-              ? '0% 90%'
+              ? '0% 100%'
               : // Fallback
                 '0% 10%'};
             transition: background-position 1s ease-in-out;

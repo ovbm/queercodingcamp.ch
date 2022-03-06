@@ -1,7 +1,10 @@
 import React from 'react'
+import Image from 'next/image'
 import SectionContainer from './Container'
-import { Disclosure, Transition } from '@headlessui/react'
-import { ChevronUpIcon } from '@heroicons/react/solid'
+import { Disclosure } from '@headlessui/react'
+import { ChevronUpIcon, ExternalLinkIcon } from '@heroicons/react/solid'
+import CimaCittaImg from '../../public/images/cimacitta.jpeg'
+import A from '../Link'
 
 const FAQ = () => {
   return (
@@ -36,8 +39,8 @@ const FAQ = () => {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className='text-left px-4 pt-4 pb-2 text-sm'>
-                Dank Unterstützung von Stiftungen und privaten Spenden ist
-                die Teilnahme gratis.
+                Dank Unterstützung von Stiftungen und privaten Spenden ist die
+                Teilnahme gratis.
               </Disclosure.Panel>
             </>
           )}
@@ -54,7 +57,8 @@ const FAQ = () => {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className='text-left px-4 pt-4 pb-2 text-sm'>
-                Nein. Du brauchst keine Programmier-Vorkenntnisse oder Affinität für IT. 
+                Nein. Du brauchst keine Programmier-Vorkenntnisse oder Affinität
+                für IT.
               </Disclosure.Panel>
             </>
           )}
@@ -85,7 +89,7 @@ const CampInfo = ({ id }) => {
   return (
     <SectionContainer id={id}>
       <h1 className='text-6xl font-bold text-left font-display'>Info</h1>
-      <div className='flex flex-col md:flex-row gap-12 mt-12'>
+      <div className='flex flex-col gap-12 md:flex-row md:gap-16 mt-12'>
         <div className='flex-1 text-left'>
           <h2 className='text-2xl font-bold text-left font-display mb-4'>
             Coding Camp
@@ -104,19 +108,30 @@ const CampInfo = ({ id }) => {
             Einführungen in Web und Game. Spannende Workshops und Inputs von
             Queeren Coder*innen.
           </p>
+          <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
+            Location
+          </h2>
+          <Image
+            className='mix-blend-hard-light rounded-xl'
+            src={CimaCittaImg}
+          />
+          <p className="mt-4">
+            Das Coding Camp findet im Residency-Haus{' '}
+            <A href='' Icon={ExternalLinkIcon}>
+              Cima Citta
+            </A>
+            , in Dangio, Tessin statt. Die Cima Citta befindet sich auf dem
+            gelände der ehemaligen Schokoladenfabrik <i>Cima Norma</i>.
+          </p>
         </div>
         <div className='flex-1 text-left'>
           <h2 className='text-2xl font-bold text-left font-display mb-4'>
-            Location
+            Weitere Fragen (FAQ)
           </h2>
-          <p>Im Residency-Haus Cima Citta, in Dangio, Tessin.</p>
+          <div className='flex flex-col md:flex-row gap-8'>
+            <FAQ />
+          </div>
         </div>
-      </div>
-      <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
-        Weitere Fragen (FAQ)
-      </h2>
-      <div className='flex flex-col md:flex-row gap-8'>
-        <FAQ />
       </div>
     </SectionContainer>
   )
