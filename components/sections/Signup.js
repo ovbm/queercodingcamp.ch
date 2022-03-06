@@ -20,13 +20,13 @@ const SignUp = ({ id }) => {
           </p>
         </div>
         <div className='flex-1 text-left'>
-          <h2 className='text-2xl font-bold text-left font-display mb-4'>
+          {/* <h2 className='text-2xl font-bold text-left font-display mb-4'>
             Ab Mai
           </h2>
           <p>
             Die Vorbereitungen für das erste Queer Coding Camp sind in vollem
             Gang. Ab Mitte Mai öffnen wir die Anmeldung fürs Camp.
-          </p>
+          </p> */}
         </div>
       </div>
     </SectionContainer>

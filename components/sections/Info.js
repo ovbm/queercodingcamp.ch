@@ -101,13 +101,6 @@ const CampInfo = ({ id }) => {
             Queere Programmierer*innen aus der Branche bringen dir ihre Skills
             bei.
           </p>
-          <h2 className='text-2xl font-bold text-left font-display mt-12'>
-            Inhalt
-          </h2>
-          <p>
-            Einführungen in Web und Game. Spannende Workshops und Inputs von
-            Queeren Coder*innen.
-          </p>
           <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
             Location
           </h2>
