@@ -8,21 +8,24 @@ mailchimp.setConfig({
 export default async (req, res) => {
   const { email } = req.body
   if (!email) {
-    return res.status(400).json({ error: 'Email is required' })
+    return res.status(400).json({ msg: 'Das ist keine gültige Email-Adresse' })
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(email)) {
+    return res
+      .status(400)
+      .json({ msg: 'Das ist keine gültige Email-Adresse' })
   }
-  const response = await mailchimp.lists.setListMember(
-    process.env.MAILCHIMP_AUDIENCE_ID,
-    email,
-    {
+  await mailchimp.lists
+    .setListMember(process.env.MAILCHIMP_AUDIENCE_ID, email, {
       email_address: email,
-      status: 'subscribed',
-    }
-  )
-  console.log(response)
-  // try {
-  //   console.log(res)
-  //   return res.status(201).json({ error: '' })
-  // } catch (error) {
-  //   return res.status(500).json({ error: error.message || error.toString() })
-  // }
+      status_if_new: 'pending',
+    })
+    .then((data) => {
+      return res.status(201).json({
+        msg: '🎉 Wir benachrichtigen dich, sobald die Anmeldung losgeht.',
+      })
+    }).catch((error) => {
+      return res
+      .status(400)
+      .json({ msg: 'Etwas ist schief gelaufen. Probier es später noch einmal.' })
+    })
 }

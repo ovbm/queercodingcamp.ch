@@ -5,12 +5,11 @@ import Button from './Button'
 
 const NewsletterSignup = () => {
   const [email, setEmail] = React.useState()
-  const [error, setError] = React.useState(null)
-  const [success, setSuccess] = React.useState()
+  const [response, setResponse] = React.useState(null)
   const [loading, setLoading] = React.useState(false)
 
   const subscribe = async () => {
-    const result = await fetch('/api/subscribe', {
+    const response = await fetch('/api/subscribe', {
       body: JSON.stringify({
         email,
       }),
@@ -19,33 +18,16 @@ const NewsletterSignup = () => {
       },
       method: 'POST',
     })
-    const { error } = await result.json();
-    if (error) {
-      setError(error)
+
+    const { msg } = await response.json();
+    if (msg) {
+      setResponse(msg)
       return
     }
-    setSuccess('🎉 Du erhälst bald eine E-Mail um deine Anmeldung zu bestätigen.')
-  }
-
-  const validateEmail = (email) => {
-    if (!email) {
-      setError('Bitte gib eine E-Mail-Adresse ein.')
-      return false
-    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(email)) {
-      setError('Oh, oh, das ist keine gültige Email-Adresse')
-      return false
-    }
-    setError(null)
-    return true
-  }
-
-  const handleBlur = () => {
-    validateEmail(email)
   }
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    validateEmail(email)
     subscribe()
   }
 
@@ -60,19 +42,16 @@ const NewsletterSignup = () => {
           type='email'
           value={email}
           onChange={handleChange}
-          onBlur={handleBlur}
           className='
           flex-1
           w-full p-3 m-0
-          bg-white
-          text-slate-900
           border-2 border-solid border-white
           rounded-xl
+          bg-transparent 
           transition
           ease-in-out
           placeholder:text-white/80
-          placeholder-shown:bg-transparent placeholder-shown:text-white
-          focus:text-slate-900 focus:bg-white focus:border-slate-900 focus:outline-none
+          focus:outline-white
           '
           id='email'
           placeholder='Deine Email'
@@ -98,7 +77,7 @@ const NewsletterSignup = () => {
           )}
         </Button>
       </div>
-      {error && <p className='text-sm text-white mt-1'>{error}</p>}
+      {response && <p className='text-sm text-white mt-2'>{response}</p>}
     </form>
   )
 }
