@@ -24,7 +24,7 @@ export default function Donate() {
               )
             }
           >
-            Stripe
+            Kreditkarte
           </Tab>
           <Tab
             className={({ selected }) =>
@@ -54,10 +54,10 @@ export default function Donate() {
           </Tab>
         </Tab.List>
         <Tab.Panels className='mt-2'>
-          <Tab.Panel className='bg-gray-900/50 backdrop-saturate-200 rounded-xl p-3 focus:outline-none'>
+          <Tab.Panel className='bg-gray-900/50 backdrop-saturate-200 rounded-xl px-4 py-8 focus:outline-none'>
             <p className='pb-4 font-display'>Einmalige Spende</p>
 
-            <div className='flex flex-row flex-wrap gap-4'>
+            <div className='flex flex-row flex-wrap gap-4 justify-center'>
               <Button
                 outline
                 className='font-display border-solid border-2 border-white text-white hover:bg-white hover:text-slate-900'
@@ -79,7 +79,7 @@ export default function Donate() {
             </div>
             <hr className='border-white/50 my-6' />
             <p className='pb-4 font-display'>Jährliche Spende</p>
-            <div className='flex flex-row flex-wrap gap-4'>
+            <div className='flex flex-row flex-wrap gap-4 justify-center'>
               <Button className='font-display text-slate-700 hover:opacity-80'>
                 50 CHF
               </Button>
@@ -91,32 +91,34 @@ export default function Donate() {
               </Button>
             </div>
           </Tab.Panel>
-          <Tab.Panel className='bg-gray-900/50 backdrop-saturate-200 rounded-xl p-3 focus:outline-none'>
+          <Tab.Panel className='bg-gray-900/50 backdrop-saturate-200 rounded-xl px-4 py-8 focus:outline-none'>
             <div className='flex flex-col items-center justify-center'>
-              <div className='w-1/2'>
+              <div className='w-1/2 mb-4'>
                 <Image src={twintQR} alt='Twint QR code' />
               </div>
-              <A
-                className='text-center'
-                taget='_blank'
+              <Button
                 href='https://pay.raisenow.io/wcxgy'
+                target='_blank'
+                outline
+                className='font-display border-solid border-2 border-white text-white hover:bg-white hover:text-slate-900'
               >
-                Mit Twint Spenden
-              </A>
+                Mit Twint spenden
+              </Button>
             </div>
           </Tab.Panel>
-          <Tab.Panel className='bg-gray-900/50 backdrop-saturate-200 rounded-xl p-3 focus:outline-none'>
+          <Tab.Panel className='bg-gray-900/50 backdrop-saturate-200 rounded-xl px-4 py-8 focus:outline-none'>
             <div className='flex flex-col items-center justify-center '>
-              <A
-                className='text-center mb-6'
-                taget='_blank'
-                href='https://www.paypal.com/donate/?hosted_button_id=497MHVPBEXZJS'
-              >
-                Mit PayPal spenden
-              </A>
-              <div className='w-1/2'>
+              <div className='w-1/2 mb-4'>
                 <Image src={paypalQR} alt='Twint QR code' />
               </div>
+              <Button
+                href='https://www.paypal.com/donate/?hosted_button_id=497MHVPBEXZJS'
+                target='_blank'
+                outline
+                className='font-display border-solid border-2 border-white text-white hover:bg-white hover:text-slate-900'
+              >
+                Mit PayPal spenden
+              </Button>
             </div>
           </Tab.Panel>
         </Tab.Panels>

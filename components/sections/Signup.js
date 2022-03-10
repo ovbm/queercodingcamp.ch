@@ -11,13 +11,12 @@ const SignUp = ({ id }) => {
           <h2 className='text-2xl font-bold text-left font-display mb-4'>
             E-Mail Verteiler
           </h2>
-          <NewlsetterSignup />
-
-          <p className='mt-4'>
+          <p className='mb-4'>
             Möchtest du benachrichtigt werden, wenn du dich fürs Queer Coding
             Camp anmelden kannst. Trag dich in unseren E-Mail Verteiler ein und
             du kriegst eine Mail sobald die Anmeldung möglich ist.
           </p>
+          <NewlsetterSignup />
         </div>
         <div className='flex-1 text-left'>
           {/* <h2 className='text-2xl font-bold text-left font-display mb-4'>

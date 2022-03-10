@@ -110,7 +110,7 @@ export default function Layout({ children }) {
               #db2777,
               #7c3aed,
               #1d4ed8,
-              #34d399
+              #00D0B9
             );
             background-size: 100% 300%;
             background-position: ${activeSection === 'top'
@@ -124,7 +124,7 @@ export default function Layout({ children }) {
               : activeSection === 'donate'
               ? '0% 100%'
               : // Fallback
-                '0% 10%'};
+                '0% 0%'};
             transition: background-position 1s ease-in-out;
           }
           /* @media (prefers-color-scheme: dark) {

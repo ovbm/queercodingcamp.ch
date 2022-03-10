@@ -61,7 +61,7 @@ const NewsletterSignup = () => {
           disabled={loading}
           className='
             border-solid border-2 border-white text-white 
-            md:ml-4
+            mt-4 md:mt-0 md:ml-4
             hover:bg-white 
             hover:text-slate-900 transition-width ease-in-out
             disabled:bg-white disabled:text-slate-900
