@@ -55,17 +55,6 @@ export default function Layout({ children }) {
           href='/favicon/apple-icon-152x152.png'
         />
         <link
-          rel='apple-touch-icon'
-          sizes='180x180'
-          href='/favicon/apple-icon-180x180.png'
-        />
-        <link
-          rel='icon'
-          type='image/png'
-          sizes='192x192'
-          href='/favicon/android-icon-192x192.png'
-        />
-        <link
           rel='icon'
           type='image/png'
           sizes='32x32'
@@ -80,11 +69,22 @@ export default function Layout({ children }) {
         <link
           rel='icon'
           type='image/png'
+          sizes='128x128'
+          href='/favicon/favicon-128x128.png'
+        />
+        <link
+          rel='icon'
+          type='image/png'
+          sizes='196x196'
+          href='/favicon/favicon-196x196.png'
+        />
+        <link
+          rel='icon'
+          type='image/png'
           sizes='16x16'
           href='/favicon/favicon-16x16.png'
         />
-        <link rel='manifest' href='/favicon/manifest.json' />
-        <meta name='msapplication-TileColor' content='#ffffff' />
+        <meta name='msapplication-TileColor' content='#0f172a' />
         <meta
           name='msapplication-TileImage'
           content='/favicon/ms-icon-144x144.png'

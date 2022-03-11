@@ -12,9 +12,10 @@ const Donate = ({ id }) => {
       <div className='flex flex-col md:flex-row gap-8 mt-4'>
         <div className='flex-1 text-left'>
           <p>
-            Willst du das Queer Coding Camp unterstützen? Sie können den Verein
-            folgendermassen unterstützen.
+            Mit deiner Spende ermöglichst du jungen queeren Personen die Teilnahme am Queer Coding Camp. 
           </p>
+          <br/>
+          <p>Unser Vereinskonto:</p>
           <p>Queer Coding Camp, 8003 Zürich</p>
           <p>IBAN: CH25 0900 0000 1584 8382 5</p>
         </div>
