@@ -3,6 +3,8 @@ import { ExternalLinkIcon } from '@heroicons/react/solid'
 import SectionContainer from './Container'
 import Profile from '../Profile'
 import olivier from '../../public/images/olivierbaumann.png'
+import adi from '../../public/images/adi.jpg'
+import tabea from '../../public/images/tabea.jpeg'
 import A from '../Link'
 
 const Ueber = ({ id }) => {
@@ -41,22 +43,22 @@ const Ueber = ({ id }) => {
         </div>
         <div className='flex-1 text-left'>
           <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
-            Verein
+            Vereinsvorstand
           </h2>
           <div className='flex flex-col'>
             <Profile
               imageSrc={olivier}
               name='Olivier Baumann'
-              bio='Swiss/Brazilian product developer at Republik Magazin. Prev. co-founder of the climate tech start-up electricityMap.'
+              bio='Olivier ist Produkt-Enwtickler beim Online Magazin Republik. Davor hat er in Kopenhagen das Klima-Startup electricityMap mitgegründet. Im Herbst 2021 hat er das das Queer Coding Camps ins Leben gerufen. '
             />
             <Profile
-              imageSrc={olivier}
+              imageSrc={tabea}
               name='Tabea Iseli'
               bio='Ein Developer'
             />
             <Profile
-              imageSrc={olivier}
-              name='Olivier Baumann'
+              imageSrc={adi}
+              name='Adrian Demleitner'
               bio='Ein Developer'
             />
           </div>

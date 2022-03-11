@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Footer from './Footer'
 
 import useActiveSection from './hooks/useActiveSection'
-
 export default function Layout({ children }) {
   const activeSection = useActiveSection()
   return (
@@ -110,7 +109,7 @@ export default function Layout({ children }) {
               #db2777,
               #7c3aed,
               #1d4ed8,
-              #00D0B9
+              #00d0b9
             );
             background-size: 100% 300%;
             background-position: ${activeSection === 'top'

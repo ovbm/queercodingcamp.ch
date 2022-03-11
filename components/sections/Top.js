@@ -8,7 +8,11 @@ const Top = ({ id }) => {
     <SectionContainer id={id}>
       <div className='flex flex-col md:flex-row md:mt-8 md:items-center gap-4 md:gap-16'>
         <div className='flex-1'>
-          <Image className='' src={illustration} alt='Placeholder' />
+          <Image
+            className='drop-shadow-[0_5px_5px_rgba(255,255,255,0.35)]'
+            src={illustration}
+            alt='Placeholder'
+          />
         </div>
         <div className='flex-1 md:text-left'>
           <h1 className='text-3xl md:text-6xl font-bold font-display'>
