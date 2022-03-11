@@ -6,27 +6,20 @@ const SignUp = ({ id }) => {
   return (
     <SectionContainer id={id}>
       <h1 className='text-6xl font-bold text-left font-display'>Anmelden</h1>
-      <div className='flex flex-col md:flex-row gap-12 mt-12'>
+      <p className='text-left mt-12 mb-4'>
+        Die Vorbereitungen für das erste Queer Coding Camp sind in vollem Gang.
+        Die Anmeldung fürs Camp wird ab <b>Mai 2022</b> möglich sein. Wenn du
+        benachrichtigt werden willst, sobald die Anmeldung freigeschalten ist,
+        kannst du dich in unseren Email-Verteiler eintragen.
+      </p>
+      <div className='flex flex-col md:flex-row gap-12'>
         <div className='flex-1 text-left'>
           <h2 className='text-2xl font-bold text-left font-display mb-4'>
             E-Mail Verteiler
           </h2>
-          <p className='mb-4'>
-            Möchtest du benachrichtigt werden, wenn du dich fürs Queer Coding
-            Camp anmelden kannst. Trag dich in unseren E-Mail Verteiler ein und
-            du kriegst eine Mail sobald die Anmeldung möglich ist.
-          </p>
           <NewlsetterSignup />
         </div>
-        <div className='flex-1 text-left'>
-          {/* <h2 className='text-2xl font-bold text-left font-display mb-4'>
-            Ab Mai
-          </h2>
-          <p>
-            Die Vorbereitungen für das erste Queer Coding Camp sind in vollem
-            Gang. Ab Mitte Mai öffnen wir die Anmeldung fürs Camp.
-          </p> */}
-        </div>
+        <div className='flex-1 text-left'></div>
       </div>
     </SectionContainer>
   )

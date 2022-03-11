@@ -16,7 +16,7 @@ const Top = ({ id }) => {
         </div>
         <div className='flex-1 md:text-left'>
           <h1 className='text-3xl md:text-6xl font-bold font-display'>
-            Queer Coding Camp
+            Queer Coding&nbsp;Camp
           </h1>
           <p className='text-xl md:text-2xl font-display font-normal mt-3'>
             Programmieren lernen, von queeren Menschen für junge queere

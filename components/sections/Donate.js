@@ -11,16 +11,19 @@ const Donate = ({ id }) => {
       </h2>
       <div className='flex flex-col md:flex-row gap-8 mt-4'>
         <div className='flex-1 text-left'>
-          <p>
-            Mit deiner Spende ermöglichst du jungen queeren Personen die Teilnahme am Queer Coding Camp. 
+          <p className='mb-4'>
+            Mit deiner Spende ermöglichst du jungen queeren Personen die
+            Teilnahme am Queer Coding&nbsp;Camp.
           </p>
-          <br/>
-          <p>Unser Vereinskonto:</p>
-          <p>Queer Coding Camp, 8003 Zürich</p>
-          <p>IBAN: CH25 0900 0000 1584 8382 5</p>
+          <DonationBox />
         </div>
         <div className='flex-1 text-left'>
-          <DonationBox />
+          <p className='mb-4'>
+            Spenden sind auch via Bankeinzahlung möglich. <br />
+            Unser Vereinskonto ist:
+          </p>
+          <p>Name: Queer Coding Camp, 8003 Zürich</p>
+          <p>IBAN: CH25 0900 0000 1584 8382 5</p>
         </div>
       </div>
     </SectionContainer>
