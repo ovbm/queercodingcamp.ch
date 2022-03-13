@@ -16,7 +16,7 @@ export default function Layout({ children }) {
       <Navbar />
       {children}
       <Footer />
-      <Stars />
+      {/* <Stars /> */}
       <style global jsx>
         {`
           body {
