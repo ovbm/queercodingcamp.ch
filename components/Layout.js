@@ -1,18 +1,15 @@
 import { useEffect, useRef } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import Head from './Head'
 import Stars from './Stars'
 import useActiveSection from './hooks/useActiveSection'
 
 
 export default function Layout({ children }) {
-
   const activeSection = useActiveSection()
 
   return (
     <>
-      <Head />
       <Navbar />
       {children}
       <Footer />
@@ -39,7 +36,7 @@ export default function Layout({ children }) {
               ? '0% 50%'
               : activeSection === 'about'
               ? '0% 75%'
-              : activeSection === 'donate'
+              : activeSection === 'spenden'
               ? '0% 100%'
               : // Fallback
                 '0% 0%'};

@@ -16,7 +16,7 @@ export default function Home({}) {
         <CampInfoSection id='info' />
         <SignupSection id="anmelden" />
         <SectionAbout id='about' />
-        <DonateSection id='donate' />
+        <DonateSection id='spenden' />
       </main>
     </>
   )

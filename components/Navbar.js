@@ -9,7 +9,7 @@ const navigation = [
   { name: 'Infos', id: 'info' },
   { name: 'Anmelden', id: 'anmelden' },
   { name: 'Über uns', id: 'about' },
-  { name: 'Spenden', id: 'donate' },
+  { name: 'Spenden', id: 'spenden' },
 ]
 
 export default function Navbar() {

@@ -1,10 +1,8 @@
 import { Tab } from '@headlessui/react'
 import Image from 'next/image'
-import { CreditCardIcon } from '@heroicons/react/solid'
 
 import { classNames } from './utils/classNames'
 import Button from './Button'
-import A from './Link'
 
 import twintQR from '../public/images/twintQR.png'
 import paypalQR from '../public/images/paypalQR.png'
