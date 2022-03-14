@@ -10,6 +10,7 @@ const Profile = ({ imageSrc, name, bio, twitter }) => {
         layout='fixed'
         width={56}
         height={56}
+        alt={name}
       />
       <div className="flex-1 ml-4">
         <p className='text-left text-md font-display'>{name}</p>

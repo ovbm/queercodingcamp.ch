@@ -106,6 +106,7 @@ const CampInfo = ({ id }) => {
           </h2>
           <Image
             className='mix-blend-hard-light rounded-xl'
+            alt="Cima Citta in Dangio"
             src={CimaCittaImg}
           />
           <p className="mt-4">
