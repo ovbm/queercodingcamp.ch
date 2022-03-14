@@ -18,11 +18,10 @@ const Top = ({ id }) => {
           <h1 className='text-3xl md:text-6xl font-bold font-display'>
             Queer Coding&nbsp;Camp
           </h1>
-          <p className='text-xl md:text-2xl font-display font-normal mt-3'>
-            Programmieren lernen, von queeren Menschen für junge queere
-            Menschen.
+          <p className='text-2xl md:text-2xl font-display font-bold mt-3'>
+            Programmieren lernen für junge queere Menschen.
           </p>
-          <p className='text-xl md:text-xl font-regular mt-4'>
+          <p className='text-xl md:text-xl font-display mt-4'>
             10. - 16. Oktober 2022 <br />
             Cima Citta, Dangio - Tessin
           </p>

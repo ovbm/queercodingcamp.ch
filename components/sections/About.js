@@ -7,23 +7,31 @@ import adi from '../../public/images/adi.jpg'
 import tabea from '../../public/images/tabea.jpeg'
 import A from '../Link'
 
+// Warum besser rauskommen, Texte nehmen, die schon existieren.
+
 const Ueber = ({ id }) => {
   return (
     <SectionContainer id={id}>
       <h1 className='text-6xl font-bold text-left font-display'>
         Wer sind wir?
       </h1>
-      <div className='flex flex-col md:flex-row gap-8 mt-4'>
+      <div className='flex flex-col md:flex-row gap-16 mt-4'>
         <div className='flex-1 text-left'>
           <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
             Queer Coding Tech!
           </h2>
           <p className='text-md mb-4'>
-            Die Tech-Branche ist heute für Personen die nicht cis, männlich,
-            weiss oder heterosexuell und für Personen, die von
-            Mehrfachdiskriminierungen betroffen sind, ausschliessend.
+            Die Tech-Branche ist für Personen die nicht cis, männlich, weiss und
+            hetero sind, ausschliessend. Das war nicht immer so. Und muss sich
+            ändern!
           </p>
-          <p className='text-md mb-4'>Das war nicht immer so!</p>
+          <p className='text-md mb-4'>
+            Der Verein Queer Coding Camp will mit Bildung und Förderung junger
+            queerer Menschen und der Vernetzung von LBGTQ+ Personen in der
+            Tech-Branche diesem Umstand entegegwirken. Wir queeren die
+            Tech-Welt, damit sie in Zukunft inklusiver, gerechter und ein
+            sicherer Ort für queere Menschen wird.
+          </p>
           <p>
             <A
               taget='_blank'
@@ -49,17 +57,17 @@ const Ueber = ({ id }) => {
             <Profile
               imageSrc={olivier}
               name='Olivier Baumann'
-              bio='Olivier ist Produkt-Enwtickler beim Online Magazin Republik. Davor hat er in Kopenhagen das Klima-Startup electricityMap mitgegründet. Im Herbst 2021 hat er das das Queer Coding Camps ins Leben gerufen. '
+              bio='Olivier ist Produkt-Enwtickler beim Online Magazin Republik. Davor hat er in Kopenhagen das Klima-Startup electricityMap mitgegründet. Im Herbst 2021 hat er den Projekt Queer Coding Camp initiiert. '
             />
             <Profile
               imageSrc={tabea}
               name='Tabea Iseli'
-              bio='Ein Developer'
+              bio='Tabea ist Gründerin des Game-Studios Stardust und seit über zehn Jahren als Game-Designerin und Programmiererin tätig.'
             />
             <Profile
               imageSrc={adi}
               name='Adrian Demleitner'
-              bio='Ein Developer'
+              bio='Adrian studierte Postindustrie-Design am HyperWerk Basel. Er ist Initiator von ckster und Mitglied bei RAST.'
             />
           </div>
         </div>
