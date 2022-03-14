@@ -1,7 +1,8 @@
 import React from 'react'
 
-const Logo = ({size = 72, className}) => (
+const Logo = ({ size = 72, className }) => (
   <svg
+    alt="Das Logo von Queer Coding Camp. Der Buchstabe 'Q', zwischen zwei einfachen Klammern"
     width={size}
     height={size}
     className={className}

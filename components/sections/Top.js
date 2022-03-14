@@ -11,7 +11,7 @@ const Top = ({ id }) => {
           <Image
             className='drop-shadow-[0_5px_5px_rgba(255,255,255,0.35)]'
             src={illustration}
-            alt='Placeholder'
+            alt='Pixel-Art Illustration, die eine gruppe queerer Menschen zeigt, die in einer Hütte zusammen programmieren.'
           />
         </div>
         <div className='flex-1 md:text-left'>

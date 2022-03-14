@@ -55,10 +55,12 @@ const NewsletterSignup = () => {
           '
           id='email'
           placeholder='Deine Email'
+          aria-label="Email Adresse eingeben"
         />
         <Button
           type='submit'
           disabled={loading}
+          aria-label="Email Verteiler abonnieren."
           className='
             border-solid border-2 border-white text-white 
             mt-4 md:mt-0 md:ml-4

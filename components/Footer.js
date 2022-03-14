@@ -26,7 +26,7 @@ export default function Footer() {
               href='https://milchjugend.ch'
               className='text-md w-16 inline-block ml-2'
             >
-              <Image src={Milchjugend} />
+              <Image alt="Milchjugend Logo" src={Milchjugend} />
             </a>
           </p>
         </div>
