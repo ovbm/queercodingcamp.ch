@@ -9,7 +9,7 @@ import paypalQR from '../public/images/paypalQR.png'
 
 export default function Donate() {
   return (
-    <div className='w-full max-w-md'>
+    <div className='w-full'>
       <Tab.Group>
         <Tab.List className='flex p-1 space-x-1 bg-gray-900/50 backdrop-saturate-200 rounded-xl'>
           <Tab
