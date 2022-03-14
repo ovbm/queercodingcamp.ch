@@ -5,5 +5,5 @@ export default {
     mail: 'olivier@iovi.io',
     twitter: '@obauma',
   },
-  description: 'Programmieren lernen von queeren Menschen für queere Menschen.',
+  description: 'Programmieren lernen für junge queere Menschen.',
 }
