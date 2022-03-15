@@ -20,7 +20,7 @@ const FAQ = () => {
         <Disclosure>
           {({ open }) => (
             <>
-              <Disclosure.Button className='flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
+              <Disclosure.Button className='flex justify-between w-full px-4 py-2 font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
                 <span>Wer kann am Queer Coding Camp teilnehmen?</span>
                 <ChevronUpIcon
                   className={`${
@@ -28,7 +28,7 @@ const FAQ = () => {
                   } w-5 h-5 text-indigo-500`}
                 />
               </Disclosure.Button>
-              <Disclosure.Panel className='px-4 pt-4 pb-2 text-left text-sm'>
+              <Disclosure.Panel className='px-4 pt-4 pb-2 text-left'>
                 Das Camp ist ausgerichtet für queere Personen zwischen 16 - 25
                 Jahren. FINTA-Personen sind in der Tech-Welt stark
                 untervertreten, weshalb sie bei der Anmeldung Priorität haben.
@@ -41,7 +41,7 @@ const FAQ = () => {
         <Disclosure as='div' className='mt-2'>
           {({ open }) => (
             <>
-              <Disclosure.Button className='flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
+              <Disclosure.Button className='flex justify-between w-full px-4 py-2 font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
                 <span>Was kostet das Queer Coding Camp?</span>
                 <ChevronUpIcon
                   className={`${
@@ -49,7 +49,7 @@ const FAQ = () => {
                   } w-5 h-5 text-indigo-500`}
                 />
               </Disclosure.Button>
-              <Disclosure.Panel className='text-left px-4 pt-4 pb-2 text-sm'>
+              <Disclosure.Panel className='text-left px-4 pt-4 pb-2'>
                 Dank Unterstützung von Stiftungen und privaten Spenden ist die
                 Teilnahme gratis. Die Anfahrt musst du selbst organisieren.
                 Falls das für dich nicht möglich ist, kannst du das bei der
@@ -61,7 +61,7 @@ const FAQ = () => {
         <Disclosure as='div' className='mt-2'>
           {({ open }) => (
             <>
-              <Disclosure.Button className='flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
+              <Disclosure.Button className='flex justify-between w-full px-4 py-2 font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
                 <span>Brauche ich Vorkenntnisse oder einen Laptop?</span>
                 <ChevronUpIcon
                   className={`${
@@ -69,7 +69,7 @@ const FAQ = () => {
                   } w-5 h-5 text-indigo-500`}
                 />
               </Disclosure.Button>
-              <Disclosure.Panel className='text-left px-4 pt-4 pb-2 text-sm'>
+              <Disclosure.Panel className='text-left px-4 pt-4 pb-2'>
                 Du brauchst keine Programmier-Vorkenntnisse oder Affinität für
                 IT. Wenn du einen eigenen Laptop hast, bitten wir dich diesen
                 mitzubringen. Falls nicht, organisieren wir einen für dich.
@@ -80,7 +80,7 @@ const FAQ = () => {
         <Disclosure as='div' className='mt-2'>
           {({ open }) => (
             <>
-              <Disclosure.Button className='flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
+              <Disclosure.Button className='flex justify-between w-full px-4 py-2 font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
                 <span>Wo und wann kann ich mich anmelden?</span>
                 <ChevronUpIcon
                   className={`${
@@ -88,7 +88,7 @@ const FAQ = () => {
                   } w-5 h-5 text-indigo-500`}
                 />
               </Disclosure.Button>
-              <Disclosure.Panel className='text-left px-4 pt-4 pb-2 text-sm'>
+              <Disclosure.Panel className='text-left px-4 pt-4 pb-2'>
                 Wir öffnen die Anmeldung für das Camp im Mai. Du kannst dich
                 jetzt schon in{' '}
                 <a className='underline' href='#anmelden'>
@@ -102,7 +102,7 @@ const FAQ = () => {
         <Disclosure as='div' className='mt-2'>
           {({ open }) => (
             <>
-              <Disclosure.Button className='flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
+              <Disclosure.Button className='flex justify-between w-full px-4 py-2 font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
                 <span>Ist der Ort rollstuhlgängig?</span>
                 <ChevronUpIcon
                   className={`${
@@ -110,7 +110,7 @@ const FAQ = () => {
                   } w-5 h-5 text-indigo-500`}
                 />
               </Disclosure.Button>
-              <Disclosure.Panel className='text-left px-4 pt-4 pb-2 text-sm'>
+              <Disclosure.Panel className='text-left px-4 pt-4 pb-2'>
                 Die Cima Citta ist leider nicht rollstuhlgängig. Wir möchten
                 zukünftige Coding Camps an barrierefreien Orten wie z.B. der
                 Jugendherberge Burghof durchführen. Dieses Jahr hat es aus
