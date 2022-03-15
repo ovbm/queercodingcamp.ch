@@ -71,7 +71,7 @@ const FAQ = () => {
               </Disclosure.Button>
               <Disclosure.Panel className='text-left px-4 pt-4 pb-2 text-sm'>
                 Du brauchst keine Programmier-Vorkenntnisse oder Affinität für
-                IT. Wenn du einen eigenen Laptop hast, bitten wir dich dieses
+                IT. Wenn du einen eigenen Laptop hast, bitten wir dich diesen
                 mitzubringen. Falls nicht, organisieren wir einen für dich.
               </Disclosure.Panel>
             </>
@@ -90,7 +90,7 @@ const FAQ = () => {
               </Disclosure.Button>
               <Disclosure.Panel className='text-left px-4 pt-4 pb-2 text-sm'>
                 Wir öffnen die Anmeldung für das Camp im Mai. Du kannst dich
-                aber schon einmal in{' '}
+                jetzt schon in{' '}
                 <a className='underline' href='#anmelden'>
                   unseren Email-Verteiler eintragen
                 </a>
@@ -147,7 +147,7 @@ const CampInfo = ({ id }) => {
           </p>
           <p>
             Am Abend gibt es Spiele, Pen and Paper, Games oder einfach
-            gemütliches Zusammensein beim Lagerfeuer. Die Jugendorgansiation
+            gemütliches Zusammensein beim Lagerfeuer. Die Jugendorganisation
             Milchjugend hilft uns in der Ausgestaltung des Abendprogramms.
           </p>
           <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
@@ -165,8 +165,8 @@ const CampInfo = ({ id }) => {
             </A>
             , in Dangio, Tessin statt. Die Cima Citta befindet sich auf dem
             Gelände der ehemaligen Schokoladenfabrik <i>Cima Norma</i>. Sie
-            liegt im Blenio Tal und ist in einer halben Stunde von Biasca mit dem
-            Bus erreichbar.
+            liegt im Blenio Tal und ist in einer halben Stunde von Biasca mit
+            dem Bus erreichbar.
           </p>
           <p className='mt-4'>
             Als Teilnehmer*in übernachtest du in mehrheitlich Zweier- oder

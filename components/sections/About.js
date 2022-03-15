@@ -67,7 +67,7 @@ const Ueber = ({ id }) => {
             <Profile
               imageSrc={adi}
               name='Adrian Demleitner'
-              bio='Adrian studierte Postindustrie-Design am HyperWerk Basel. Er ist Initiator von ckster und Mitglied bei RAST.'
+              bio='Adrian studierte Postindustrie-Design am HyperWerk Basel und hat soeben einen MA in Designforschung an der MAD HKB abgeschlossen. Adrian arbeitet als wissenschaftlicher Softwareprogrammierer an der Uni Basel.'
             />
           </div>
         </div>

@@ -7,7 +7,7 @@ const SignUp = ({ id }) => {
     <SectionContainer id={id}>
       <h1 className='text-6xl font-bold text-left font-display'>Anmelden</h1>
       <p className='text-left mt-12 mb-4'>
-        Die Vorbereitungen für das erste Queer Coding Camp sind in vollem Gang.
+        Die Vorbereitungen für das erste Queer Coding Camp sind im vollen Gange.
         Die Anmeldung fürs Camp wird ab <b>Mai 2022</b> möglich sein. Willst du
         benachrichtigt werden, sobald die Anmeldung freigeschaltet wird? Dann
         trage dich in unseren Email-Verteiler ein.
