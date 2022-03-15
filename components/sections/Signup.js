@@ -10,7 +10,7 @@ const SignUp = ({ id }) => {
         Die Vorbereitungen für das erste Queer Coding Camp sind in vollem Gang.
         Die Anmeldung fürs Camp wird ab <b>Mai 2022</b> möglich sein. Willst du
         benachrichtigt werden, sobald die Anmeldung freigeschaltet wird? Dann
-        trag dich in unseren Email-Verteiler ein.
+        trage dich in unseren Email-Verteiler ein.
       </p>
       <div className='flex flex-col md:flex-row gap-12'>
         <div className='flex-1 text-left'>

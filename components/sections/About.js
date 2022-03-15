@@ -28,7 +28,7 @@ const Ueber = ({ id }) => {
           <p className='text-md mb-4'>
             Der Verein Queer Coding Camp will mit Bildung und Förderung junger
             queerer Menschen und der Vernetzung von LBGTQ+ Personen in der
-            Tech-Branche diesem Umstand entegegwirken. Wir queeren die
+            Tech-Branche diesem Umstand entgegenwirken. Wir queeren die
             Tech-Welt, damit sie in Zukunft inklusiver, gerechter und ein
             sicherer Ort für queere Menschen wird.
           </p>
@@ -57,7 +57,7 @@ const Ueber = ({ id }) => {
             <Profile
               imageSrc={olivier}
               name='Olivier Baumann'
-              bio='Olivier ist Produkt-Enwtickler beim Online Magazin Republik. Davor hat er in Kopenhagen das Klima-Startup electricityMap mitgegründet. Im Herbst 2021 hat er den Projekt Queer Coding Camp initiiert. '
+              bio='Olivier ist Produkt-Enwtickler beim Online Magazin Republik. Davor hat er in Kopenhagen das Klima-Startup electricityMap mitgegründet. Im Herbst 2021 hat er das Projekt Queer Coding Camp initiiert. '
             />
             <Profile
               imageSrc={tabea}

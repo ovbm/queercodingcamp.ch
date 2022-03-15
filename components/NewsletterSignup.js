@@ -9,6 +9,7 @@ const NewsletterSignup = () => {
   const [loading, setLoading] = React.useState(false)
 
   const subscribe = async () => {
+    setLoading(true)
     const response = await fetch('/api/subscribe', {
       body: JSON.stringify({
         email,
@@ -22,6 +23,7 @@ const NewsletterSignup = () => {
     const { msg } = await response.json();
     if (msg) {
       setResponse(msg)
+      setLoading(false)
       return
     }
   }

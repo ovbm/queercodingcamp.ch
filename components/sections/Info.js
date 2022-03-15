@@ -147,7 +147,7 @@ const CampInfo = ({ id }) => {
           </p>
           <p>
             Am Abend gibt es Spiele, Pen and Paper, Games oder einfach
-            gemütliches Zusammensein beim Lagerfeuer. Die jugendorgansiation
+            gemütliches Zusammensein beim Lagerfeuer. Die Jugendorgansiation
             Milchjugend hilft uns in der Ausgestaltung des Abendprogramms.
           </p>
           <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
@@ -165,12 +165,12 @@ const CampInfo = ({ id }) => {
             </A>
             , in Dangio, Tessin statt. Die Cima Citta befindet sich auf dem
             Gelände der ehemaligen Schokoladenfabrik <i>Cima Norma</i>. Sie
-            liegt im Blenio Tal und ist in einer halbe Stunde von Biasca mit dem
+            liegt im Blenio Tal und ist in einer halben Stunde von Biasca mit dem
             Bus erreichbar.
           </p>
           <p className='mt-4'>
-            Als Teilehmer*in übernachtest du in mehrheitlich Zweier- oder
-            Viererzimmer im ehemaligen Arbeiterhaus &laquo;Pensionato&raquo;.
+            Als Teilnehmer*in übernachtest du in mehrheitlich Zweier- oder
+            Viererzimmern im ehemaligen Arbeiterhaus &laquo;Pensionato&raquo;.
           </p>
         </div>
         <div className='flex-1 text-left'>
