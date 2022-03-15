@@ -1,34 +1,41 @@
 import Head from 'next/head'
-import Section from '../components/Section'
-import Hero from '../components/sections/Hero'
+import config from '../config'
+import SectionAbout from '../components/sections/About'
+import CampInfoSection from '../components/sections/Info'
+import TopSection from '../components/sections/Top'
+import DonateSection from '../components/sections/Donate'
+import SignupSection from '../components/sections/Signup'
+
+const { title, description } = config
+
 export default function Home({}) {
   return (
     <>
       <Head>
-        <title>Queer Coding Camp</title>
+        <title>{title}</title>
+        <meta name='description' content={description} />
+        <meta property='og:type' content='website' />
+        <meta property='og:title' content={title} />
+        <meta property='og:description' content={description} />
+        <meta property='og:site_name' content={title} />
+        <meta
+          property='og:image'
+          content='/images/queercodingcamp_og_image.png'
+        />
+        <meta property='twitter:card' content='summary' />
+        <meta property='twitter:title' content={title} />
+        <meta
+          property='twitter:image'
+          content='/images/queercodingcamp_og_image.png'
+        />
+        <meta property='twitter:description' content={description} />
       </Head>
-
       <main className='flex flex-col items-center justify-center w-full flex-1 text-center'>
-        <Hero />
-        {/* 
-        <Section id='top'>
-          <h1 className='text-6xl font-bold font-display'>Queer Coding Camp</h1>
-        </Section>
-        <Section id='middle'>
-          <h1 className='text-6xl font-bold font-display'>Queer Coding Camp</h1>
-        </Section>
-        <section
-          className='h-96 flex flex-col items-center justify-center bg-pink-600'
-          id='bottom'
-        >
-          <h1 className='text-6xl font-bold font-display'>Queer Coding Camp</h1>
-        </section>
-        <section
-          className='h-96 flex flex-col items-center justify-center bg-purple-600'
-          id='end'
-        >
-          <h1 className='text-6xl font-bold font-display'>Queer Coding Camp</h1>
-        </section> */}
+        <TopSection id='top' />
+        <CampInfoSection id='info' />
+        <SignupSection id='anmelden' />
+        <SectionAbout id='about' />
+        <DonateSection id='spenden' />
       </main>
     </>
   )
