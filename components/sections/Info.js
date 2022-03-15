@@ -30,10 +30,10 @@ const FAQ = () => {
               </Disclosure.Button>
               <Disclosure.Panel className='px-4 pt-4 pb-2 text-left'>
                 Das Camp ist ausgerichtet für queere Personen zwischen 16 - 25
-                Jahren. FINTA-Personen sind in der Tech-Welt stark
-                untervertreten, weshalb sie bei der Anmeldung Priorität haben.
-                Bist du älter oder jünger? Schreib uns. Die Altersgrenzen sind
-                Richtwerte.
+                Jahren. FINTA (Frauen, Inter, Nichtbinäre, Trans und Agender
+                Menschen) sind in der Tech-Welt stark untervertreten, weshalb
+                sie bei der Anmeldung Priorität haben. Bist du älter oder
+                jünger? Schreib uns. Die Altersgrenzen sind Richtwerte.
               </Disclosure.Panel>
             </>
           )}
