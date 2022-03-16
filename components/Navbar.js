@@ -33,10 +33,16 @@ export default function Navbar() {
             <Disclosure.Panel className='md:hidden' unmount={false}>
               <div className='px-4 pt-2 pb-3 space-y-4 flex flex-col justify-end items-end'>
                 {navigation.map((item) => (
-                  <Disclosure.Button
-                    as='a'
+                  <a
                     key={item.name}
                     href={`#${item.id}`}
+                    onClick={(e) => {
+                      e.preventDefault()
+                      window.scrollTo({
+                        top: document.getElementById(item.id).offsetTop,
+                        behavior: 'smooth',
+                      })
+                    }}
                     className={classNames(
                       item.id === activeSection
                         ? 'bg-gray-900/10 -translate-x-5'
@@ -48,7 +54,7 @@ export default function Navbar() {
                     }
                   >
                     {item.name}
-                  </Disclosure.Button>
+                  </a>
                 ))}
               </div>
             </Disclosure.Panel>
@@ -58,6 +64,13 @@ export default function Navbar() {
               <a
                 key='top'
                 href='#top'
+                onClick={(e) => {
+                  e.preventDefault()
+                  window.scrollTo({
+                    top: document.getElementById('top').offsetTop,
+                    behavior: 'smooth',
+                  })
+                }}
                 title='top'
                 className='hidden md:block'
                 aria-current={'top' === activeSection ? 'page' : undefined}
@@ -83,6 +96,13 @@ export default function Navbar() {
                       <a
                         key={item.name}
                         href={`#${item.id}`}
+                        onClick={(e) => {
+                          e.preventDefault()
+                          window.scrollTo({
+                            top: document.getElementById(item.id).offsetTop,
+                            behavior: 'smooth',
+                          })
+                        }}
                         title={item.name}
                         className={classNames(
                           item.id === activeSection
