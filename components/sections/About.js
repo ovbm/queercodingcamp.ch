@@ -57,7 +57,7 @@ const Ueber = ({ id }) => {
             <Profile
               imageSrc={olivier}
               name='Olivier Baumann'
-              bio='Olivier ist Produkt-Enwtickler beim Online Magazin Republik. Davor hat er in Kopenhagen das Klima-Startup electricityMap mitgegründet. Im Herbst 2021 hat er das Projekt Queer Coding Camp initiiert. '
+              bio='Olivier ist Produkt-Entwickler beim Online Magazin Republik. Davor hat er in Kopenhagen das Klima-Startup electricityMap mitgegründet. Im Herbst 2021 hat er das Projekt Queer Coding Camp initiiert. '
             />
             <Profile
               imageSrc={tabea}
