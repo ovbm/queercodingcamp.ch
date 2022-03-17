@@ -160,9 +160,9 @@ const CampInfo = ({ id }) => {
           />
           <p className='mt-4'>
             Das Coding Camp findet im Residency-Haus{' '}
-            <A href='' Icon={ExternalLinkIcon}>
+            <a href='https://cimacitta.ch/de' target='_blank' Icon={ExternalLinkIcon}>
               Cima Citta
-            </A>
+            </a>
             , in Dangio, Tessin statt. Die Cima Citta befindet sich auf dem
             Gelände der ehemaligen Schokoladenfabrik <i>Cima Norma</i>. Sie
             liegt im Blenio Tal und ist in einer halben Stunde von Biasca mit
