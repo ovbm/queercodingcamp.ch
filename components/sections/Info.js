@@ -154,7 +154,7 @@ const CampInfo = ({ id }) => {
           />
           <p className='mt-4'>
             Das Coding Camp findet im Residency-Haus{' '}
-            <A href='' Icon={ExternalLinkIcon}>
+            <A href='https://cimacitta.ch' target="_blank" Icon={ExternalLinkIcon}>
               Cima Citta
             </A>
             , in Dangio, Tessin statt. Die Cima Citta befindet sich auf dem
