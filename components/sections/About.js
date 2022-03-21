@@ -12,9 +12,9 @@ import A from '../Link'
 const Ueber = ({ id }) => {
   return (
     <SectionContainer id={id}>
-      <h1 className='text-6xl font-bold text-left font-display'>
+      <h2 className='text-6xl font-bold text-left font-display'>
         Wer sind wir?
-      </h1>
+      </h2>
       <div className='flex flex-col md:flex-row gap-16 mt-4'>
         <div className='flex-1 text-left'>
           <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>

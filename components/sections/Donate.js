@@ -7,7 +7,7 @@ import A from '../Link'
 const Donate = ({ id }) => {
   return (
     <SectionContainer id={id}>
-      <h1 className='text-6xl font-bold text-left font-display'>Spenden</h1>
+      <h2 className='text-6xl font-bold text-left font-display'>Spenden</h2>
       <h2 className='text-2xl font-bold text-left font-display mt-12'>
         Hilf uns die Tech-Welt zu queeren!
       </h2>

@@ -23,7 +23,7 @@ const Top = ({ id }) => {
           </p>
           <p className='text-xl md:text-xl font-display mt-4'>
             10. - 16. Oktober 2022 <br />
-            Cima Citta, Dangio - Tessin
+            Cima Citta, Dangio TI, Schweiz
           </p>
         </div>
       </div>
