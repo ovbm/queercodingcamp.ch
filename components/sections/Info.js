@@ -6,12 +6,6 @@ import { ChevronUpIcon, ExternalLinkIcon } from '@heroicons/react/solid'
 import CimaCittaImg from '../../public/images/cimacitta.jpeg'
 import A from '../Link'
 
-// andere Fragen
-// Accessability - Nicht Rollstuhl - in Zukunft besser machen will.
-// Kann ich mich mit Freunden anmelden?
-// Material: Muss ich selbst einen Laptop mitnehmen? Hast du keins, melde dich, und wir organisieren es für dich.
-
-// Parkplätze <- wie kommt man hin. Wird die Anfahtr erstattet (nicht leisten? Melde dich.)
 
 const FAQ = () => {
   return (
@@ -127,7 +121,7 @@ const FAQ = () => {
 const CampInfo = ({ id }) => {
   return (
     <SectionContainer id={id}>
-      <h1 className='text-6xl font-bold text-left font-display'>Info</h1>
+      <h2 className='text-6xl font-bold text-left font-display'>Info</h2>
       <div className='flex flex-col gap-12 md:flex-row md:gap-16 mt-12'>
         <div className='flex-1 text-left'>
           <h2 className='text-2xl font-bold text-left font-display mb-4'>

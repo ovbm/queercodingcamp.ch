@@ -12,9 +12,9 @@ import A from '../Link'
 const Ueber = ({ id }) => {
   return (
     <SectionContainer id={id}>
-      <h1 className='text-6xl font-bold text-left font-display'>
+      <h2 className='text-6xl font-bold text-left font-display'>
         Wer sind wir?
-      </h1>
+      </h2>
       <div className='flex flex-col md:flex-row gap-16 mt-4'>
         <div className='flex-1 text-left'>
           <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
@@ -56,17 +56,20 @@ const Ueber = ({ id }) => {
           <div className='flex flex-col'>
             <Profile
               imageSrc={olivier}
+              twitter='obauma'
               name='Olivier Baumann'
-              bio='Olivier ist Produkt-Enwtickler beim Online Magazin Republik. Davor hat er in Kopenhagen das Klima-Startup electricityMap mitgegründet. Im Herbst 2021 hat er das Projekt Queer Coding Camp initiiert. '
+              bio='Olivier ist Produkt-Entwickler beim Online Magazin Republik. Davor hat er in Kopenhagen das Klima-Startup electricityMap mitgegründet. Im Herbst 2021 hat er das Projekt Queer Coding Camp initiiert. '
             />
             <Profile
               imageSrc={tabea}
+              twitter='ElisaItabe'
               name='Tabea Iseli'
               bio='Tabea ist Gründerin des Game-Studios Stardust und seit über zehn Jahren als Game-Designerin und Programmiererin tätig.'
             />
             <Profile
               imageSrc={adi}
               name='Adrian Demleitner'
+              twitter='_thgie'
               bio='Adrian studierte Postindustrie-Design am HyperWerk Basel und hat soeben einen MA in Designforschung an der MAD HKB abgeschlossen. Adrian arbeitet als wissenschaftlicher Softwareprogrammierer an der Uni Basel.'
             />
           </div>
