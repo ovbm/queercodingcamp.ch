@@ -9,7 +9,7 @@ const Link = React.forwardRef(
         ref={ref}
         alt={alt}
         target={target}
-        rel={target === 'blank' && 'noreferrer'}
+        rel={target === '_blank' && 'noreferrer'}
         className={classNames(
           'underline underline-offset-2 hover:opacity-80',
           className
