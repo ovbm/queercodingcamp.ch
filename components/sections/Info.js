@@ -121,7 +121,7 @@ const FAQ = () => {
 const CampInfo = ({ id }) => {
   return (
     <SectionContainer id={id}>
-      <h1 className='text-6xl font-bold text-left font-display'>Info</h1>
+      <h2 className='text-6xl font-bold text-left font-display'>Info</h2>
       <div className='flex flex-col gap-12 md:flex-row md:gap-16 mt-12'>
         <div className='flex-1 text-left'>
           <h2 className='text-2xl font-bold text-left font-display mb-4'>
