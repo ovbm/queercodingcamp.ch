@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { ExternalLinkIcon } from '@heroicons/react/solid'
 import SectionContainer from './Container'
 import Profile from '../Profile'
@@ -75,6 +76,56 @@ const Ueber = ({ id }) => {
           </div>
         </div>
       </div>
+      <h2
+        id='supporters'
+        className='text-2xl font-bold text-left font-display mt-12 mb-4'
+      >
+        Supporters
+      </h2>
+
+      <div className='flex flex-wrap gap-4 justify-center md:justify-start md:gap-8 mt-4'>
+        <div>
+          <a
+            href='https://www.puzzle.ch/de/home'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <Image
+              src='/images/puzzle_itc_logo.svg'
+              width={180}
+              height={50}
+              alt='Puzzle ITC'
+            />
+          </a>
+          {/* <a
+            href='/'
+            target='_blank'
+            className='bg-white text-xs relative top-1 rounded-md text-fuchsia-500 font-bold p-1 pb-0.5 mb-4'
+          >
+            hiring
+          </a> */}
+        </div>
+        <a href='https://www.fanaka.ch' target='_blank' rel='noreferrer'>
+          <Image
+            src='/images/fanaka_logo.svg'
+            width={180}
+            height={50}
+            alt='Fanaka'
+          />
+        </a>
+      </div>
+      <p className='text-left mt-4'>
+        Das Queer Coding Camp kann Dank der finanziellen Untertsützung von
+        Stiftungen und Sponsoring-Beiträgen von Unternehmen stattfinden. Möchte
+        auch dein Unternehmen das Projekt unterstützen? Infos dazu in unserem{' '}
+        <A
+          taget='_blank'
+          Icon={ExternalLinkIcon}
+          href='https://queercodecamp.notion.site/Queer-Coding-Camp-Sponsoring-bb0ed022360e445e92abe94238f78646'
+        >
+          Sponsoring Aufruf für KMU&apos;s
+        </A>
+      </p>
     </SectionContainer>
   )
 }

@@ -18,25 +18,11 @@ const Donate = ({ id }) => {
             Teilnahme am Queer Coding&nbsp;Camp.
           </p>
           <DonationBox />
-        </div>
-        <div className='flex-1 text-left'>
-          <p className='mb-4'>
-            Wir suchen KMU&apos;s, die das Queer Coding Camp finanziell
-            unterstützen wollen. Infos dazu in unserem{' '}
-            <A
-              taget='_blank'
-              Icon={ExternalLinkIcon}
-              href='https://queercodecamp.notion.site/Queer-Coding-Camp-Sponsoring-bb0ed022360e445e92abe94238f78646'
-            >
-              Sponsoring Aufruf KMU
-            </A>
-          </p>
-          <p className='mb-4'>
-            Spenden sind auch via Bankeinzahlung möglich:
-          </p>
+          <p className='mb-4 mt-4'>Spenden sind auch via Bankeinzahlung möglich:</p>
           <p>Name: Queer Coding Camp, 8003 Zürich</p>
           <p>IBAN: CH25 0900 0000 1584 8382 5</p>
         </div>
+        <div className='flex-1 text-left'></div>
       </div>
     </SectionContainer>
   )
