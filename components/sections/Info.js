@@ -4,8 +4,9 @@ import SectionContainer from './Container'
 import { Disclosure } from '@headlessui/react'
 import { ChevronUpIcon, ExternalLinkIcon } from '@heroicons/react/solid'
 import CimaCittaImg from '../../public/images/cimacitta.jpeg'
+import DiscordImg from '../../public/images/Discord-Logo-White.svg'
 import A from '../Link'
-
+import Button from '../Button'
 
 const FAQ = () => {
   return (
@@ -25,9 +26,10 @@ const FAQ = () => {
               <Disclosure.Panel className='px-4 pt-4 pb-2 text-left'>
                 Das Camp ist ausgerichtet für queere Personen zwischen 16 - 25
                 Jahren. FINTA (Frauen, Inter, Nichtbinäre, Trans und Agender
-                Menschen) sind in der Tech-Welt stark untervertreten, weshalb
-                sie bei der Anmeldung Priorität haben. Bist du älter oder
-                jünger? Schreib uns. Die Altersgrenzen sind Richtwerte.
+                Personen) und PoC (Persons of Color) sind in der Tech-Welt stark
+                untervertreten, weshalb sie bei der Anmeldung Priorität haben
+                werden. Bist du älter oder jünger? Schreib uns. Die
+                Altersgrenzen sind Richtwerte.
               </Disclosure.Panel>
             </>
           )}
@@ -154,7 +156,12 @@ const CampInfo = ({ id }) => {
           />
           <p className='mt-4'>
             Das Coding Camp findet im Residency-Haus{' '}
-            <A href='https://cimacitta.ch/de' target='_blank' rel="noreferrer" Icon={ExternalLinkIcon}>
+            <A
+              href='https://cimacitta.ch/de'
+              target='_blank'
+              rel='noreferrer'
+              Icon={ExternalLinkIcon}
+            >
               Cima Citta
             </A>
             , in Dangio, Tessin statt. Die Cima Citta befindet sich auf dem
@@ -174,6 +181,13 @@ const CampInfo = ({ id }) => {
           <div className='flex flex-col md:flex-row gap-8'>
             <FAQ />
           </div>
+          {/* <a
+            href='https://discord.gg/9S2TDwb9EC'
+            className='p-4 rounded-xl bg-gradient-to-r from-pink-500 to-fuchsia-600 flex shadow-md hover:shadow-lg transition-all duration-200'
+          >
+            <Image src={DiscordImg} width={42} height={42} alt='Discord' />
+            Join our Discord
+          </a> */}
         </div>
       </div>
     </SectionContainer>
