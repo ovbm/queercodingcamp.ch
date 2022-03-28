@@ -7,6 +7,7 @@ import olivier from '../../public/images/olivierbaumann.png'
 import adi from '../../public/images/adi.jpg'
 import tabea from '../../public/images/tabea.jpeg'
 import A from '../Link'
+import Supporter from '../Supporter'
 
 // Warum besser rauskommen, Texte nehmen, die schon existieren.
 
@@ -84,35 +85,17 @@ const Ueber = ({ id }) => {
       </h2>
 
       <div className='flex flex-wrap gap-4 justify-center md:justify-start md:gap-8 mt-4'>
-        <div>
-          <a
-            href='https://www.puzzle.ch/de/home'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <Image
-              src='/images/puzzle_itc_logo.svg'
-              width={180}
-              height={50}
-              alt='Puzzle ITC'
-            />
-          </a>
-          {/* <a
-            href='/'
-            target='_blank'
-            className='bg-white text-xs relative top-1 rounded-md text-fuchsia-500 font-bold p-1 pb-0.5 mb-4'
-          >
-            hiring
-          </a> */}
-        </div>
-        <a href='https://www.fanaka.ch' target='_blank' rel='noreferrer'>
-          <Image
-            src='/images/fanaka_logo.svg'
-            width={180}
-            height={50}
-            alt='Fanaka'
-          />
-        </a>
+        <Supporter
+          href='https://www.puzzle.ch/de/stellen'
+          imageSrc='/images/puzzle_itc_logo.svg'
+          name='Puzzle ITC'
+          hiring={true}
+        />
+        <Supporter
+          href='https://www.fanaka.ch'
+          imageSrc='/images/fanaka_logo.svg'
+          name='Fanaka'
+        />
       </div>
       <p className='text-left mt-4'>
         Das Queer Coding Camp kann Dank der finanziellen Untertsützung von

@@ -6,7 +6,6 @@ import { ChevronUpIcon, ExternalLinkIcon } from '@heroicons/react/solid'
 import CimaCittaImg from '../../public/images/cimacitta.jpeg'
 import A from '../Link'
 
-
 const FAQ = () => {
   return (
     <div className='w-full'>
@@ -25,9 +24,10 @@ const FAQ = () => {
               <Disclosure.Panel className='px-4 pt-4 pb-2 text-left'>
                 Das Camp ist ausgerichtet für queere Personen zwischen 16 - 25
                 Jahren. FINTA (Frauen, Inter, Nichtbinäre, Trans und Agender
-                Menschen) sind in der Tech-Welt stark untervertreten, weshalb
-                sie bei der Anmeldung Priorität haben. Bist du älter oder
-                jünger? Schreib uns. Die Altersgrenzen sind Richtwerte.
+                Personen) und PoC (Persons of Color) sind in der Tech-Welt stark
+                untervertreten, weshalb sie bei der Anmeldung Priorität haben
+                werden. Bist du älter oder jünger? Schreib uns. Die
+                Altersgrenzen sind Richtwerte.
               </Disclosure.Panel>
             </>
           )}
@@ -154,7 +154,12 @@ const CampInfo = ({ id }) => {
           />
           <p className='mt-4'>
             Das Coding Camp findet im Residency-Haus{' '}
-            <A href='https://cimacitta.ch/de' target='_blank' rel="noreferrer" Icon={ExternalLinkIcon}>
+            <A
+              href='https://cimacitta.ch/de'
+              target='_blank'
+              rel='noreferrer'
+              Icon={ExternalLinkIcon}
+            >
               Cima Citta
             </A>
             , in Dangio, Tessin statt. Die Cima Citta befindet sich auf dem
