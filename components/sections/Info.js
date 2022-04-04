@@ -5,6 +5,8 @@ import { Disclosure } from '@headlessui/react'
 import { ChevronUpIcon, ExternalLinkIcon } from '@heroicons/react/solid'
 import CimaCittaImg from '../../public/images/cimacitta.jpeg'
 import A from '../Link'
+import Button from '../Button'
+import DiscordImg from '../../public/images/Discord-Logo-White.svg'
 
 const FAQ = () => {
   return (
@@ -179,6 +181,17 @@ const CampInfo = ({ id }) => {
           <div className='flex flex-col md:flex-row gap-8'>
             <FAQ />
           </div>
+          <a
+            href='https://discord.gg/9S2TDwb9EC'
+            target='_blank'
+            rel='noreferrer'
+            className='rounded-xl p-4 mt-6 bg-gradient-to-r from-pink-500/90 to-fuchsia-600/40 hover:backdrop-brightness-200 flex items-center shadow-md hover:shadow-lg transition-all duration-200'
+          >
+            <Image src={DiscordImg} width={32} height={32} alt='Discord' />
+            <span className='ml-4'>
+              Noch Fragen? Wir sind auch auf Discord.
+            </span>
+          </a>
         </div>
       </div>
     </SectionContainer>
