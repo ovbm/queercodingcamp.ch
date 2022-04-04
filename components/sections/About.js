@@ -84,7 +84,7 @@ const Ueber = ({ id }) => {
         Supporters
       </h2>
 
-      <div className='flex flex-wrap gap-4 justify-center md:justify-start md:gap-8 mt-4'>
+      <div className='flex flex-wrap gap-4 justify-center items-center md:justify-start md:gap-8 mt-8'>
         <Supporter
           href='https://www.puzzle.ch/de/stellen'
           imageSrc='/images/puzzle_itc_logo.svg'
@@ -96,8 +96,21 @@ const Ueber = ({ id }) => {
           imageSrc='/images/fanaka_logo.svg'
           name='Fanaka'
         />
+        <Supporter
+          href='https://www.cyon.ch/ueber-cyon/jobs'
+          imageSrc='/images/cyon-logo-white.svg'
+          name='Cyon'
+          height={40}
+          width={140}
+          hiring={true}
+        />
+        <Supporter
+          href='https://codesmith.ch'
+          imageSrc='/images/codesmith-logo.svg'
+          name='Codesmith'
+        />
       </div>
-      <p className='text-left mt-4'>
+      <p className='text-left mt-8'>
         Das Queer Coding Camp kann Dank der finanziellen Untertsützung von
         Stiftungen und Sponsoring-Beiträgen von Unternehmen stattfinden. Möchte
         auch dein Unternehmen das Projekt unterstützen? Infos dazu in unserem{' '}
