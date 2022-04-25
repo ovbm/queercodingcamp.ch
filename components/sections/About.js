@@ -84,7 +84,7 @@ const Ueber = ({ id }) => {
         Supporters
       </h2>
 
-      <div className='flex flex-wrap gap-4 justify-center items-center md:justify-start md:gap-8 mt-8'>
+      <div className='flex flex-wrap gap-8 justify-center items-center md:justify-start md:gap-12 mt-8'>
         <Supporter
           href='https://www.puzzle.ch/de/stellen'
           imageSrc='/images/puzzle_itc_logo.svg'
@@ -100,14 +100,22 @@ const Ueber = ({ id }) => {
           href='https://www.cyon.ch/ueber-cyon/jobs'
           imageSrc='/images/cyon-logo-white.svg'
           name='Cyon'
-          height={40}
-          width={140}
+          height={36}
+          width={120}
           hiring={true}
         />
         <Supporter
           href='https://codesmith.ch'
           imageSrc='/images/codesmith-logo.svg'
           name='Codesmith'
+        />
+        <Supporter
+          href='https://www.liip.ch/jobs'
+          imageSrc='/images/liip-logo.svg'
+          name='Liip'
+          height={34}
+          width={110}
+          hiring
         />
       </div>
       <p className='text-left mt-8'>
