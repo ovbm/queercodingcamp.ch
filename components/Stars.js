@@ -4,7 +4,7 @@ const getRandomInt = (max) => Math.floor(Math.random() * max)
 const createStars = (n, h) => {
   let stars = ''
   for (let i = 0; i <= n; i++) {
-    let opacity = Math.random() * (0.12 - 0.01) + 0.01
+    let opacity = Math.random() * (0.5 - 0.21) + 0.01
     stars += ` ${getRandomInt(2000)}px ${getRandomInt(
       2000
     )}px rgba(255,255,255,${opacity.toPrecision(2)}) ${
@@ -24,7 +24,7 @@ const Stars = () => {
   useEffect(() => {
     const moveStars = () => {
       if (starsH !== 2) {
-        setStarsH(2)
+        setStarsH(5)
       }
       setStarsY(Math.floor(window.pageYOffset * 0.05))
       const timer = setTimeout(() => {
@@ -39,12 +39,12 @@ const Stars = () => {
   return (
     <>
       <div
-        style={{ top: starsY, height: 4 }}
+        style={{ top: starsY, height: 4  * starsH}}
         className='stars'
         id='stars-1'
       />
       <div
-        style={{ top: starsY * 2, height: 10  }}
+        style={{ top: starsY * 2, height: 10 * starsH  }}
         className='stars'
         id='stars-2'
       />
