@@ -2,6 +2,7 @@ import React from 'react'
 import Link from './Link'
 import Image from 'next/image'
 import Milchjugend from '../public/images/Milchjugend.jpg'
+import Instagram from '../public/images/Instagram.svg'
 import { MailIcon } from '@heroicons/react/solid'
 
 export default function Footer() {
@@ -14,6 +15,22 @@ export default function Footer() {
             8003 Zürich <br />
             <Link Icon={MailIcon} href='mailto:hi@queercodingcamp.ch'>
               hi@queercodingcamp.ch
+            </Link>{' '}
+            <br />
+            <Link
+              Icon={() => (
+                <div className='align-top inline-block ml-2 mt-1'>
+                  <Image
+                    src={Instagram}
+                    width={18}
+                    height={18}
+                    alt='Instagram'
+                  />
+                </div>
+              )}
+              href='https://www.instagram.com/queercodingcamp/'
+            >
+              @queercodingcamp
             </Link>
           </p>
         </div>
@@ -26,7 +43,7 @@ export default function Footer() {
               href='https://milchjugend.ch'
               className='text-md w-16 inline-block ml-2'
             >
-              <Image alt="Milchjugend Logo" src={Milchjugend} />
+              <Image alt='Milchjugend Logo' src={Milchjugend} />
             </a>
           </p>
         </div>
