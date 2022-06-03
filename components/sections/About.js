@@ -44,10 +44,15 @@ const Ueber = ({ id }) => {
             </A>
           </p>
           <br />
-          <p>Möchtest du dich engagieren?</p>
+          <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
+            Möchtest du mithelfen?
+          </h2>
           <p>
-            <A taget='_blank' href='mailto:hi@queercodingcamp.ch'>
-              hi@queercodingcamp.ch
+            <A
+              taget='_blank'
+              href='https://queercodecamp.notion.site/Call-for-Workshops-Queer-Coding-Camp-fb25239955234429aa5026089994ea62'
+            >
+              Call for Workshops!
             </A>
           </p>
         </div>

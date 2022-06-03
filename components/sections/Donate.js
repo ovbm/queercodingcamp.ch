@@ -1,8 +1,7 @@
 import React from 'react'
 import SectionContainer from './Container'
 import DonationBox from '../DonationBox'
-import { ExternalLinkIcon } from '@heroicons/react/solid'
-import A from '../Link'
+
 
 const Donate = ({ id }) => {
   return (
