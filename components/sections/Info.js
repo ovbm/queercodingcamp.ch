@@ -172,6 +172,17 @@ const CampInfo = ({ id }) => {
           <p className='mt-4'>
             Als Teilnehmer*in übernachtest du in mehrheitlich Zweier- oder
             Viererzimmern im ehemaligen Arbeiterhaus &laquo;Pensionato&raquo;.
+            Einen Eindruck vom Residency Haus und der Umgebung kannst du dir auf
+            der{' '}
+            <A
+              href='https://cimacitta.ch/de/cima-citta/ort'
+              target='_blank'
+              rel='noreferrer'
+              Icon={ExternalLinkIcon}
+            >
+              Bildergalerie von Cima Citta
+            </A>{' '}
+            machen.
           </p>
         </div>
         <div className='flex-1 text-left'>
