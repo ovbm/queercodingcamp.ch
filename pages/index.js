@@ -20,13 +20,13 @@ export default function Home({}) {
         <meta property='og:site_name' content={title} />
         <meta
           property='og:image'
-          content='/images/queercodingcamp_og_image.png'
+          content='https://queercodingcamp.ch/images/queercodingcamp_og_image.png'
         />
         <meta property='twitter:card' content='summary' />
         <meta property='twitter:title' content={title} />
         <meta
           property='twitter:image'
-          content='/images/queercodingcamp_og_image.png'
+          content='https://queercodingcamp.ch/images/queercodingcamp_og_image.png'
         />
         <meta property='twitter:description' content={description} />
       </Head>
