@@ -1,16 +1,10 @@
-# QueerCodingCamp.ch
+# Queer Coding Camp
 
-Built with Next.js and [Tailwind CSS](https://tailwindcss.com/docs/guides/nextjs).
+Das Queer Coding Camp ist ein einwöchiges Lager, an dem junge queere Personen erste Erfahrungen mit Programmieren sammeln können.
 
-## How to use
+Mehr Infos auf [queercodingcamp.ch](https://queercodingcamp.ch).
 
-```bash
-yarn install
-# and
-yarn dev
-```
+## In diesem Repo enthalten
 
-## How to deploy
-
-The main branch is automatically deployed as a static page to vercel
-
+- (www) Die Webseite vom Queer Coding Camp
+- (courses) Kursmaterialien
