@@ -4,7 +4,7 @@ Das Queer Coding Camp ist ein einwöchiges Lager, an dem junge queere Personen e
 
 Mehr Infos auf [queercodingcamp.ch](https://queercodingcamp.ch).
 
-## In diesem Repo enthalten
+## Inhalt des Repos
 
 - (www) Die Webseite vom Queer Coding Camp
 - (courses) Kursmaterialien

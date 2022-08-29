@@ -1,1 +1,0 @@
-# Web - Core Kurs Queer Coding Camp
