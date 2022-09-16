@@ -26,6 +26,12 @@ const Top = ({ id }) => {
             10. - 16. Oktober 2022 <br />
             Cima Citta, Dangio TI, Schweiz
           </p>
+          <Button
+            href='#anmelden'
+            className='font-display font-bold mt-4 inline-block'
+          >
+            Anmelden
+          </Button>
         </div>
       </div>
     </SectionContainer>
