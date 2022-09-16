@@ -1,0 +1,89 @@
+import React from 'react'
+import { ExternalLinkIcon } from '@heroicons/react/solid'
+import SectionContainer from './Container'
+import A from '../Link'
+import Supporter from '../Supporter'
+
+// Warum besser rauskommen, Texte nehmen, die schon existieren.
+
+const Supporters = ({ id }) => {
+  return (
+    <SectionContainer id={id}>
+      <h2 className='text-6xl font-bold text-left font-display'>
+        Ermöglicht durch
+      </h2>
+
+      <div className='flex flex-wrap gap-8 justify-center items-center md:justify-start md:gap-12 mt-16'>
+        <Supporter
+          href='https://haslerstiftung.ch'
+          imageSrc='/images/hasler_stiftung.svg'
+          name='Hasler Stiftung'
+          width={320}
+        />
+        <Supporter
+          href='https://prohelvetia.ch'
+          imageSrc='/images/pro_helvetia.svg'
+          name='Pro Helvetia'
+          width={280}
+          height={60}
+        />
+      </div>
+
+      <h3
+        id='supporters'
+        className='text-2xl font-bold text-left font-display mt-16 mb-4'
+      >
+        Und unseren KMU Sponsoren
+      </h3>
+
+      <div className='flex flex-wrap gap-8 justify-center items-center md:justify-start md:gap-12 mt-8'>
+        <Supporter
+          href='https://www.puzzle.ch/de/stellen'
+          imageSrc='/images/puzzle_itc_logo.svg'
+          name='Puzzle ITC'
+          hiring={true}
+        />
+        <Supporter
+          href='https://www.fanaka.ch'
+          imageSrc='/images/fanaka_logo.svg'
+          name='Fanaka'
+        />
+        <Supporter
+          href='https://www.cyon.ch/ueber-cyon/jobs'
+          imageSrc='/images/cyon-logo-white.svg'
+          name='Cyon'
+          height={36}
+          width={120}
+          hiring={true}
+        />
+        <Supporter
+          href='https://codesmith.ch'
+          imageSrc='/images/codesmith-logo.svg'
+          name='Codesmith'
+        />
+        <Supporter
+          href='https://www.liip.ch/jobs'
+          imageSrc='/images/liip-logo.svg'
+          name='Liip'
+          height={34}
+          width={110}
+          hiring
+        />
+      </div>
+      <p className='text-left mt-8'>
+        Das Queer Coding Camp kann Dank der finanziellen Untertsützung von
+        Stiftungen und Sponsoring-Beiträgen von Unternehmen stattfinden. Möchte
+        auch dein Unternehmen das Projekt unterstützen? Infos dazu in unserem{' '}
+        <A
+          taget='_blank'
+          Icon={ExternalLinkIcon}
+          href='https://queercodecamp.notion.site/Queer-Coding-Camp-Sponsoring-bb0ed022360e445e92abe94238f78646'
+        >
+          Sponsoring Aufruf für KMU&apos;s
+        </A>
+      </p>
+    </SectionContainer>
+  )
+}
+
+export default Supporters

@@ -5,6 +5,7 @@ import CampInfoSection from '../components/sections/Info'
 import TopSection from '../components/sections/Top'
 import DonateSection from '../components/sections/Donate'
 import SignupSection from '../components/sections/Signup'
+import SupporterSection from '../components/sections/Supporters'
 
 const { title, description } = config
 
@@ -36,6 +37,7 @@ export default function Home({}) {
         <CampInfoSection id='info' />
         <SignupSection id='anmelden' />
         <SectionAbout id='about' />
+        <SupporterSection id='support' />
         <DonateSection id='spenden' />
       </main>
     </>
