@@ -13,7 +13,7 @@ const Supporters = ({ id }) => {
         Ermöglicht durch
       </h2>
 
-      <div className='flex flex-wrap gap-8 justify-center items-center md:justify-start md:gap-12 mt-16'>
+      <div className='flex flex-wrap gap-8 justify-start items-center md:gap-12 mt-16'>
         <Supporter
           href='https://haslerstiftung.ch'
           imageSrc='/images/hasler_stiftung.svg'
@@ -24,8 +24,8 @@ const Supporters = ({ id }) => {
           href='https://prohelvetia.ch'
           imageSrc='/images/pro_helvetia.svg'
           name='Pro Helvetia'
-          width={280}
-          height={60}
+          height={80}
+          width={200}
         />
       </div>
 
@@ -36,7 +36,7 @@ const Supporters = ({ id }) => {
         Und unseren KMU Sponsoren
       </h3>
 
-      <div className='flex flex-wrap gap-8 justify-center items-center md:justify-start md:gap-12 mt-8'>
+      <div className='flex flex-wrap gap-8 justify-start items-center md:gap-12 mt-8'>
         <Supporter
           href='https://www.puzzle.ch/de/stellen'
           imageSrc='/images/puzzle_itc_logo.svg'
@@ -47,6 +47,8 @@ const Supporters = ({ id }) => {
           href='https://www.fanaka.ch'
           imageSrc='/images/fanaka_logo.svg'
           name='Fanaka'
+          height={36}
+          width={120}
         />
         <Supporter
           href='https://www.cyon.ch/ueber-cyon/jobs'
