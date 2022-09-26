@@ -1,10 +1,10 @@
 import React from 'react'
-import { ExternalLinkIcon } from '@heroicons/react/solid'
+import { ExternalLinkIcon, MailIcon } from '@heroicons/react/solid'
 import SectionContainer from './Container'
 import Profile from '../Profile'
 import olivier from '../../public/images/olivierbaumann.png'
 import tabea from '../../public/images/tabea.jpeg'
-import A from '../Link'
+import Link from '../Link'
 
 const Ueber = ({ id }) => {
   return (
@@ -30,25 +30,22 @@ const Ueber = ({ id }) => {
             sicherer Ort für queere Menschen wird.
           </p>
           <p>
-            <A
-              taget='_blank'
+            <Link
               Icon={ExternalLinkIcon}
               href='https://queercodecamp.notion.site/Statuten-des-Vereins-Queer-Coding-Camp-45b6ed0a758b4be59ebb5afcc5b5d6a7'
             >
               Unsere Statuten
-            </A>
+            </Link>
           </p>
           <br />
           <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
             Möchtest du mithelfen?
           </h2>
           <p>
-            <A
-              taget='_blank'
-              href='https://queercodecamp.notion.site/Call-for-Workshops-Queer-Coding-Camp-fb25239955234429aa5026089994ea62'
-            >
-              Call for Workshops!
-            </A>
+            Meld dich bei uns:{' '}
+            <Link Icon={MailIcon} href='mailto:hi@queercodingcamp.ch'>
+              hi@queercodingcamp.ch
+            </Link>
           </p>
         </div>
         <div className='flex-1 text-left'>
