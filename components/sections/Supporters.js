@@ -71,6 +71,13 @@ const Supporters = ({ id }) => {
           width={110}
           hiring
         />
+        <Supporter
+          href='https://www.89grad.ch'
+          imageSrc='/images/89grad.png'
+          name='89grad'
+          height={38}
+          width={160}
+        />
       </div>
       <p className='text-left mt-8'>
         Das Queer Coding Camp kann Dank der finanziellen Untertsützung von
