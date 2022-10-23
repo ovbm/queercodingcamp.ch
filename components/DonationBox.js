@@ -163,7 +163,7 @@ export default function Donate() {
               </div>
               <Button
                 target='_blank'
-                href='https://pay.raisenow.io/wcxgy'
+                href='https://donate.raisenow.io/nxkxk'
                 outline
                 className='font-display border-solid border-2 border-white text-white hover:bg-white hover:text-slate-900'
               >
