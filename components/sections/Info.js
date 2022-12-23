@@ -27,9 +27,9 @@ const FAQ = () => {
                 Das Camp ist ausgerichtet für queere Personen zwischen 16 - 25
                 Jahren. FINTA (Frauen, Inter, Nichtbinäre, Trans und Agender
                 Personen) und PoC (Persons of Color) sind in der Tech-Welt stark
-                untervertreten, weshalb sie bei der Anmeldung Priorität haben
-                werden. Bist du älter oder jünger? Schreib uns. Die
-                Altersgrenzen sind Richtwerte.
+                untervertreten, weshalb sie bei der Anmeldung Priorität haben.
+                Bist du älter oder jünger? Schreib uns, die Altersgrenzen sind
+                Richtwerte.
               </Disclosure.Panel>
             </>
           )}
@@ -85,8 +85,8 @@ const FAQ = () => {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className='text-left px-4 pt-4 pb-2'>
-                Wir öffnen die Anmeldung für das Camp im Mai. Du kannst dich
-                jetzt schon in{' '}
+                Wir öffnen die Anmeldung für das Camp jeweils im Frühjahr. Du
+                kannst dich jetzt schon in{' '}
                 <a className='underline' href='#anmelden'>
                   unseren Email-Verteiler eintragen
                 </a>
@@ -107,10 +107,9 @@ const FAQ = () => {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className='text-left px-4 pt-4 pb-2'>
-                Die Cima Citta ist leider nicht rollstuhlgängig. Wir möchten
-                zukünftige Coding Camps an barrierefreien Orten wie z.B. der
-                Jugendherberge Burghof durchführen. Dieses Jahr hat es aus
-                finanziellen Gründen nicht geklappt.
+                Die Cima Citta ist leider nicht rollstuhlgängig. Wir haben
+                bisher keinen barrierefreien Ort gefunden, der für die
+                Durchführung in Frage kommt. Kennst du einen? Schreib uns!
               </Disclosure.Panel>
             </>
           )}
