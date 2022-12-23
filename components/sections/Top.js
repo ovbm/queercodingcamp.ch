@@ -23,8 +23,8 @@ const Top = ({ id }) => {
             Programmieren lernen für junge queere Menschen.
           </p>
           <p className='text-xl md:text-xl font-display mt-4'>
-            10. - 16. Oktober 2022 <br />
-            Cima Citta, Dangio TI, Schweiz
+            SAVE THE DATE:{' '}<br />
+            <span className='font-black'>9. - 15. Oktober 2023</span>
           </p>
           {/* <Button
             href='#anmelden'

@@ -14,9 +14,9 @@ const SignUp = ({ id }) => {
             Newsletter
           </h2>
           <p className='text-left mb-4'>
-            Die Anmeldung für das Coding Camp im Oktober 2022 ist geschlossen.
-            Willst du Neuigkeiten zum Camp und zukünftige Camps informiert
-            werden? Dann trage dich in unseren Newsletter ein.
+            Die Anmeldung für das Coding Camp 2023 wird nächstes Frühjahr
+            möglich sein. Willst du benachrichtigt werden, sobald die Anmeldung
+            geöffnet wird? Dann trage dich in unseren Newsletter ein.
           </p>
           <NewlsetterSignup />
           {/* <h2 className='text-2xl font-bold text-left font-display'>
