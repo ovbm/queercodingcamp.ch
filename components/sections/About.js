@@ -65,12 +65,6 @@ const Ueber = ({ id }) => {
               name='Tabea Iseli'
               bio='Tabea ist Gründerin des Game-Studios Stardust und seit über zehn Jahren als Game-Designerin und Programmiererin tätig.'
             />
-            {/* <Profile
-              imageSrc={adi}
-              name='Adrian Demleitner'
-              twitter='_thgie'
-              bio='Adrian studierte Postindustrie-Design am HyperWerk Basel und hat soeben einen MA in Designforschung an der MAD HKB abgeschlossen. Adrian arbeitet als wissenschaftlicher Softwareprogrammierer an der Uni Basel.'
-            /> */}
           </div>
         </div>
       </div>

@@ -86,7 +86,7 @@ const Supporters = ({ id }) => {
         <A
           taget='_blank'
           Icon={ExternalLinkIcon}
-          href='https://queercodecamp.notion.site/Queer-Coding-Camp-Sponsoring-bb0ed022360e445e92abe94238f78646'
+          href='https://queercodingcamp.notion.site/Queer-Coding-Camp-KMU-Sponsoring-bb0ed022360e445e92abe94238f78646'
         >
           Sponsoring Aufruf für KMU&apos;s
         </A>
