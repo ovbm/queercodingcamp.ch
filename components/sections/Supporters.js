@@ -1,5 +1,5 @@
 import React from 'react'
-import { LinkIcon } from '@heroicons/react/24/solid'
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 import SectionContainer from './Container'
 import A from '../Link'
 import Supporter from '../Supporter'
@@ -85,7 +85,7 @@ const Supporters = ({ id }) => {
         auch dein Unternehmen das Projekt unterstützen? Infos dazu in unserem{' '}
         <A
           taget='_blank'
-          Icon={LinkIcon}
+          Icon={ArrowTopRightOnSquareIcon}
           href='https://queercodingcamp.notion.site/Queer-Coding-Camp-KMU-Sponsoring-bb0ed022360e445e92abe94238f78646'
         >
           Sponsoring Aufruf für KMU&apos;s

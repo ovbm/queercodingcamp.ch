@@ -2,7 +2,7 @@ import React from 'react'
 import SectionContainer from './Container'
 import NewlsetterSignup from '../NewsletterSignup'
 import Link from '../Link'
-import { MailIcon } from '@heroicons/react/24/solid'
+import { EnvelopeIcon } from '@heroicons/react/24/solid'
 
 const SignUp = ({ id }) => {
   return (
@@ -25,7 +25,7 @@ const SignUp = ({ id }) => {
           <p className='text-left mb-4'>
             Für das Camp im Oktober 2022 gibt es noch ein paar wenige Plätze für
             spontane Anmeldungen. Interessiert? Schreib eine E-Mail an{' '}
-            <Link Icon={MailIcon} href='mailto:hi@queercodingcamp.ch'>
+            <Link Icon={EnvelopeIcon} href='mailto:hi@queercodingcamp.ch'>
               hi@queercodingcamp.ch
             </Link>
             .

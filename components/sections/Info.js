@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/legacy/image'
 import SectionContainer from './Container'
 import { Disclosure } from '@headlessui/react'
-import { ChevronUpIcon, ExternalLinkIcon } from '@heroicons/react/24/solid'
+import { ChevronUpIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 import CimaCittaImg from '../../public/images/cimacitta.jpeg'
 import A from '../Link'
 import DiscordImg from '../../public/images/Discord-Logo-White.svg'
@@ -159,7 +159,7 @@ const CampInfo = ({ id }) => {
               href='https://cimacitta.ch/de'
               target='_blank'
               rel='noreferrer'
-              Icon={ExternalLinkIcon}
+              Icon={ArrowTopRightOnSquareIcon}
             >
               Cima Citta
             </A>
@@ -177,7 +177,7 @@ const CampInfo = ({ id }) => {
               href='https://cimacitta.ch/de/cima-citta/ort'
               target='_blank'
               rel='noreferrer'
-              Icon={ExternalLinkIcon}
+              Icon={ArrowTopRightOnSquareIcon}
             >
               Bildergalerie von Cima Citta
             </A>{' '}

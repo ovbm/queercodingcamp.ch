@@ -1,5 +1,5 @@
 import React from 'react'
-import { LinkIcon, MailIcon } from '@heroicons/react/24/solid'
+import { ArrowTopRightOnSquareIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
 import SectionContainer from './Container'
 import Profile from '../Profile'
 import olivier from '../../public/images/olivierbaumann.png'
@@ -31,7 +31,7 @@ const Ueber = ({ id }) => {
           </p>
           <p>
             <Link
-              Icon={LinkIcon}
+              Icon={ArrowTopRightOnSquareIcon}
               href='https://queercodecamp.notion.site/Statuten-des-Vereins-Queer-Coding-Camp-45b6ed0a758b4be59ebb5afcc5b5d6a7'
             >
               Unsere Statuten
@@ -43,7 +43,7 @@ const Ueber = ({ id }) => {
           </h2>
           <p>
             Meld dich bei uns:{' '}
-            <Link Icon={MailIcon} href='mailto:hi@queercodingcamp.ch'>
+            <Link Icon={EnvelopeIcon} href='mailto:hi@queercodingcamp.ch'>
               hi@queercodingcamp.ch
             </Link>
           </p>

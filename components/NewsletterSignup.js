@@ -1,5 +1,5 @@
 import React from 'react'
-import { RefreshIcon } from '@heroicons/react/24/outline'
+import { ArrowPathIcon } from '@heroicons/react/24/outline'
 import { classNames } from './utils/classNames'
 import Button from './Button'
 
@@ -72,7 +72,7 @@ const NewsletterSignup = () => {
           '
         >
           {loading ? (
-            <RefreshIcon
+            <ArrowPathIcon
               className={classNames(loading && 'animate-spin', 'block h-8 w-8')}
               aria-hidden='true'
             />

@@ -1,5 +1,5 @@
 import { Disclosure, Transition } from '@headlessui/react'
-import { Bars3Icon, XIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import useActiveSection from './hooks/useActiveSection'
 import { classNames } from './utils/classNames'
 import Logo from '../components/Logo'
@@ -82,7 +82,7 @@ export default function Navbar() {
                 <Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-full bg-gray-900/50 hover:bg-gray-700/50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white backdrop-blur-sm backdrop-saturate-200 shadow-lg'>
                   <span className='sr-only'>Open main menu</span>
                   {open ? (
-                    <XIcon className='block h-9 w-9' aria-hidden='true' />
+                    <XMarkIcon className='block h-9 w-9' aria-hidden='true' />
                   ) : (
                     <Bars3Icon className='block h-9 w-9' aria-hidden='true' />
                   )}

@@ -3,7 +3,7 @@ import Link from './Link'
 import Image from 'next/legacy/image'
 import Milchjugend from '../public/images/Milchjugend.jpg'
 import Instagram from '../public/images/Instagram.svg'
-import { MailIcon } from '@heroicons/react/24/solid'
+import { EnvelopeIcon } from '@heroicons/react/24/solid'
 
 export default function Footer() {
   return (
@@ -13,7 +13,7 @@ export default function Footer() {
           <p className='text-base'>
             Verein Queer Coding Camp <br />
             8003 Zürich <br />
-            <Link Icon={MailIcon} href='mailto:hi@queercodingcamp.ch'>
+            <Link Icon={EnvelopeIcon} href='mailto:hi@queercodingcamp.ch'>
               hi@queercodingcamp.ch
             </Link>{' '}
             <br />
