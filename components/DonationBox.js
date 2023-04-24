@@ -1,5 +1,5 @@
 import { Tab } from '@headlessui/react'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 
 import { classNames } from './utils/classNames'
 import Button from './Button'
@@ -15,7 +15,7 @@ export default function Donate() {
           <Tab
             className={({ selected }) =>
               classNames(
-                'w-full py-2.5 text-md leading-5 font-medium text-white rounded-lg',
+                'w-full py-2.5 text-md leading-5 font-medium rounded-lg',
                 'focus:outline-none',
                 selected
                   ? 'bg-white text-slate-900 shadow'
@@ -44,7 +44,7 @@ export default function Donate() {
           <Tab
             className={({ selected }) =>
               classNames(
-                'w-full py-2.5 text-md leading-5 font-medium text-white rounded-lg',
+                'w-full py-2.5 text-md leading-5 font-medium rounded-lg',
                 'focus:outline-none',
                 selected
                   ? 'bg-white text-slate-900 shadow'
@@ -74,7 +74,7 @@ export default function Donate() {
           <Tab
             className={({ selected }) =>
               classNames(
-                'w-full py-2.5 text-md leading-5 font-medium text-white rounded-lg',
+                'w-full py-2.5 text-md leading-5 font-medium rounded-lg',
                 'focus:outline-none',
                 selected
                   ? 'bg-white text-slate-900 shadow'

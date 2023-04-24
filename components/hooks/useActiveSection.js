@@ -7,7 +7,7 @@ export default function useActiveSection() {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset + 200
       const sections = document.querySelectorAll('section')
-      const activeSection = sections[0]
+      let activeSection = sections[0]
       sections.forEach((section) => {
         if (section.offsetTop <= scrollTop) {
           activeSection = section

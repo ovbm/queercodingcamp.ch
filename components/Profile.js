@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import A from './Link'
 
 const TwitterIcon = () => (
@@ -20,8 +20,8 @@ const Profile = ({ imageSrc, name, bio, twitter }) => {
     <div className='flex max-w-md w-full mb-8'>
       <Image
         className='rounded-full grayscale'
-        src={imageSrc}
         layout='fixed'
+        src={imageSrc}
         width={56}
         height={56}
         alt={name}

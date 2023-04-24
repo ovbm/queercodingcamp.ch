@@ -1,6 +1,5 @@
 import { Disclosure, Transition } from '@headlessui/react'
-import Image from 'next/image'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { Bars3Icon, XIcon } from '@heroicons/react/24/outline'
 import useActiveSection from './hooks/useActiveSection'
 import { classNames } from './utils/classNames'
 import Logo from '../components/Logo'
@@ -85,7 +84,7 @@ export default function Navbar() {
                   {open ? (
                     <XIcon className='block h-9 w-9' aria-hidden='true' />
                   ) : (
-                    <MenuIcon className='block h-9 w-9' aria-hidden='true' />
+                    <Bars3Icon className='block h-9 w-9' aria-hidden='true' />
                   )}
                 </Disclosure.Button>
               </div>

@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from './Link'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import Milchjugend from '../public/images/Milchjugend.jpg'
 import Instagram from '../public/images/Instagram.svg'
-import { MailIcon } from '@heroicons/react/solid'
+import { MailIcon } from '@heroicons/react/24/solid'
 
 export default function Footer() {
   return (
@@ -19,14 +19,14 @@ export default function Footer() {
             <br />
             <Link
               Icon={() => (
-                <div className='align-top inline-block ml-2 mt-1'>
+                <span className='align-top inline-block ml-2 mt-1'>
                   <Image
                     src={Instagram}
                     width={18}
                     height={18}
                     alt='Instagram'
                   />
-                </div>
+                </span>
               )}
               href='https://www.instagram.com/queercodingcamp/'
             >

@@ -2,7 +2,7 @@ import React from 'react'
 import SectionContainer from './Container'
 import NewlsetterSignup from '../NewsletterSignup'
 import Link from '../Link'
-import { MailIcon } from '@heroicons/react/solid'
+import { MailIcon } from '@heroicons/react/24/solid'
 
 const SignUp = ({ id }) => {
   return (

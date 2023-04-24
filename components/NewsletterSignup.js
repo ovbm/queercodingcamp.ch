@@ -1,5 +1,5 @@
 import React from 'react'
-import { RefreshIcon } from '@heroicons/react/outline'
+import { RefreshIcon } from '@heroicons/react/24/outline'
 import { classNames } from './utils/classNames'
 import Button from './Button'
 
@@ -64,7 +64,7 @@ const NewsletterSignup = () => {
           disabled={loading}
           aria-label="Email Verteiler abonnieren."
           className='
-            border-solid border-2 border-white text-white 
+            border-solid border-2 border-white
             mt-4 md:mt-0 md:ml-4
             hover:bg-white 
             hover:text-slate-900 transition-width ease-in-out
