@@ -4,6 +4,7 @@ import Image from 'next/legacy/image'
 import Milchjugend from '../public/images/Milchjugend.jpg'
 import Instagram from '../public/images/Instagram.svg'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
+import Logo from '../components/Logo'
 
 export default function Footer() {
   return (
@@ -35,17 +36,7 @@ export default function Footer() {
           </p>
         </div>
         <div>
-          <p>
-            In Partnerschaft mit:
-            <a
-              target='_blank'
-              rel='noreferrer'
-              href='https://milchjugend.ch'
-              className='text-md w-16 inline-block ml-2'
-            >
-              <Image alt='Milchjugend Logo' src={Milchjugend} />
-            </a>
-          </p>
+          <Logo size={80} className='hover:opacity-90 -ml-3' />
         </div>
       </div>
     </footer>
