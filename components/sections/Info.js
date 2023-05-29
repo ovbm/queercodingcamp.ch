@@ -24,12 +24,10 @@ const FAQ = () => {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className='px-4 pt-4 pb-2 text-left'>
-                Das Camp ist ausgerichtet für queere Personen zwischen 16 - 25
+                Das Camp ist offen für alle queere Personen von 16 bis 25
                 Jahren. FINTA (Frauen, Inter, Nichtbinäre, Trans und Agender
                 Personen) und PoC (Persons of Color) sind in der Tech-Welt stark
                 untervertreten, weshalb sie bei der Anmeldung Priorität haben.
-                Bist du älter oder jünger? Schreib uns, die Altersgrenzen sind
-                Richtwerte.
               </Disclosure.Panel>
             </>
           )}
@@ -142,8 +140,7 @@ const CampInfo = ({ id }) => {
           </p>
           <p>
             Am Abend gibt es Spiele, Pen and Paper, Games oder einfach
-            gemütliches Zusammensein beim Lagerfeuer. Die Jugendorganisation
-            Milchjugend hilft uns in der Ausgestaltung des Abendprogramms.
+            gemütliches Zusammensein beim Lagerfeuer.
           </p>
           <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
             Location
@@ -170,7 +167,7 @@ const CampInfo = ({ id }) => {
           </p>
           <p className='mt-4'>
             Als Teilnehmer*in übernachtest du in mehrheitlich Zweier- oder
-            Viererzimmern im ehemaligen Arbeiterhaus &laquo;Pensionato&raquo;.
+            Dreierzimmer im ehemaligen Arbeiterhaus &laquo;Pensionato&raquo;.
             Einen Eindruck vom Residency Haus und der Umgebung kannst du dir auf
             der{' '}
             <A
