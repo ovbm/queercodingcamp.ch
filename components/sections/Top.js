@@ -23,15 +23,14 @@ const Top = ({ id }) => {
             Programmieren lernen für junge queere Menschen.
           </p>
           <p className='text-xl md:text-xl font-display mt-4'>
-            SAVE THE DATE: <br />
             <span className='font-black'>9. - 15. Oktober 2023</span>
           </p>
-          {/* <Button
+          <Button
             href='#anmelden'
             className='font-display font-bold mt-4 inline-block'
           >
             Anmelden
-          </Button> */}
+          </Button>
         </div>
       </div>
     </SectionContainer>
