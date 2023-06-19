@@ -2,7 +2,10 @@ import React from 'react'
 import Image from 'next/legacy/image'
 import SectionContainer from './Container'
 import { Disclosure } from '@headlessui/react'
-import { ChevronUpIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
+import {
+  ChevronUpIcon,
+  ArrowTopRightOnSquareIcon,
+} from '@heroicons/react/24/solid'
 import CimaCittaImg from '../../public/images/cimacitta.jpeg'
 import A from '../Link'
 import DiscordImg from '../../public/images/Discord-Logo-White.svg'
@@ -27,7 +30,8 @@ const FAQ = () => {
                 Das Camp ist offen für alle queere Personen von 16 bis 25
                 Jahren. FINTA (Frauen, Inter, Nichtbinäre, Trans und Agender
                 Personen) und PoC (Persons of Color) sind in der Tech-Welt stark
-                untervertreten, weshalb sie bei der Anmeldung Priorität haben.
+                untervertreten. Wir werden Plätze für Personen reservieren, die
+                Mehrfachdiskriminierungen erleben.
               </Disclosure.Panel>
             </>
           )}
