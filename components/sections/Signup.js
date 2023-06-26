@@ -19,8 +19,8 @@ const SignUp = ({ id }) => {
             Zum Anmeldeformular
           </Button>
           <p className='text-left mb-4'>
-            Die Anmeldung ist ab sofort bis und mit Sonntag 25. Juni 2023
-            möglich. Bis am 2. Juli 2023 benachrichtigen wir dich, ob du am Camp
+            Die Anmeldung ist ab sofort bis und mit Sonntag <b>2. Juli 2023</b>
+            möglich. Bis am 4. Juli 2023 benachrichtigen wir dich, ob du am Camp
             teilnehmen kannst. Falls wir mehr Anmeldungen haben als Plätze
             verfügbar sind, wird es eine Warteliste geben.
           </p>
