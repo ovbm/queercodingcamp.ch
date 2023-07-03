@@ -25,12 +25,6 @@ const Top = ({ id }) => {
           <p className='text-xl md:text-xl font-display mt-4'>
             <span className='font-black'>9. - 15. Oktober 2023</span>
           </p>
-          <Button
-            href='#anmelden'
-            className='font-display font-bold mt-4 inline-block'
-          >
-            Anmelden
-          </Button>
         </div>
       </div>
     </SectionContainer>
