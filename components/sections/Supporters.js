@@ -15,23 +15,23 @@ const Supporters = ({ id }) => {
 
       <div className='flex flex-wrap gap-8 justify-start items-center md:gap-12 mt-16'>
         <Supporter
-          href='https://haslerstiftung.ch'
-          imageSrc='/images/hasler_stiftung.svg'
-          name='Hasler Stiftung'
-          width={320}
-        />
-        <Supporter
           href='https://prohelvetia.ch'
           imageSrc='/images/pro_helvetia.svg'
           name='Pro Helvetia'
           height={80}
+          width={180}
+        />
+        <Supporter
+          href='https://haslerstiftung.ch'
+          imageSrc='/images/hasler_stiftung.svg'
+          name='Hasler Stiftung'
           width={200}
         />
       </div>
 
       <h3
         id='supporters'
-        className='text-2xl font-bold text-left font-display mt-16 mb-4'
+        className='text-2xl font-light text-left font-display mt-16 mb-4'
       >
         Und unseren KMU Sponsoren
       </h3>
@@ -70,13 +70,6 @@ const Supporters = ({ id }) => {
           height={34}
           width={110}
           hiring
-        />
-        <Supporter
-          href='https://www.89grad.ch'
-          imageSrc='/images/89grad.png'
-          name='89grad'
-          height={38}
-          width={160}
         />
       </div>
       <p className='text-left mt-8'>
