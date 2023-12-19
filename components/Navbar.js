@@ -2,7 +2,6 @@ import { Disclosure, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import useActiveSection from './hooks/useActiveSection'
 import { classNames } from './utils/classNames'
-import { LogoFullWhite } from '../components/Logo'
 
 const navigation = [
   { name: 'Infos', id: 'info' },
@@ -74,7 +73,13 @@ export default function Navbar() {
                 className='p-2 rounded-xl bg-gray-900/50 backdrop-blur-sm backdrop-saturate-200 hidden md:block'
                 aria-current={'top' === activeSection ? 'page' : undefined}
               >
-                <LogoFullWhite size={42} className='hover:opacity-90' />
+                <img
+                  src="/images/queercodingcamp_logo_color_bright.png"
+                  width={96.6}
+                  height={42}
+                  alt='Queer Coding Camp Logo'
+                  className='hover:opacity-90'
+                />
               </a>
 
               <div className='absolute inset-y-0 right-0 flex items-center md:hidden'>

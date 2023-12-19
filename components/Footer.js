@@ -2,8 +2,8 @@ import React from 'react'
 import Link from './Link'
 import Image from 'next/legacy/image'
 import Instagram from '../public/images/Instagram.svg'
+import LogoWhite from '../public/images/queercodingcamp_logo_color_bright.png'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
-import { LogoFullWhite } from '../components/Logo'
 
 export default function Footer() {
   return (
@@ -35,7 +35,12 @@ export default function Footer() {
           </p>
         </div>
         <div>
-          <LogoFullWhite size={80} className='hover:opacity-90' />
+          <img
+            src='/images/queercodingcamp_logo_color_bright.png'
+            width={184}
+            alt='Queer Coding Camp Logo'
+            className='hover:opacity-90'
+          />
         </div>
       </div>
     </footer>
