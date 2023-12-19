@@ -35,7 +35,7 @@ export default function Footer() {
           </p>
         </div>
         <div>
-          <LogoFullWhite size={80} className='hover:opacity-90 -ml-3' />
+          <LogoFullWhite size={80} className='hover:opacity-90' />
         </div>
       </div>
     </footer>
