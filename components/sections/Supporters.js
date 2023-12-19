@@ -63,14 +63,6 @@ const Supporters = ({ id }) => {
           imageSrc='/images/codesmith-logo.svg'
           name='Codesmith'
         />
-        <Supporter
-          href='https://www.liip.ch/jobs'
-          imageSrc='/images/liip-logo.svg'
-          name='Liip'
-          height={34}
-          width={110}
-          hiring
-        />
       </div>
       <p className='text-left mt-8'>
         Das Queer Coding Camp kann Dank der finanziellen Untertsützung von

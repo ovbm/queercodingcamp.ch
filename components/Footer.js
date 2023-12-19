@@ -1,10 +1,9 @@
 import React from 'react'
 import Link from './Link'
 import Image from 'next/legacy/image'
-import Milchjugend from '../public/images/Milchjugend.jpg'
 import Instagram from '../public/images/Instagram.svg'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
-import Logo from '../components/Logo'
+import { LogoFullWhite } from '../components/Logo'
 
 export default function Footer() {
   return (
@@ -36,7 +35,7 @@ export default function Footer() {
           </p>
         </div>
         <div>
-          <Logo size={80} className='hover:opacity-90 -ml-3' />
+          <LogoFullWhite size={80} className='hover:opacity-90 -ml-3' />
         </div>
       </div>
     </footer>
