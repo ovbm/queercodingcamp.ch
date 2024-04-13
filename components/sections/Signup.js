@@ -30,11 +30,16 @@ const SignUp = ({ id }) => {
             Newsletter
           </h2>
           <p className='text-left mb-4'>
+            Die Anmeldung für das Coding Camp 2024 wird im Juni 2024
+            möglich sein. Willst du benachrichtigt werden, sobald die Anmeldung
+            geöffnet wird? Dann trage dich in unseren Newsletter ein.
+          </p>
+          {/* <p className='text-left mb-4'>
             Die Anmeldungen für das Camp im Oktober 2023 sind geschlossen. Es
             kann sein, dass im Herbst kurzfristig Plätze frei werden. Willst du
             Neuigkeiten zum Camp und zukünftigen Aktivitäten des Vereins
             informiert werden? Dann trage dich in unseren Newsletter ein.
-          </p>
+          </p> */}
           <NewlsetterSignup />
         </div>
         <div className='flex-1 text-left'></div>

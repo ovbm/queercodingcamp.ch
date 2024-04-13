@@ -27,7 +27,7 @@ const FAQ = () => {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className='px-4 pt-4 pb-2 text-left'>
-                Das Camp ist offen für alle queere Personen von 16 bis 25
+                Das Camp ist offen für alle queere Personen von 16 bis 23
                 Jahren. FINTA (Frauen, Inter, Nichtbinäre, Trans und Agender
                 Personen) und PoC (Persons of Color) sind in der Tech-Welt stark
                 untervertreten. Wir werden Plätze für Personen reservieren, die
