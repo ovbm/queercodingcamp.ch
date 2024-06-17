@@ -22,16 +22,16 @@ const Top = ({ id }) => {
           <p className='text-2xl md:text-2xl font-display font-bold mt-3'>
             Programmieren lernen für junge queere Menschen.
           </p>
-          <p className='text-xl md:text-xl font-display mt-4'>
+          {/* <p className='text-xl md:text-xl font-display mt-4'>
             SAVE THE DATE: <br />
             <span className='font-black'>6. - 12. Oktober 2024</span>
-          </p>
-          {/* <Button
+          </p> */}
+          <Button
             href='#anmelden'
             className='font-display font-bold mt-4 inline-block'
           >
             Anmelden
-          </Button> */}
+          </Button>
         </div>
       </div>
     </SectionContainer>
