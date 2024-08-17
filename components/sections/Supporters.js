@@ -37,12 +37,12 @@ const Supporters = ({ id }) => {
       </h3>
 
       <div className='flex flex-wrap gap-8 justify-start items-center md:gap-12 mt-8'>
-        <Supporter
+        {/* <Supporter
           href='https://www.puzzle.ch/de/stellen'
           imageSrc='/images/puzzle_itc_logo.svg'
           name='Puzzle ITC'
           hiring={true}
-        />
+        /> */}
         <Supporter
           href='https://www.fanaka.ch'
           imageSrc='/images/fanaka_logo.svg'

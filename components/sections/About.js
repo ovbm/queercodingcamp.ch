@@ -1,9 +1,13 @@
 import React from 'react'
-import { ArrowTopRightOnSquareIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
+import {
+  ArrowTopRightOnSquareIcon,
+  EnvelopeIcon,
+} from '@heroicons/react/24/solid'
 import SectionContainer from './Container'
 import Profile from '../Profile'
 import olivier from '../../public/images/olivierbaumann.png'
 import tabea from '../../public/images/tabea.jpeg'
+import samuel from '../../public/images/SamVonäsch2024.jpeg'
 import Link from '../Link'
 
 const Ueber = ({ id }) => {
@@ -32,7 +36,8 @@ const Ueber = ({ id }) => {
           <p>
             <Link
               Icon={ArrowTopRightOnSquareIcon}
-              href='https://queercodecamp.notion.site/Statuten-des-Vereins-Queer-Coding-Camp-45b6ed0a758b4be59ebb5afcc5b5d6a7'
+              target="_blank"
+              href='https://queercodingcamp.notion.site/Statuten-des-Vereins-Queer-Coding-Camp-04-12-2023-159e87a58e3d43ddbbe9fbd0456c7e5c?pvs=4'
             >
               Unsere Statuten
             </Link>
@@ -55,7 +60,7 @@ const Ueber = ({ id }) => {
           <div className='flex flex-col'>
             <Profile
               imageSrc={olivier}
-              twitter='obauma'
+              threads='@olivier.iovi'
               name='Olivier Baumann'
               bio='Olivier ist Produkt-Entwickler beim Online Magazin Republik. Davor hat er in Kopenhagen das Klima-Startup electricityMap mitgegründet. Im Herbst 2021 hat er das Projekt Queer Coding Camp initiiert. '
             />
@@ -64,6 +69,12 @@ const Ueber = ({ id }) => {
               twitter='ElisaItabe'
               name='Tabea Iseli'
               bio='Tabea ist Gründerin des Game-Studios Stardust und seit über zehn Jahren als Game-Designerin und Programmiererin tätig.'
+            />
+            <Profile
+              imageSrc={samuel}
+              twitter='elephantatwork'
+              name='Samuel Vonäsch, Programmleitung'
+              bio='Samuel engagiert sich mit dem Swiss Game Hub für die Schweizer Game Entwicklung Szene und ist Gründer und Game Maker beim Game Studio lauflauf '
             />
           </div>
         </div>
