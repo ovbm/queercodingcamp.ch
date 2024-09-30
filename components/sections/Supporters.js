@@ -15,6 +15,12 @@ const Supporters = ({ id }) => {
 
       <div className='flex flex-wrap gap-8 justify-start items-center md:gap-12 mt-16'>
         <Supporter
+          href='https://www.lgbtiyouthfund.ch'
+          imageSrc='/images/lgbti_youth_fund.png'
+          name='LGBTI Youth Fund'
+          width={180}
+        />
+        <Supporter
           href='https://prohelvetia.ch'
           imageSrc='/images/pro_helvetia.svg'
           name='Pro Helvetia'
@@ -33,7 +39,7 @@ const Supporters = ({ id }) => {
         id='supporters'
         className='text-2xl font-light text-left font-display mt-16 mb-4'
       >
-        Und unseren KMU Sponsoren
+        unseren KMU Sponsoren
       </h3>
 
       <div className='flex flex-wrap gap-8 justify-start items-center md:gap-12 mt-8'>
@@ -70,6 +76,21 @@ const Supporters = ({ id }) => {
           height={34}
           width={110}
           hiring
+        />
+      </div>
+      <h3
+        id='supporters'
+        className='text-2xl font-light text-left font-display mt-16 mb-4'
+      >
+        und unserem Hardware-Sponsor
+      </h3>
+      <div className='flex flex-wrap gap-8 justify-start items-center md:gap-12 mt-8'>
+        <Supporter
+          href='https://projektneptun.ch'
+          imageSrc='/images/project-neptune.png'
+          name='Projekt Neptun'
+          height={78}
+          width={80}
         />
       </div>
       <p className='text-left mt-8'>

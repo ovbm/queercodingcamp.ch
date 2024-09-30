@@ -37,7 +37,7 @@ const Ueber = ({ id }) => {
             <Link
               Icon={ArrowTopRightOnSquareIcon}
               target="_blank"
-              href='https://queercodingcamp.notion.site/Statuten-des-Vereins-Queer-Coding-Camp-04-12-2023-159e87a58e3d43ddbbe9fbd0456c7e5c?pvs=4'
+              href='https://queercodingcamp.notion.site/Statuten-des-Vereins-Queer-Coding-Camp-04-12-2023-159e87a58e3d43ddbbe9fbd0456c7e5c'
             >
               Unsere Statuten
             </Link>
