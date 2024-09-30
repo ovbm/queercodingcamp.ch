@@ -7,7 +7,7 @@ import SectionContainer from './Container'
 import Profile from '../Profile'
 import olivier from '../../public/images/olivierbaumann.png'
 import tabea from '../../public/images/tabea.jpeg'
-import samuel from '../../public/images/SamVonäsch2024.jpeg'
+import samuel from '../../public/images/SamVonaesch2024.jpeg'
 import Link from '../Link'
 
 const Ueber = ({ id }) => {
