@@ -26,12 +26,12 @@ const Top = ({ id }) => {
             {/* SAVE THE DATE: <br /> */}
             <span className='font-black'>6. - 12. Oktober 2024</span>
           </p>
-          <Button
+          {/* <Button
             href='#anmelden'
             className='font-display font-bold mt-4 inline-block'
           >
             Anmelden
-          </Button>
+          </Button> */}
         </div>
       </div>
     </SectionContainer>

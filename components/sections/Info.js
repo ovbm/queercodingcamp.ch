@@ -116,6 +116,27 @@ const FAQ = () => {
             </>
           )}
         </Disclosure>
+        <Disclosure as='div' className='mt-2'>
+          {({ open }) => (
+            <>
+              <Disclosure.Button className='flex justify-between w-full px-4 py-2 font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
+                <span>
+                  Welche Sprachkenntnisse brauche ich?
+                </span>
+                <ChevronUpIcon
+                  className={`${
+                    open ? 'transform rotate-180' : ''
+                  } w-5 h-5 text-indigo-500`}
+                />
+              </Disclosure.Button>
+              <Disclosure.Panel className='text-left px-4 pt-4 pb-2'>
+                Die Core-Kurse (Web und Game) werden auf Deutsch durchgeführt.
+                Es gibt aber auch Workshops und Vorträge, die auf Englisch
+                gehalten werden. 
+              </Disclosure.Panel>
+            </>
+          )}
+        </Disclosure>
       </div>
     </div>
   )

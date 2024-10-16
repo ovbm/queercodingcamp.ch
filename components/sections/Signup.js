@@ -10,7 +10,7 @@ const SignUp = ({ id }) => {
     <SectionContainer id={id}>
       <h2 className='text-6xl font-bold text-left font-display'>Anmelden</h2>
       <div className='flex flex-col md:flex-row gap-12 mt-12'>
-        <div className='flex-1 text-left'>
+        {/* <div className='flex-1 text-left'>
           <Button
             className='w-full block text-center mb-4 font-display font-bold text-indigo-900'
             target='_blank'
@@ -22,12 +22,12 @@ const SignUp = ({ id }) => {
             Für das Camp im Oktober sind noch ein paar wenige Plätze verfügbar.
           </p>
         </div>
-        {/* <p className='text-left mb-4'>
+        <p className='text-left mb-4'>
           Die Anmeldungen für das Camp im Oktober 2024 sind geschlossen. Es kann
           sein, dass im Herbst kurzfristig Plätze frei werden. Willst du
           Neuigkeiten zum Camp und zukünftigen Aktivitäten des Vereins
           informiert werden? Dann trage dich in unseren Newsletter ein.
-        </p> */}
+        </p>  */}
         <div className='flex-1 text-left'>
           <h2 className='text-2xl font-bold text-left font-display'>
             Newsletter
@@ -45,7 +45,7 @@ const SignUp = ({ id }) => {
 
           <NewlsetterSignup />
         </div>
-        {/* <div className='flex-1 text-left'></div> */}
+        <div className='flex-1 text-left'></div>
       </div>
     </SectionContainer>
   )
