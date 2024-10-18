@@ -24,7 +24,7 @@ const Top = ({ id }) => {
           </p>
           <p className='text-xl md:text-xl font-display mt-4'>
             {/* SAVE THE DATE: <br /> */}
-            <span className='font-black'>6. - 12. Oktober 2024</span>
+            <span className='font-black'>Oktober 2025</span>
           </p>
           {/* <Button
             href='#anmelden'
