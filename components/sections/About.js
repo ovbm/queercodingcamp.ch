@@ -2,6 +2,7 @@ import React from 'react'
 import {
   ArrowTopRightOnSquareIcon,
   EnvelopeIcon,
+  HeartIcon,
 } from '@heroicons/react/24/solid'
 import SectionContainer from './Container'
 import Profile from '../Profile'
@@ -36,7 +37,7 @@ const Ueber = ({ id }) => {
           <p>
             <Link
               Icon={ArrowTopRightOnSquareIcon}
-              target="_blank"
+              target='_blank'
               href='https://queercodingcamp.notion.site/Statuten-des-Vereins-Queer-Coding-Camp-04-12-2023-159e87a58e3d43ddbbe9fbd0456c7e5c'
             >
               Unsere Statuten
@@ -47,7 +48,13 @@ const Ueber = ({ id }) => {
             Möchtest du mithelfen?
           </h2>
           <p>
-            Meld dich bei uns:{' '}
+            <Link
+              Icon={HeartIcon}
+              href='https://docs.google.com/forms/d/e/1FAIpQLSdI_q8afBbx3V4H7rfawevAbRG9lk2zbi5GFP5K4iwQyJqTLQ/viewform?usp=sf_link'
+            >
+              Werde Mitglied
+            </Link>{' '}
+            beim Verein Queer Coding Camp oder meld dich bei uns:{' '}
             <Link Icon={EnvelopeIcon} href='mailto:hi@queercodingcamp.ch'>
               hi@queercodingcamp.ch
             </Link>
