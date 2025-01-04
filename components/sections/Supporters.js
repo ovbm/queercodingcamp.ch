@@ -12,7 +12,18 @@ const Supporters = ({ id }) => {
       <h2 className='text-6xl font-bold text-left font-display'>
         Ermöglicht durch
       </h2>
-
+      <p className='text-left text-lg mt-8'>
+        Das Queer Coding Camp kann Dank der finanziellen Untertsützung von
+        Stiftungen und Sponsoring-Beiträgen von Unternehmen stattfinden. Möchte
+        auch dein Unternehmen das Projekt unterstützen? Infos dazu in unserem{' '}
+        <A
+          taget='_blank'
+          Icon={ArrowTopRightOnSquareIcon}
+          href='https://queercodingcamp.notion.site/Queer-Coding-Camp-KMU-Sponsoring-bb0ed022360e445e92abe94238f78646'
+        >
+          Sponsoring Aufruf für KMU&apos;s
+        </A>
+      </p>
       <div className='flex flex-wrap gap-8 justify-start items-center md:gap-12 mt-16'>
         <Supporter
           href='https://www.lgbtiyouthfund.ch'
@@ -33,16 +44,7 @@ const Supporters = ({ id }) => {
           name='Hasler Stiftung'
           width={200}
         />
-      </div>
 
-      <h3
-        id='supporters'
-        className='text-2xl font-light text-left font-display mt-16 mb-4'
-      >
-        unseren KMU Sponsoren
-      </h3>
-
-      <div className='flex flex-wrap gap-8 justify-start items-center md:gap-12 mt-8'>
         {/* <Supporter
           href='https://www.puzzle.ch/de/stellen'
           imageSrc='/images/puzzle_itc_logo.svg'
@@ -78,33 +80,6 @@ const Supporters = ({ id }) => {
           hiring
         />
       </div>
-      <h3
-        id='supporters'
-        className='text-2xl font-light text-left font-display mt-16 mb-4'
-      >
-        und unserem Hardware-Sponsor
-      </h3>
-      <div className='flex flex-wrap gap-8 justify-start items-center md:gap-12 mt-8'>
-        <Supporter
-          href='https://projektneptun.ch'
-          imageSrc='/images/project-neptune.png'
-          name='Projekt Neptun'
-          height={78}
-          width={80}
-        />
-      </div>
-      <p className='text-left mt-8'>
-        Das Queer Coding Camp kann Dank der finanziellen Untertsützung von
-        Stiftungen und Sponsoring-Beiträgen von Unternehmen stattfinden. Möchte
-        auch dein Unternehmen das Projekt unterstützen? Infos dazu in unserem{' '}
-        <A
-          taget='_blank'
-          Icon={ArrowTopRightOnSquareIcon}
-          href='https://queercodingcamp.notion.site/Queer-Coding-Camp-KMU-Sponsoring-bb0ed022360e445e92abe94238f78646'
-        >
-          Sponsoring Aufruf für KMU&apos;s
-        </A>
-      </p>
     </SectionContainer>
   )
 }

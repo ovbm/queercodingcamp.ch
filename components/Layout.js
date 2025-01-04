@@ -1,15 +1,10 @@
-import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import useActiveSection from './hooks/useActiveSection'
-import { polyfill } from 'smoothscroll-polyfill'
 import Head from 'next/head'
 
 export default function Layout({ children }) {
-  const activeSection = useActiveSection()
-  useEffect(() => {
-    polyfill()
-  }, [])
+  const { pathname, locale } = useRouter()
   return (
     <>
       <Head>
@@ -44,9 +39,11 @@ export default function Layout({ children }) {
           content='black-translucent'
         />
       </Head>
-      <Navbar />
-      {children}
-      <Footer />
+      <main className='min-h-dvh flex flex-col'>
+        <Navbar />
+        <div className='flex-grow'>{children}</div>
+        <Footer />
+      </main>
       <style global jsx>
         {`
           body {
@@ -61,15 +58,15 @@ export default function Layout({ children }) {
               #00d0b9
             );
             background-size: 100% 300%;
-            background-position: ${activeSection === 'top'
+            background-position: ${pathname === '/'
               ? '0% 0%'
-              : activeSection === 'info'
+              : pathname === '/info'
               ? '0% 25%'
-              : activeSection === 'anmelden'
+              : pathname === '/anmelden'
               ? '0% 50%'
-              : activeSection === 'about'
+              : pathname === '/about'
               ? '0% 75%'
-              : activeSection === 'spenden'
+              : pathname === '/spenden'
               ? '0% 100%'
               : // Fallback
                 '0% 0%'};

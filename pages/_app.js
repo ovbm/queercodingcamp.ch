@@ -1,17 +1,21 @@
 import '../styles/globals.css'
 import Layout from '../components/Layout'
-import { polyfill } from 'smoothscroll-polyfill'
-import { useEffect } from 'react'
+import { NextIntlClientProvider } from 'next-intl'
+import { useRouter } from 'next/router'
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    polyfill()
-  }, [])
+  const router = useRouter()
 
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <NextIntlClientProvider
+      locale={router.locale}
+      timeZone='Europe/Vienna'
+      messages={pageProps.messages}
+    >
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </NextIntlClientProvider>
   )
 }
 

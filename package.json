@@ -11,9 +11,9 @@
     "@heroicons/react": "^2.0.17",
     "@mailchimp/mailchimp_marketing": "^3.0.74",
     "next": "^13.3.1",
+    "next-intl": "^3.21.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "smoothscroll-polyfill": "^0.4.4"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

@@ -4,24 +4,24 @@ import {
   EnvelopeIcon,
   HeartIcon,
 } from '@heroicons/react/24/solid'
-import SectionContainer from './Container'
-import Profile from '../Profile'
-import olivier from '../../public/images/olivierbaumann.png'
-import tabea from '../../public/images/tabea.jpeg'
-import samuel from '../../public/images/SamVonaesch2024.jpeg'
-import Link from '../Link'
+import Container from '../components/Container'
+import Profile from '../components/Profile'
+import Link from '../components/Link'
+import olivier from '../public/images/olivierbaumann.png'
+import tabea from '../public/images/tabea.jpeg'
+import samuel from '../public/images/SamVonaesch2024.jpeg'
 
-const Ueber = ({ id }) => {
+const Ueber = () => {
   return (
-    <SectionContainer id={id}>
-      <h2 className='text-6xl font-bold text-left font-display'>
+    <Container>
+      <h2 className='text-4xl md:text-6xl font-bold text-left font-display'>
         Wer sind wir?
       </h2>
       <div className='flex flex-col md:flex-row gap-16 mt-4'>
         <div className='flex-1 text-left'>
-          <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
+          <h3 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
             Queer Coding Tech!
-          </h2>
+          </h3>
           <p className='text-md mb-4'>
             Die Tech-Branche ist für Personen die nicht cis, männlich, weiss und
             hetero sind, ausschliessend. Das war nicht immer so. Und muss sich
@@ -44,9 +44,9 @@ const Ueber = ({ id }) => {
             </Link>
           </p>
           <br />
-          <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
+          <h3 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
             Möchtest du mithelfen?
-          </h2>
+          </h3>
           <p>
             <Link
               Icon={HeartIcon}
@@ -67,7 +67,7 @@ const Ueber = ({ id }) => {
           <div className='flex flex-col'>
             <Profile
               imageSrc={olivier}
-              threads='@olivier.iovi'
+              bsky="iovi.io"
               name='Olivier Baumann'
               bio='Olivier ist Produkt-Entwickler beim Online Magazin Republik. Davor hat er in Kopenhagen das Klima-Startup electricityMap mitgegründet. Im Herbst 2021 hat er das Projekt Queer Coding Camp initiiert. '
             />
@@ -86,7 +86,7 @@ const Ueber = ({ id }) => {
           </div>
         </div>
       </div>
-    </SectionContainer>
+    </Container>
   )
 }
 

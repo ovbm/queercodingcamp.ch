@@ -2,12 +2,11 @@ import React from 'react'
 import Link from './Link'
 import Image from 'next/legacy/image'
 import Instagram from '../public/images/Instagram.svg'
-import LogoWhite from '../public/images/queercodingcamp_logo_color_bright.png'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 
 export default function Footer() {
   return (
-    <footer className=' bg-slate-900 w-full mt-24'>
+    <footer className='bg-slate-900 w-full mt-24'>
       <div className='max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-8  px-4 md:px-6 lg:px-8 py-8 md:py-16'>
         <div>
           <p className='text-base'>
@@ -19,7 +18,7 @@ export default function Footer() {
             <br />
             <Link
               Icon={() => (
-                <span className='align-top inline-block ml-2 mt-1'>
+                <span className='align-top inline-block mt-1'>
                   <Image
                     src={Instagram}
                     width={18}

@@ -15,8 +15,8 @@ const Link = React.forwardRef(
           className
         )}
       >
+        <Icon className='inline-block w-4 mr-1' />
         {children}
-        <Icon className='inline-block w-4 ml-1' />
       </a>
     )
   }
