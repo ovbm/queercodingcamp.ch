@@ -7,9 +7,10 @@ import {
 import Container from '../components/Container'
 import Profile from '../components/Profile'
 import Link from '../components/Link'
-import olivier from '../public/images/olivierbaumann.png'
+import olivier from '../public/images/olivier.jpg'
 import tabea from '../public/images/tabea.jpeg'
 import samuel from '../public/images/SamVonaesch2024.jpeg'
+import eva from '../public/images/eva.jpeg'
 
 const Ueber = () => {
   return (
@@ -22,19 +23,19 @@ const Ueber = () => {
           <h3 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
             Queer Coding Tech!
           </h3>
-          <p className='text-md mb-4'>
+          <p className='text-lg mb-4'>
             Die Tech-Branche ist für Personen die nicht cis, männlich, weiss und
             hetero sind, ausschliessend. Das war nicht immer so. Und muss sich
             ändern!
           </p>
-          <p className='text-md mb-4'>
+          <p className='text-lg mb-4'>
             Der Verein Queer Coding Camp will mit Bildung und Förderung junger
             queerer Menschen und der Vernetzung von LBGTQ+ Personen in der
             Tech-Branche diesem Umstand entgegenwirken. Wir queeren die
             Tech-Welt, damit sie in Zukunft inklusiver, gerechter und ein
             sicherer Ort für queere Menschen wird.
           </p>
-          <p>
+          <p className='text-lg'>
             <Link
               Icon={ArrowTopRightOnSquareIcon}
               target='_blank'
@@ -45,19 +46,27 @@ const Ueber = () => {
           </p>
           <br />
           <h3 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
-            Möchtest du mithelfen?
+            Möchtest du mitmachen?
           </h3>
-          <p>
+          <p className='text-lg mb-4'>
+            Wir sind immer nach der Suche nach Tutor*innen oder Mentor*innen,
+            die am Camp unterrichten wollen. Meld dich bei{' '}
+            <Link Icon={EnvelopeIcon} href='mailto:hi@queercodingcamp.ch'>
+              hi@queercodingcamp.ch
+            </Link>
+            .
+          </p>
+          <p className='text-lg mb-4'>
+            Du kannst ausserdem
             <Link
               Icon={HeartIcon}
               href='https://docs.google.com/forms/d/e/1FAIpQLSdI_q8afBbx3V4H7rfawevAbRG9lk2zbi5GFP5K4iwQyJqTLQ/viewform?usp=sf_link'
             >
-              Werde Mitglied
+              Mitglied
             </Link>{' '}
-            beim Verein Queer Coding Camp oder meld dich bei uns:{' '}
-            <Link Icon={EnvelopeIcon} href='mailto:hi@queercodingcamp.ch'>
-              hi@queercodingcamp.ch
-            </Link>
+            beim Verein Queer Coding Camp werden. Dann erhälst du eine Einladung
+            zu unserer Mitgliederversammlung, bei der du über zukünftige
+            Projekte mitbestimmen kannst. Mitgliederversammlung ein und oder
           </p>
         </div>
         <div className='flex-1 text-left'>
@@ -67,20 +76,25 @@ const Ueber = () => {
           <div className='flex flex-col'>
             <Profile
               imageSrc={olivier}
-              bsky="iovi.io"
-              name='Olivier Baumann'
+              bsky='iovi.io'
+              name='Olivier Baumann (er/ihm), Vorstand'
               bio='Olivier ist Produkt-Entwickler beim Online Magazin Republik. Davor hat er in Kopenhagen das Klima-Startup electricityMap mitgegründet. Im Herbst 2021 hat er das Projekt Queer Coding Camp initiiert. '
             />
             <Profile
               imageSrc={tabea}
               twitter='ElisaItabe'
-              name='Tabea Iseli'
+              name='Tabea Iseli (she/they), Vorstand'
               bio='Tabea ist Gründerin des Game-Studios Stardust und seit über zehn Jahren als Game-Designerin und Programmiererin tätig.'
+            />
+            <Profile
+              imageSrc={eva}
+              name='Eva Bracey (they/she), Vorstand'
+              bio='Eva is a neuroscientist studying the hypothalamus, an academic mentor and peer counsellor, and giant trans person.'
             />
             <Profile
               imageSrc={samuel}
               twitter='elephantatwork'
-              name='Samuel Vonäsch, Programmleitung'
+              name='Samuel Vonäsch (er/ihm), Programmleitung'
               bio='Samuel engagiert sich mit dem Swiss Game Hub für die Schweizer Game Entwicklung Szene und ist Gründer und Game Maker beim Game Studio lauflauf '
             />
           </div>
