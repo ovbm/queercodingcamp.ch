@@ -86,16 +86,16 @@ const Ueber = () => {
               bio='Olivier ist Produkt-Entwickler beim Online Magazin Republik. Davor hat er in Kopenhagen das Klima-Startup electricityMap mitgegründet. Im Herbst 2021 hat er das Projekt Queer Coding Camp initiiert. '
             />
             <Profile
-              imageSrc={tabea}
-              twitter='ElisaItabe'
-              name='Tabea Iseli (she/they), Vorstand'
-              bio='Tabea ist Gründerin des Game-Studios Stardust und seit über zehn Jahren als Game-Designerin und Programmiererin tätig.'
-            />
-            <Profile
               imageSrc={samuel}
               twitter='elephantatwork'
               name='Samuel Vonäsch (er/ihm), Programmleitung'
               bio='Samuel engagiert sich mit dem Swiss Game Hub für die Schweizer Game Entwicklung Szene und ist Gründer und Game Maker beim Game Studio lauflauf '
+            />
+            <Profile
+              imageSrc={tabea}
+              twitter='ElisaItabe'
+              name='Tabea Iseli (she/they), Vorstand'
+              bio='Tabea ist Gründerin des Game-Studios Stardust und seit über zehn Jahren als Game-Designerin und Programmiererin tätig.'
             />
           </div>
         </div>
