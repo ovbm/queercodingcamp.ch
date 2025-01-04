@@ -75,6 +75,11 @@ const Ueber = () => {
           </h2>
           <div className='flex flex-col'>
             <Profile
+              imageSrc={eva}
+              name='Eva Bracey (they/she), Vorstand'
+              bio='Eva is a neuroscientist studying the hypothalamus, an academic mentor and peer counsellor, and giant trans person.'
+            />
+            <Profile
               imageSrc={olivier}
               bsky='iovi.io'
               name='Olivier Baumann (er/ihm), Vorstand'
@@ -85,11 +90,6 @@ const Ueber = () => {
               twitter='ElisaItabe'
               name='Tabea Iseli (she/they), Vorstand'
               bio='Tabea ist Gründerin des Game-Studios Stardust und seit über zehn Jahren als Game-Designerin und Programmiererin tätig.'
-            />
-            <Profile
-              imageSrc={eva}
-              name='Eva Bracey (they/she), Vorstand'
-              bio='Eva is a neuroscientist studying the hypothalamus, an academic mentor and peer counsellor, and giant trans person.'
             />
             <Profile
               imageSrc={samuel}
