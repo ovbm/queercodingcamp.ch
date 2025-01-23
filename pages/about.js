@@ -82,6 +82,7 @@ const Ueber = () => {
             />
             <Profile
               imageSrc={liam}
+              bsky='iamli.am'
               name='Liam Spradlin (he/him), Vorstand'
               bio='Liam is an interdisciplinary designer and writer. His design work, which ranges from independent apps to global platforms, informs his writing and teaching on the theory, meaning, and positionality of the software interface.'
             />
