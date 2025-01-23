@@ -11,6 +11,7 @@ import olivier from '../public/images/olivier.jpg'
 import tabea from '../public/images/tabea.jpeg'
 import samuel from '../public/images/SamVonaesch2024.jpeg'
 import eva from '../public/images/eva.jpeg'
+import liam from '../public/images/liam-small.png'
 
 const Ueber = () => {
   return (
@@ -78,6 +79,11 @@ const Ueber = () => {
               imageSrc={eva}
               name='Eva Bracey (they/she), Vorstand'
               bio='Eva is a neuroscientist studying the hypothalamus, an academic mentor and peer counsellor, and giant trans person.'
+            />
+            <Profile
+              imageSrc={liam}
+              name='Liam Spradlin (he/him), Vorstand'
+              bio='Liam is an interdisciplinary designer and writer. His design work, which ranges from independent apps to global platforms, informs his writing and teaching on the theory, meaning, and positionality of the software interface.'
             />
             <Profile
               imageSrc={olivier}
