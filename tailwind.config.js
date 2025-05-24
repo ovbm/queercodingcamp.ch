@@ -5,8 +5,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ['Signika', 'sans-serif'],
-      display: ['Grandstander', 'cursive'],
+      sans: ['Funnel Sans', 'sans-serif'],
+      display: ['Funnel Display', 'sans-serif'],
     },
   },
   plugins: [],

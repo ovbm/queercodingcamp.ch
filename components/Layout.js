@@ -8,8 +8,10 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
         <link
-          href='https://fonts.googleapis.com/css2?&family=Grandstander:wght@500;800&family=Signika:wght@500;700&display=swap'
+          href='https://fonts.googleapis.com/css2?family=Funnel+Display:wght@700&family=Funnel+Sans:ital@0;1&display=swap'
           rel='stylesheet'
         />
 
@@ -50,14 +52,17 @@ export default function Layout({ children }) {
             color: #fff;
             background-color: #0f172a;
             background: linear-gradient(
-              -45deg,
-              #c2410c,
-              #db2777,
-              #7c3aed,
-              #1d4ed8,
-              #00d0b9
-            );
-            background-size: 100% 300%;
+                -45deg,
+                #c2410c,
+                #db2777,
+                #7c3aed,
+                #1d4ed8,
+                #00d0b9
+              ),
+              url('/images/noise.svg');
+            background-size: 100% 300%, 22%;
+            background-repeat: no-repeat, repeat;
+            background-blend-mode: screen;
             background-position: ${pathname === '/'
               ? '0% 0%'
               : pathname === '/info'

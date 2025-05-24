@@ -16,11 +16,11 @@ const Top = ({ id }) => {
           />
         </div>
         <div className='flex-1 md:text-left'>
-          <h1 className='text-3xl md:text-6xl font-bold font-display'>
+          <h1 className='text-3xl md:text-4xl font-bold font-display'>
             Queer Coding&nbsp;Camp
           </h1>
-          <p className='text-2xl md:text-2xl font-display font-bold mt-3'>
-            Programmieren lernen für junge queere Menschen.
+          <p className='text-2xl md:text-xl mt-3'>
+            coden lernen, gemeinschaft finden
           </p>
           <p className='text-xl md:text-xl font-display mt-4'>
             SAVE THE DATE: <br />
