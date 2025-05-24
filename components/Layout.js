@@ -60,9 +60,11 @@ export default function Layout({ children }) {
                 #00d0b9
               ),
               url('/images/noise.svg');
-            background-size: 100% 300%, 22%;
+            background-size: 100% 300%, 100%;
             background-repeat: no-repeat, repeat;
             background-blend-mode: screen;
+            transform: translateZ(0);
+            -webkit-transform: translateZ(0);
             background-position: ${pathname === '/'
               ? '0% 0%'
               : pathname === '/info'
@@ -76,6 +78,12 @@ export default function Layout({ children }) {
               : // Fallback
                 '0% 0%'};
             transition: background-position 1s ease-in-out;
+          }
+
+          @media (max-width: 768px) {
+            body {
+              background-size: 100% 300%, 200%;
+            }
           }
         `}
       </style>
