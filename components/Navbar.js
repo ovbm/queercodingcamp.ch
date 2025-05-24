@@ -66,9 +66,9 @@ export default function Navbar() {
                       {item.name}
                     </Link>
                   ))}
-                  <Link href='/' locale={locale === 'en' ? 'de' : 'en'}>
+                  {/* <Link href='/' locale={locale === 'en' ? 'de' : 'en'}>
                     {locale === 'en' ? 'DE' : 'EN'}
-                  </Link>
+                  </Link> */}
                 </div>
               </Disclosure.Panel>
             </Transition>

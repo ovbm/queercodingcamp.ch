@@ -63,8 +63,6 @@ export default function Layout({ children }) {
             background-size: 100% 300%, 100%;
             background-repeat: no-repeat, repeat;
             background-blend-mode: screen;
-            transform: translateZ(0);
-            -webkit-transform: translateZ(0);
             background-position: ${pathname === '/'
               ? '0% 0%'
               : pathname === '/info'
