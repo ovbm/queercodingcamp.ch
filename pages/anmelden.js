@@ -34,7 +34,7 @@ const SignUp = () => {
           </h2>
 
           <p className='text-left mb-4'>
-            Die Anmeldung für das Coding Camp 2025 wird im Frühjahr 2025 möglich
+            Die Anmeldung für das Coding Camp 2025 wird im Frühsommer 2025 möglich
             sein. Willst du benachrichtigt werden, sobald die Anmeldung geöffnet
             wird? Oder möchtest du über Neuigkeiten zum Camp und zukünftigen
             Aktivitäten des Vereins informiert werden? <br /><br />
