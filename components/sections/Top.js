@@ -16,15 +16,11 @@ const Top = ({ id }) => {
           />
         </div>
         <div className='flex-1 md:text-left'>
-          <h1 className='text-3xl md:text-4xl font-bold font-display'>
-            Queer Coding&nbsp;Camp
+          <h1 className='text-5xl md:text-7xl font-bold font-display'>
+          coden lernen, gemeinschaft finden
           </h1>
-          <p className='text-2xl md:text-xl mt-3'>
-            coden lernen, gemeinschaft finden
-          </p>
-          <p className='text-xl md:text-xl font-display mt-4'>
-            SAVE THE DATE: <br />
-            <span className='font-black'>5. - 11. Oktober 2025</span>
+          <p className='text-2xl mt-3 font-display'>
+            Queer Coding Camp, 5. - 10. Oktober 2025, Sumiswald, Bern
           </p>
           {/* <Button
             href='#anmelden'

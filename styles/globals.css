@@ -5,6 +5,12 @@
   --font-display: "Funnel Display", sans-serif;
 }
 
+@layer base {
+  p {
+    @apply text-xl;
+  }
+}
+
 /* Safari Bug */
 
 nav {

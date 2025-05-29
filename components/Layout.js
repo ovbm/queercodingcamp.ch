@@ -72,12 +72,12 @@ export default function Layout({ children }) {
 
           .background-gradient {
             background: linear-gradient(
-                -45deg,
-                #c2410c,
-                #db2777,
-                #7c3aed,
+                -34deg,
+                #00d0b9,
                 #1d4ed8,
-                #00d0b9
+                #7c3aed,
+                #c2410c,
+                #db2777
               ),
               url('/images/noise.svg');
             background-size: 100% 300%, 100%;

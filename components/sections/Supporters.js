@@ -12,7 +12,7 @@ const Supporters = ({ id }) => {
       <h2 className='text-6xl font-bold text-left font-display'>
         Ermöglicht durch
       </h2>
-      <p className='text-left text-lg mt-8'>
+      <p className='text-left mt-8'>
         Das Queer Coding Camp kann Dank der finanziellen Untertsützung von
         Stiftungen und Sponsoring-Beiträgen von Unternehmen stattfinden. Möchte
         auch dein Unternehmen das Projekt unterstützen? Infos dazu in unserem{' '}

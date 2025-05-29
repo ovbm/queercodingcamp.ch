@@ -16,7 +16,7 @@ import liam from '../public/images/liam-small.png'
 const Ueber = () => {
   return (
     <Container>
-      <h2 className='text-4xl md:text-6xl font-bold text-left font-display'>
+      <h2 className='text-4xl font-bold text-left font-display'>
         Wer sind wir?
       </h2>
       <div className='flex flex-col md:flex-row gap-16 mt-4'>
@@ -24,19 +24,19 @@ const Ueber = () => {
           <h3 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
             Queer Coding Tech!
           </h3>
-          <p className='text-lg mb-4'>
+          <p className='mb-4'>
             Die Tech-Branche ist für Personen die nicht cis, männlich, weiss und
             hetero sind, ausschliessend. Das war nicht immer so. Und muss sich
             ändern!
           </p>
-          <p className='text-lg mb-4'>
+          <p className='mb-4'>
             Der Verein Queer Coding Camp will mit Bildung und Förderung junger
             queerer Menschen und der Vernetzung von LBGTQ+ Personen in der
             Tech-Branche diesem Umstand entgegenwirken. Wir queeren die
             Tech-Welt, damit sie in Zukunft inklusiver, gerechter und ein
             sicherer Ort für queere Menschen wird.
           </p>
-          <p className='text-lg'>
+          <p>
             <Link
               Icon={ArrowTopRightOnSquareIcon}
               target='_blank'
@@ -49,7 +49,7 @@ const Ueber = () => {
           <h3 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
             Möchtest du mitmachen?
           </h3>
-          <p className='text-lg mb-4'>
+          <p className='mb-4'>
             Wir sind immer nach der Suche nach Tutor*innen oder Mentor*innen,
             die am Camp unterrichten wollen. Meld dich bei{' '}
             <Link Icon={EnvelopeIcon} href='mailto:hi@queercodingcamp.ch'>
@@ -57,7 +57,7 @@ const Ueber = () => {
             </Link>
             .
           </p>
-          <p className='text-lg mb-4'>
+          <p className='mb-4'>
             Du kannst ausserdem
             <Link
               Icon={HeartIcon}
