@@ -2,14 +2,13 @@ import { Disclosure, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { classNames } from './utils/classNames'
 import { useRouter } from 'next/router'
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl'
 import Link from 'next/link'
-
 
 export default function Navbar() {
   const router = useRouter()
   const { pathname, locale } = router
-  const t = useTranslations();
+  const t = useTranslations()
 
   const navigation = [
     { name: t('navbar.camp'), href: '/' },
@@ -62,14 +61,20 @@ export default function Navbar() {
                         item.href === pathname
                           ? 'bg-gray-900/10 -translate-x-5'
                           : 'bg-gray-900/50 hover:bg-gray-700/50',
-                        'text-white px-6 py-2 pt-2 rounded-xl font-display font-bold text-xl backdrop-blur-sm backdrop-saturate-200 transition-transform shadow-lg'
+                        'text-white px-6 py-2 pt-2 rounded-xl font-display font-bold text-xl backdrop-blur-sm backdrop-saturate-200 transition-transform shadow-lg',
                       )}
                       aria-current={item.href === pathname ? 'page' : undefined}
                     >
                       {item.name}
                     </Link>
                   ))}
-                  <Link href='/' locale={locale === 'en' ? 'de' : 'en'}>
+                  <Link
+                    href='/'
+                    locale={locale === 'en' ? 'de' : 'en'}
+                    className={
+                      'flex h-8 w-8 items-center justify-center bg-gray-900/50 hover:bg-gray-700/50 rounded-full font-display font-bold text-lg backdrop-blur-sm backdrop-saturate-200 shadow-lg'
+                    }
+                  >
                     {locale === 'en' ? 'de' : 'en'}
                   </Link>
                 </div>
@@ -100,7 +105,7 @@ export default function Navbar() {
                             item.href === pathname
                               ? 'bg-gray-900/10 translate-y-1'
                               : 'bg-gray-900/50 hover:bg-gray-700/50 hover:text-white',
-                            'text-white px-6 py-2 pt-2 rounded-xl font-display font-bold text-xl backdrop-blur-sm backdrop-saturate-200 transition-transform shadow-lg'
+                            'text-white px-6 py-2 pt-2 rounded-xl font-display font-bold text-xl backdrop-blur-sm backdrop-saturate-200 transition-transform shadow-lg',
                           )}
                           aria-current={
                             item.href === pathname ? 'page' : undefined
@@ -109,10 +114,13 @@ export default function Navbar() {
                           {item.name}
                         </Link>
                       ))}
+
                       <Link
                         href={pathname}
                         locale={locale === 'en' ? 'de' : 'en'}
-                        className='font-display text-lg'
+                        className={
+                          'flex h-8 w-8 items-center justify-center bg-gray-900/50 hover:bg-gray-700/50 rounded-full font-display font-bold text-lg backdrop-blur-sm backdrop-saturate-200 shadow-lg'
+                        }
                       >
                         {locale === 'en' ? 'de' : 'en'}
                       </Link>
