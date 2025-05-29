@@ -1,6 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Funnel Sans", sans-serif;
+  --font-display: "Funnel Display", sans-serif;
+}
 
 /* Safari Bug */
 

@@ -5,16 +5,27 @@ import Head from 'next/head'
 
 export default function Layout({ children }) {
   const { pathname, locale } = useRouter()
+  
+  const getBackgroundPosition = () => {
+    switch (pathname) {
+      case '/':
+        return '0% 0%'
+      case '/info':
+        return '0% 25%'
+      case '/anmelden':
+        return '0% 50%'
+      case '/about':
+        return '0% 75%'
+      case '/spenden':
+        return '0% 100%'
+      default:
+        return '0% 0%'
+    }
+  }
+
   return (
     <>
       <Head>
-        <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
-        <link
-          href='https://fonts.googleapis.com/css2?family=Funnel+Display:wght@700&family=Funnel+Sans:ital@0;1&display=swap'
-          rel='stylesheet'
-        />
-
         <link
           rel='apple-touch-icon'
           sizes='180x180'
@@ -41,16 +52,25 @@ export default function Layout({ children }) {
           content='black-translucent'
         />
       </Head>
-      <main className='min-h-dvh flex flex-col'>
+      
+      {/* Dedicated background element */}
+      <div className="fixed inset-0 -z-10 background-gradient">
+      </div>
+
+      <main className='min-h-dvh flex flex-col relative'>
         <Navbar />
         <div className='flex-grow'>{children}</div>
         <Footer />
       </main>
+      
       <style global jsx>
         {`
           body {
             color: #fff;
             background-color: #0f172a;
+          }
+
+          .background-gradient {
             background: linear-gradient(
                 -45deg,
                 #c2410c,
@@ -63,23 +83,12 @@ export default function Layout({ children }) {
             background-size: 100% 300%, 100%;
             background-repeat: no-repeat, repeat;
             background-blend-mode: screen;
-            background-position: ${pathname === '/'
-              ? '0% 0%'
-              : pathname === '/info'
-              ? '0% 25%'
-              : pathname === '/anmelden'
-              ? '0% 50%'
-              : pathname === '/about'
-              ? '0% 75%'
-              : pathname === '/spenden'
-              ? '0% 100%'
-              : // Fallback
-                '0% 0%'};
+            background-position: ${getBackgroundPosition()}, 0 0;
             transition: background-position 1s ease-in-out;
           }
 
           @media (max-width: 768px) {
-            body {
+            .background-gradient {
               background-size: 100% 300%, 200%;
             }
           }
