@@ -19,15 +19,13 @@ const FAQ = () => {
         <Disclosure>
           {({ open }) => (
             <>
-              <Disclosure.Button className='flex justify-between w-full px-4 py-2 font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
+              <Disclosure.Button className='text-xl font-display flex justify-between w-full px-4 py-2 text-left rounded-lg bg-gray-900/50 hover:bg-gray-700/50 backdrop-blur-sm backdrop-saturate-200 shadow-lg focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
                 <span>{t('info.faq.who')}</span>
                 <ChevronUpIcon
-                  className={`${
-                    open ? 'transform rotate-180' : ''
-                  } w-5 h-5 text-indigo-500`}
+                  className={`${open ? 'transform rotate-180' : ''} w-5 h-5`}
                 />
               </Disclosure.Button>
-              <Disclosure.Panel className='px-4 pt-4 pb-2 text-left'>
+              <Disclosure.Panel className='px-4 pt-4 pb-2 text-left text-lg'>
                 {t('info.faq.who-text')}
               </Disclosure.Panel>
             </>
@@ -36,15 +34,15 @@ const FAQ = () => {
         <Disclosure as='div' className='mt-2'>
           {({ open }) => (
             <>
-              <Disclosure.Button className='flex justify-between w-full px-4 py-2 font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
+              <Disclosure.Button className='text-xl font-display flex justify-between w-full px-4 py-2 text-left rounded-lg bg-gray-900/50 hover:bg-gray-700/50 backdrop-blur-sm backdrop-saturate-200 shadow-lg focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
                 <span>{t('info.faq.cost')}</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'transform rotate-180' : ''
-                  } w-5 h-5 text-indigo-500`}
+                  } w-5 h-5`}
                 />
               </Disclosure.Button>
-              <Disclosure.Panel className='text-left px-4 pt-4 pb-2'>
+              <Disclosure.Panel className='text-left text-lg px-4 pt-4 pb-2'>
                 {t('info.faq.cost-text')}
               </Disclosure.Panel>
             </>
@@ -53,15 +51,15 @@ const FAQ = () => {
         <Disclosure as='div' className='mt-2'>
           {({ open }) => (
             <>
-              <Disclosure.Button className='flex justify-between w-full px-4 py-2 font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
+              <Disclosure.Button className='text-xl font-display flex justify-between w-full px-4 py-2 text-left rounded-lg bg-gray-900/50 hover:bg-gray-700/50 backdrop-blur-sm backdrop-saturate-200 shadow-lg focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
                 <span>{t('info.faq.skills')}</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'transform rotate-180' : ''
-                  } w-5 h-5 text-indigo-500`}
+                  } w-5 h-5`}
                 />
               </Disclosure.Button>
-              <Disclosure.Panel className='text-left px-4 pt-4 pb-2'>
+              <Disclosure.Panel className='text-left text-lg px-4 pt-4 pb-2'>
                 {t('info.faq.skills-text')}
               </Disclosure.Panel>
             </>
@@ -70,18 +68,20 @@ const FAQ = () => {
         <Disclosure as='div' className='mt-2'>
           {({ open }) => (
             <>
-              <Disclosure.Button className='flex justify-between w-full px-4 py-2 font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
+              <Disclosure.Button className='text-xl font-display flex justify-between w-full px-4 py-2 text-left rounded-lg bg-gray-900/50 hover:bg-gray-700/50 backdrop-blur-sm backdrop-saturate-200 shadow-lg focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
                 <span>{t('info.faq.when')}</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'transform rotate-180' : ''
-                  } w-5 h-5 text-indigo-500`}
+                  } w-5 h-5`}
                 />
               </Disclosure.Button>
-              <Disclosure.Panel className='text-left px-4 pt-4 pb-2'>
+              <Disclosure.Panel className='text-left text-lg px-4 pt-4 pb-2'>
                 {t.rich('info.faq.when-text', {
                   a: (chunks) => (
-                    <a className='underline' href='#anmelden'>{chunks}</a>
+                    <a className='underline' href='#anmelden'>
+                      {chunks}
+                    </a>
                   ),
                 })}
               </Disclosure.Panel>
@@ -91,15 +91,15 @@ const FAQ = () => {
         <Disclosure as='div' className='mt-2'>
           {({ open }) => (
             <>
-              <Disclosure.Button className='flex justify-between w-full px-4 py-2 font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
+              <Disclosure.Button className='text-xl font-display flex justify-between w-full px-4 py-2 text-left rounded-lg bg-gray-900/50 hover:bg-gray-700/50 backdrop-blur-sm backdrop-saturate-200 shadow-lg focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
                 <span>{t('info.faq.accessibility')}</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'transform rotate-180' : ''
-                  } w-5 h-5 text-indigo-500`}
+                  } w-5 h-5`}
                 />
               </Disclosure.Button>
-              <Disclosure.Panel className='text-left px-4 pt-4 pb-2'>
+              <Disclosure.Panel className='text-left text-lg px-4 pt-4 pb-2'>
                 {t('info.faq.accessibility-text')}
               </Disclosure.Panel>
             </>
@@ -108,15 +108,15 @@ const FAQ = () => {
         <Disclosure as='div' className='mt-2'>
           {({ open }) => (
             <>
-              <Disclosure.Button className='flex justify-between w-full px-4 py-2 font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
+              <Disclosure.Button className='text-xl font-display flex justify-between w-full px-4 py-2 text-left rounded-lg bg-gray-900/50 hover:bg-gray-700/50 backdrop-blur-sm backdrop-saturate-200 shadow-lg focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
                 <span>{t('info.faq.language')}</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'transform rotate-180' : ''
-                  } w-5 h-5 text-indigo-500`}
+                  } w-5 h-5`}
                 />
               </Disclosure.Button>
-              <Disclosure.Panel className='text-left px-4 pt-4 pb-2'>
+              <Disclosure.Panel className='text-left text-lg px-4 pt-4 pb-2'>
                 {t('info.faq.language-text')}
               </Disclosure.Panel>
             </>
@@ -139,15 +139,9 @@ const CampInfo = ({ id }) => {
           <h2 className='text-2xl font-bold text-left font-display mb-4'>
             {t('info.coding-camp')}
           </h2>
-          <p className='mb-4 '>
-            {t('info.coding-camp-text')}
-          </p>
-          <p className='mb-4 '>
-            {t('info.coding-camp-text-2')}
-          </p>
-          <p className=''>
-            {t('info.coding-camp-text-3')}
-          </p>
+          <p className='mb-4 '>{t('info.coding-camp-text')}</p>
+          <p className='mb-4 '>{t('info.coding-camp-text-2')}</p>
+          <p className=''>{t('info.coding-camp-text-3')}</p>
           <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
             {t('info.location')}
           </h2>
@@ -159,7 +153,12 @@ const CampInfo = ({ id }) => {
           <p className='mt-4 '>
             {t.rich('info.location-text', {
               a: (chunks) => (
-                <A href='https://www.schlafschloss.ch' target='_blank' rel='noreferrer' Icon={ArrowTopRightOnSquareIcon}>
+                <A
+                  href='https://www.schlafschloss.ch'
+                  target='_blank'
+                  rel='noreferrer'
+                  Icon={ArrowTopRightOnSquareIcon}
+                >
                   {chunks}
                 </A>
               ),
