@@ -6,8 +6,10 @@ import Button from './Button'
 
 import twintQR from '../public/images/twintQR.png'
 import paypalQR from '../public/images/paypalQR.png'
+import { useTranslations } from 'next-intl'
 
 export default function Donate() {
+  const t = useTranslations()
   return (
     <div className='w-full'>
       <Tab.Group>
@@ -37,7 +39,7 @@ export default function Donate() {
                   d='M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z'
                 />
               </svg>
-              Kreditkarte
+              {t('donate.credit-card')}
             </span>
           </Tab>
           <Tab
@@ -66,7 +68,7 @@ export default function Donate() {
                   fill='currentColor'
                 />
               </svg>
-              Twint
+              {t('donate.twint')}
             </span>
           </Tab>
           <Tab
@@ -92,14 +94,14 @@ export default function Donate() {
                   <path d='M20.067 8.478c.492.88.556 2.014.3 3.327-.74 3.806-3.276 5.12-6.514 5.12h-.5a.805.805 0 0 0-.794.68l-.04.22-.63 3.993-.032.17a.804.804 0 0 1-.794.679H7.72a.483.483 0 0 1-.477-.558L7.418 21h1.518l.95-6.02h1.385c4.678 0 7.75-2.203 8.796-6.502zm-2.96-5.09c.762.868.983 1.81.752 3.285-.019.123-.04.24-.062.36-.735 3.773-3.089 5.446-6.956 5.446H8.957c-.63 0-1.174.414-1.354 1.002l-.014-.002-.93 5.894H3.121a.051.051 0 0 1-.05-.06l2.598-16.51A.95.95 0 0 1 6.607 2h5.976c2.183 0 3.716.469 4.523 1.388z'></path>
                 </g>
               </svg>
-              PayPal
+              {t('donate.paypal')}
             </span>
           </Tab>
         </Tab.List>
         <Tab.Panels className='mt-2'>
           <Tab.Panel className='bg-gray-900/50 backdrop-saturate-200 rounded-xl px-4 py-8 focus:outline-none'>
             <h3 className='pb-4 font-display text-lg text-center'>
-              Einmalige Spende 🙌{' '}
+              {t('donate.one-time-donation')}
             </h3>
 
             <div className='flex flex-row flex-wrap gap-4 justify-center'>
@@ -127,7 +129,7 @@ export default function Donate() {
             </div>
             <hr className='border-white/50 my-6' />
             <h3 className='pb-4 font-display text-lg text-center'>
-              Jährliche Spende 🎉{' '}
+              {t('donate.annual-donation')}
             </h3>
             <div className='flex flex-row flex-wrap gap-4 justify-center'>
               <Button
@@ -164,7 +166,7 @@ export default function Donate() {
                 outline
                 className='font-display border-solid border-2 border-white text-white hover:bg-white hover:text-slate-900'
               >
-                Mit Twint spenden
+                {t('donate.donate-with-twint')}
               </Button>
             </div>
           </Tab.Panel>
@@ -179,7 +181,7 @@ export default function Donate() {
                 outline
                 className='font-display border-solid border-2 border-white text-white hover:bg-white hover:text-slate-900'
               >
-                Mit PayPal spenden
+                {t('donate.donate-with-paypal')}
               </Button>
             </div>
           </Tab.Panel>

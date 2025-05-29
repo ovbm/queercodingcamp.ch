@@ -1,0 +1,82 @@
+{
+  "navbar": {
+    "about": "Über uns",
+    "signup": "Anmelden",
+    "donate": "Spenden",
+    "camp": "Camp"
+  },
+  "index": {
+    "title": "coden lernen, gemeinschaft finden",
+    "subtitle": "Queer Coding Camp, 5. - 10. Oktober 2025, Sumiswald, Bern",
+    "illustration": "Pixel-Art Illustration, die eine gruppe queerer Menschen zeigt, die in einer Hütte zusammen programmieren."
+  },
+  "supporters": {
+    "title": "Ermöglicht durch",
+    "text": "Das Queer Coding Camp kann Dank der finanziellen Untertsützung von Stiftungen und Sponsoring-Beiträgen von Unternehmen stattfinden. Möchte auch dein Unternehmen das Projekt unterstützen? Infos dazu in unserem <a>Sponsoring Aufruf für KMU's</a>."
+  },
+  "info": {
+    "faq": {
+      "who": "Wer kann am Queer Coding Camp teilnehmen?",
+      "who-text": "Das Camp ist offen für alle queere Personen von 16 bis 23 Jahren. FINTA (Frauen, Inter, Nichtbinäre, Trans und Agender Personen) und PoC (Persons of Color) sind in der Tech-Welt stark untervertreten. Wir reservieren Plätze für Personen, die Mehrfachdiskriminierungen erleben.",
+      "cost": "Was kostet das Queer Coding Camp?",
+      "cost-text": "Dank Unterstützung von Stiftungen und privaten Spenden ist die Teilnahme gratis. Die Anfahrt musst du selbst bezahlen, im Vorfeld des Lagers organisieren wir jeweils Reisegruppen von Zürich und Bern. Falls das für dich nicht möglich ist, kannst du das bei der Anmeldung anmerken und wir finden eine Lösung.",
+      "skills": "Brauche ich Vorkenntnisse oder einen Laptop?",
+      "skills-text": "Du brauchst keine Programmier-Vorkenntnisse oder Affinität für IT. Wenn du einen eigenen Laptop hast, bitten wir dich diesen mitzubringen. Falls nicht, organisieren wir einen für dich.",
+      "when": "Wo und wann kann ich mich anmelden?",
+      "when-text": "Wir öffnen die Anmeldung für das Camp jeweils im Frühsommer. Du kannst dich jetzt schon in unseren Email-Verteiler eintragen, dann melden wir uns bei dir, sobald die Ameldung geöffnet ist.",
+      "accessibility": "Ist der Ort rollstuhlgängig?",
+      "accessibility-text": "Das Schlafschloss Sumiswald ist leider nicht rollstuhlgängig. Wir haben bisher keinen barrierefreien Ort gefunden, der für die Durchführung in Frage kommt. Kennst du einen? Schreib uns!",
+      "language": "Welche Sprachkenntnisse brauche ich?",
+      "language-text": "Die Core-Kurse (Web und Game) wurden bisher auf Deutsch durchgeführt. Workshops und Vorträge teils auch auf Englisch. Alle Lehrenden sprechen fliessend Deutsch und Englisch. Eine Teilnahme ist möglich, wenn eine der beiden Sprachen verstanden wird."
+    },
+    "title": "Info",
+    "coding-camp": "Coding Camp",
+    "coding-camp-text": "Das Queer Coding Camp ist ein einwöchiges Lager, an dem du erste Erfahrungen mit Programmieren sammeln kannst. Queere Programmierer*innen bringen dir ihre Skills bei und stehen dir als Mentor*innen für deine eigenen Projekte zur Seite.",
+    "coding-camp-text-2": "Du lernst Grundkenntnisse in der Programmierung von Webseiten und Games. Ausserdem gibt es Workshops und Inputs zu Themen wie Design und künstliche Intelligenz.",
+    "coding-camp-text-3": "Am Abend gibt es Spiele, Pen and Paper, Games oder einfach gemütliches Zusammensein beim Lagerfeuer.",
+    "location": "Location",
+    "location-text": "Das Coding Camp findet 2025 im <a>Schlafschloss Sumiswald</a>, in Emmental (Kanton Bern), statt. Als Teilnehner*in übernachtest du in Zweier- oder Dreierzimmern.",
+    "faq-title": "Weitere Fragen (FAQ)",
+    "faq-contact": "Noch Fragen? Schreib uns auf:"
+  },
+  "about": {
+    "title": "Über uns",
+    "title-2": "Wer sind wir?",
+    "text-1": "Die Tech-Branche ist für Personen die nicht cis, männlich, weiss und hetero sind, ausschliessend. Das war nicht immer so. Und muss sich ändern!",
+    "text-2": "Der Verein Queer Coding Camp will mit Bildung und Förderung junger queerer Menschen und der Vernetzung von LBGTQ+ Personen in der Tech-Branche diesem Umstand entgegenwirken. Wir queeren die Tech-Welt, damit sie in Zukunft inklusiver, gerechter und ein sicherer Ort für queere Menschen wird.",
+    "statutes": "Unsere Statuten",
+    "participate": "Möchtest du mitmachen?",
+    "participate-text-1": "Wir sind immer nach der Suche nach Tutor*innen oder Mentor*innen, die am Camp unterrichten wollen. Meld dich bei <a>hi@queercodingcamp.ch</a>.",
+    "participate-text-2": "Du kannst ausserdem Mitglied beim Verein Queer Coding Camp werden. Dann erhälst du eine Einladung zu unserer Mitgliederversammlung, bei der du über zukünftige Projekte mitbestimmen kannst.",
+    "board": "Vorstand",
+    "eva-name": "Eva Bracey (they/she), Vorstand",
+    "eva": "Eva ist eine Neuro-Wissenschaftlerin, die sich mit dem Hypothalamus beschäftigt, eine akademische Mentor*in und eine gigantische trans Person.",
+    "liam-name": "Liam Spradlin (he/him), Vorstand",
+    "liam": "Liam ist ein interdisziplinärer Designer und Schriftsteller. Seine Arbeiten - von unabhängigen Apps bis zu globalen Plattformen - informieren sein Schreiben und Lehre über Theorie, Bedeutung und Positionalität von Software-Schnittstellen.",
+    "olivier-name": "Olivier Baumann (er/ihm), Vorstand",
+    "olivier": "Olivier ist Produkt-Entwickler beim Online Magazin Republik. Davor hat er in Kopenhagen das Klima-Startup electricityMap mitgegründet. Im Herbst 2021 hat er das Projekt Queer Coding Camp initiiert. ",
+    "samuel-name": "Samuel Vonäsch (er/ihm), Programmleitung",
+    "samuel": "Samuel engagiert sich mit dem Swiss Game Hub für die Schweizer Game Entwicklung Szene und ist Gründer und Game Maker beim Game Studio lauflauf ",
+    "tabea-name": "Tabea Iseli (she/they), Vorstand",
+    "tabea": "Tabea ist Gründerin des Game-Studios Stardust und seit über zehn Jahren als Game-Designerin und Programmiererin tätig."
+  },
+  "signup": {
+    "title": "Anmelden",
+    "newsletter": "Newsletter",
+    "newsletter-text": "Du möchtest über Neuigkeiten zum Camp und zukünftigen Aktivitäten des Vereins informiert werden? Dann trage dich in unseren Newsletter ein."
+  },
+  "donate": {
+    "title": "Hilf uns die Tech-Welt zu queeren!",
+    "text-1": "Mit deiner Spende ermöglichst du jungen queeren Personen die Teilnahme am Queer Coding Camp.",
+    "text-2": "Der Verein Queer Coding Camp wurde 2024 vom Kanton Zürich als gemeinnütziger Verein anerkannt und ist damit steuerbefreit. Kontaktiere uns für eine Spendenbescheinigungen (für Spenden ab CHF 100 im Jahr).",
+    "text-3": "Spenden sind auch via Bankeinzahlung möglich:",
+    "text-4": "Name: Queer Coding Camp <br></br> Ort: 8003 Zürich <br></br> IBAN: CH25 0900 0000 1584 8382 5",
+    "credit-card": "Kreditkarte",
+    "twint": "Twint",
+    "paypal": "Paypal",
+    "one-time-donation": "Einmalige Spende 🙌",
+    "annual-donation": "Jährliche Spende 🎉",
+    "donate-with-twint": "Mit Twint spenden",
+    "donate-with-paypal": "Mit PayPal spenden"
+  }
+}

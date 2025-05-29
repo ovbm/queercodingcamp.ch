@@ -2,18 +2,21 @@ import { Disclosure, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { classNames } from './utils/classNames'
 import { useRouter } from 'next/router'
+import {useTranslations} from 'next-intl';
 import Link from 'next/link'
 
-const navigation = [
-  { name: 'Camp', href: '/' },
-  { name: 'Anmelden', href: '/anmelden' },
-  { name: 'Über uns', href: '/about' },
-  { name: 'Spenden', href: '/spenden' },
-]
 
 export default function Navbar() {
   const router = useRouter()
   const { pathname, locale } = router
+  const t = useTranslations();
+
+  const navigation = [
+    { name: t('navbar.camp'), href: '/' },
+    { name: t('navbar.signup'), href: '/anmelden' },
+    { name: t('navbar.about'), href: '/about' },
+    { name: t('navbar.donate'), href: '/spenden' },
+  ]
 
   return (
     <>
@@ -66,9 +69,9 @@ export default function Navbar() {
                       {item.name}
                     </Link>
                   ))}
-                  {/* <Link href='/' locale={locale === 'en' ? 'de' : 'en'}>
-                    {locale === 'en' ? 'DE' : 'EN'}
-                  </Link> */}
+                  <Link href='/' locale={locale === 'en' ? 'de' : 'en'}>
+                    {locale === 'en' ? 'de' : 'en'}
+                  </Link>
                 </div>
               </Disclosure.Panel>
             </Transition>
@@ -106,13 +109,13 @@ export default function Navbar() {
                           {item.name}
                         </Link>
                       ))}
-                      {/* <Link
-                        href='/'
+                      <Link
+                        href={pathname}
                         locale={locale === 'en' ? 'de' : 'en'}
-                        className='font-display font-bold text-l'
+                        className='font-display text-lg'
                       >
-                        {locale === 'en' ? 'DE' : 'EN'}
-                      </Link> */}
+                        {locale === 'en' ? 'de' : 'en'}
+                      </Link>
                     </div>
                   </div>
                 </div>

@@ -4,6 +4,8 @@ import {
   EnvelopeIcon,
   HeartIcon,
 } from '@heroicons/react/24/solid'
+import { useTranslations } from 'next-intl'
+
 import Container from '../components/Container'
 import Profile from '../components/Profile'
 import Link from '../components/Link'
@@ -14,27 +16,22 @@ import eva from '../public/images/eva.jpeg'
 import liam from '../public/images/liam-small.png'
 
 const Ueber = () => {
+  const t = useTranslations()
   return (
     <Container>
       <h2 className='text-4xl font-bold text-left font-display'>
-        Wer sind wir?
+        {t('about.title')}
       </h2>
       <div className='flex flex-col md:flex-row gap-16 mt-4'>
         <div className='flex-1 text-left'>
           <h3 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
-            Queer Coding Tech!
+            {t('about.title-2')}
           </h3>
           <p className='mb-4'>
-            Die Tech-Branche ist für Personen die nicht cis, männlich, weiss und
-            hetero sind, ausschliessend. Das war nicht immer so. Und muss sich
-            ändern!
+            {t('about.text-1')}
           </p>
           <p className='mb-4'>
-            Der Verein Queer Coding Camp will mit Bildung und Förderung junger
-            queerer Menschen und der Vernetzung von LBGTQ+ Personen in der
-            Tech-Branche diesem Umstand entgegenwirken. Wir queeren die
-            Tech-Welt, damit sie in Zukunft inklusiver, gerechter und ein
-            sicherer Ort für queere Menschen wird.
+            {t('about.text-2')}
           </p>
           <p>
             <Link
@@ -42,67 +39,65 @@ const Ueber = () => {
               target='_blank'
               href='https://queercodingcamp.notion.site/Statuten-des-Vereins-Queer-Coding-Camp-04-12-2023-159e87a58e3d43ddbbe9fbd0456c7e5c'
             >
-              Unsere Statuten
+              {t('about.statutes')}
             </Link>
           </p>
           <br />
           <h3 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
-            Möchtest du mitmachen?
+            {t('about.participate')}
           </h3>
           <p className='mb-4'>
-            Wir sind immer nach der Suche nach Tutor*innen oder Mentor*innen,
-            die am Camp unterrichten wollen. Meld dich bei{' '}
-            <Link Icon={EnvelopeIcon} href='mailto:hi@queercodingcamp.ch'>
-              hi@queercodingcamp.ch
-            </Link>
-            .
+            {t.rich('about.participate-text-1', {
+              a: (chunks) => (
+                <Link Icon={EnvelopeIcon} href='mailto:hi@queercodingcamp.ch'>
+                  {chunks}
+                </Link>
+              ),
+            })}
           </p>
           <p className='mb-4'>
-            Du kannst ausserdem
-            <Link
-              Icon={HeartIcon}
-              href='https://docs.google.com/forms/d/e/1FAIpQLSdI_q8afBbx3V4H7rfawevAbRG9lk2zbi5GFP5K4iwQyJqTLQ/viewform?usp=sf_link'
-            >
-              Mitglied
-            </Link>{' '}
-            beim Verein Queer Coding Camp werden. Dann erhälst du eine Einladung
-            zu unserer Mitgliederversammlung, bei der du über zukünftige
-            Projekte mitbestimmen kannst. Mitgliederversammlung ein und oder
+            {t.rich('about.participate-text-2', {
+              a: (chunks) => (
+                <Link Icon={HeartIcon} href='https://docs.google.com/forms/d/e/1FAIpQLSdI_q8afBbx3V4H7rfawevAbRG9lk2zbi5GFP5K4iwQyJqTLQ/viewform?usp=sf_link'>
+                  {chunks}
+                </Link>
+              ),
+            })}
           </p>
         </div>
         <div className='flex-1 text-left'>
           <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
-            Vereinsvorstand
+            {t('about.board')}
           </h2>
           <div className='flex flex-col'>
             <Profile
               imageSrc={eva}
-              name='Eva Bracey (they/she), Vorstand'
-              bio='Eva is a neuroscientist studying the hypothalamus, an academic mentor and peer counsellor, and giant trans person.'
+              name={t('about.eva-name')}
+              bio={t('about.eva')}
             />
             <Profile
               imageSrc={liam}
               bsky='iamli.am'
-              name='Liam Spradlin (he/him), Vorstand'
-              bio='Liam is an interdisciplinary designer and writer. His design work, which ranges from independent apps to global platforms, informs his writing and teaching on the theory, meaning, and positionality of the software interface.'
+              name={t('about.liam-name')}
+              bio={t('about.liam')}
             />
             <Profile
               imageSrc={olivier}
               bsky='iovi.io'
-              name='Olivier Baumann (er/ihm), Vorstand'
-              bio='Olivier ist Produkt-Entwickler beim Online Magazin Republik. Davor hat er in Kopenhagen das Klima-Startup electricityMap mitgegründet. Im Herbst 2021 hat er das Projekt Queer Coding Camp initiiert. '
+              name={t('about.olivier-name')}
+              bio={t('about.olivier')}
             />
             <Profile
               imageSrc={samuel}
               twitter='elephantatwork'
-              name='Samuel Vonäsch (er/ihm), Programmleitung'
-              bio='Samuel engagiert sich mit dem Swiss Game Hub für die Schweizer Game Entwicklung Szene und ist Gründer und Game Maker beim Game Studio lauflauf '
+              name={t('about.samuel-name')}
+              bio={t('about.samuel')}
             />
             <Profile
               imageSrc={tabea}
               twitter='ElisaItabe'
-              name='Tabea Iseli (she/they), Vorstand'
-              bio='Tabea ist Gründerin des Game-Studios Stardust und seit über zehn Jahren als Game-Designerin und Programmiererin tätig.'
+              name={t('about.tabea-name')}
+              bio={t('about.tabea')}
             />
           </div>
         </div>
@@ -112,3 +107,11 @@ const Ueber = () => {
 }
 
 export default Ueber
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      messages: (await import(`../messages/${locale}.json`)).default,
+    },
+  }
+}

@@ -4,11 +4,15 @@ import NewlsetterSignup from '../components/NewsletterSignup'
 import Link from '../components/Link'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import Button from '../components/Button'
+import { useTranslations } from 'next-intl'
 
 const SignUp = () => {
+  const t = useTranslations()
   return (
     <Container>
-      <h2 className='text-4xl font-bold text-left font-display'>Anmelden</h2>
+      <h2 className='text-4xl font-bold text-left font-display'>
+        {t('signup.title')}
+      </h2>
       <div className='flex flex-col md:flex-row gap-12 mt-12'>
         {/* <div className='flex-1 text-left'>
           <Button
@@ -30,15 +34,11 @@ const SignUp = () => {
         </p>  */}
         <div className='flex-1 text-left'>
           <h2 className='text-2xl font-bold text-left font-display'>
-            Newsletter
+            {t('signup.newsletter')}
           </h2>
 
           <p className='text-left mb-4'>
-            Die Anmeldung für das Coding Camp 2025 wird im Frühsommer 2025 möglich
-            sein. Willst du benachrichtigt werden, sobald die Anmeldung geöffnet
-            wird? Oder möchtest du über Neuigkeiten zum Camp und zukünftigen
-            Aktivitäten des Vereins informiert werden? <br /><br />
-            Dann trage dich in unseren Newsletter ein.
+            {t('signup.newsletter-text')}
           </p>
 
           <NewlsetterSignup />
@@ -50,3 +50,11 @@ const SignUp = () => {
 }
 
 export default SignUp
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      messages: (await import(`../messages/${locale}.json`)).default,
+    },
+  }
+}

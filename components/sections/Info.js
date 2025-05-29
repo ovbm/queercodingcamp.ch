@@ -9,8 +9,10 @@ import {
 import LocationImg from '../../public/images/schlafschloss.jpg'
 import A from '../Link'
 import Instagram from '../../public/images/Instagram.svg'
+import { useTranslations } from 'next-intl'
 
 const FAQ = () => {
+  const t = useTranslations()
   return (
     <div className='w-full'>
       <div className='w-full p-2 mx-auto bg-slate-900/20 rounded-2xl '>
@@ -18,7 +20,7 @@ const FAQ = () => {
           {({ open }) => (
             <>
               <Disclosure.Button className='flex justify-between w-full px-4 py-2 font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
-                <span>Wer kann am Queer Coding Camp teilnehmen?</span>
+                <span>{t('info.faq.who')}</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'transform rotate-180' : ''
@@ -26,11 +28,7 @@ const FAQ = () => {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className='px-4 pt-4 pb-2 text-left'>
-                Das Camp ist offen für alle queere Personen von 16 bis 23
-                Jahren. FINTA (Frauen, Inter, Nichtbinäre, Trans und Agender
-                Personen) und PoC (Persons of Color) sind in der Tech-Welt stark
-                untervertreten. Wir reservieren Plätze für Personen, die
-                Mehrfachdiskriminierungen erleben.
+                {t('info.faq.who-text')}
               </Disclosure.Panel>
             </>
           )}
@@ -39,7 +37,7 @@ const FAQ = () => {
           {({ open }) => (
             <>
               <Disclosure.Button className='flex justify-between w-full px-4 py-2 font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
-                <span>Was kostet das Queer Coding Camp?</span>
+                <span>{t('info.faq.cost')}</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'transform rotate-180' : ''
@@ -47,11 +45,7 @@ const FAQ = () => {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className='text-left px-4 pt-4 pb-2'>
-                Dank Unterstützung von Stiftungen und privaten Spenden ist die
-                Teilnahme gratis. Die Anfahrt musst du selbst bezahlen, im
-                Vorfeld des Lagers organisieren wir jeweils Reisegruppen von
-                Zürich und Bern. Falls das für dich nicht möglich ist, kannst du
-                das bei der Anmeldung anmerken und wir finden eine Lösung.
+                {t('info.faq.cost-text')}
               </Disclosure.Panel>
             </>
           )}
@@ -60,7 +54,7 @@ const FAQ = () => {
           {({ open }) => (
             <>
               <Disclosure.Button className='flex justify-between w-full px-4 py-2 font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
-                <span>Brauche ich Vorkenntnisse oder einen Laptop?</span>
+                <span>{t('info.faq.skills')}</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'transform rotate-180' : ''
@@ -68,9 +62,7 @@ const FAQ = () => {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className='text-left px-4 pt-4 pb-2'>
-                Du brauchst keine Programmier-Vorkenntnisse oder Affinität für
-                IT. Wenn du einen eigenen Laptop hast, bitten wir dich diesen
-                mitzubringen. Falls nicht, organisieren wir einen für dich.
+                {t('info.faq.skills-text')}
               </Disclosure.Panel>
             </>
           )}
@@ -79,7 +71,7 @@ const FAQ = () => {
           {({ open }) => (
             <>
               <Disclosure.Button className='flex justify-between w-full px-4 py-2 font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
-                <span>Wo und wann kann ich mich anmelden?</span>
+                <span>{t('info.faq.when')}</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'transform rotate-180' : ''
@@ -87,12 +79,11 @@ const FAQ = () => {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className='text-left px-4 pt-4 pb-2'>
-                Wir öffnen die Anmeldung für das Camp jeweils im Frühsommer. Du
-                kannst dich jetzt schon in{' '}
-                <a className='underline' href='#anmelden'>
-                  unseren Email-Verteiler eintragen
-                </a>
-                , dann melden wir uns bei dir, sobald die Ameldung geöffnet ist.
+                {t.rich('info.faq.when-text', {
+                  a: (chunks) => (
+                    <a className='underline' href='#anmelden'>{chunks}</a>
+                  ),
+                })}
               </Disclosure.Panel>
             </>
           )}
@@ -101,7 +92,7 @@ const FAQ = () => {
           {({ open }) => (
             <>
               <Disclosure.Button className='flex justify-between w-full px-4 py-2 font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
-                <span>Ist der Ort rollstuhlgängig?</span>
+                <span>{t('info.faq.accessibility')}</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'transform rotate-180' : ''
@@ -109,9 +100,7 @@ const FAQ = () => {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className='text-left px-4 pt-4 pb-2'>
-                Das Schlafschloss Sumiswald ist leider nicht rollstuhlgängig.
-                Wir haben bisher keinen barrierefreien Ort gefunden, der für die
-                Durchführung in Frage kommt. Kennst du einen? Schreib uns!
+                {t('info.faq.accessibility-text')}
               </Disclosure.Panel>
             </>
           )}
@@ -120,7 +109,7 @@ const FAQ = () => {
           {({ open }) => (
             <>
               <Disclosure.Button className='flex justify-between w-full px-4 py-2 font-medium text-left text-indigo-900 bg-indigo-100 rounded-lg hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
-                <span>Welche Sprachkenntnisse brauche ich?</span>
+                <span>{t('info.faq.language')}</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'transform rotate-180' : ''
@@ -128,9 +117,7 @@ const FAQ = () => {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className='text-left px-4 pt-4 pb-2'>
-                Die Core-Kurse (Web und Game) werden auf Deutsch durchgeführt.
-                Es gibt aber auch Workshops und Vorträge, die auf Englisch
-                gehalten werden.
+                {t('info.faq.language-text')}
               </Disclosure.Panel>
             </>
           )}
@@ -141,31 +128,28 @@ const FAQ = () => {
 }
 
 const CampInfo = ({ id }) => {
+  const t = useTranslations()
   return (
     <SectionContainer id={id}>
-      <h2 className='text-6xl font-bold text-left font-display'>Info</h2>
+      <h2 className='text-6xl font-bold text-left font-display'>
+        {t('info.title')}
+      </h2>
       <div className='flex flex-col gap-12 md:flex-row md:gap-16 mt-12'>
         <div className='flex-1 text-left'>
           <h2 className='text-2xl font-bold text-left font-display mb-4'>
-            Coding Camp
+            {t('info.coding-camp')}
           </h2>
           <p className='mb-4 '>
-            Das Queer Coding Camp ist ein einwöchiges Lager, an dem du erste
-            Erfahrungen mit Programmieren sammeln kannst. Queere
-            Programmierer*innen bringen dir ihre Skills bei und stehen dir als
-            Mentor*innen für deine eigenen Projekte zur Seite.
+            {t('info.coding-camp-text')}
           </p>
           <p className='mb-4 '>
-            Du lernst Grundkenntnisse in der Programmierung von Webseiten und
-            Games. Ausserdem gibt es Workshops und Inputs zu Themen wie Design
-            und künstliche Intelligenz.
+            {t('info.coding-camp-text-2')}
           </p>
           <p className=''>
-            Am Abend gibt es Spiele, Pen and Paper, Games oder einfach
-            gemütliches Zusammensein beim Lagerfeuer.
+            {t('info.coding-camp-text-3')}
           </p>
           <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
-            Location
+            {t('info.location')}
           </h2>
           <Image
             className='rounded-xl'
@@ -173,27 +157,23 @@ const CampInfo = ({ id }) => {
             src={LocationImg}
           />
           <p className='mt-4 '>
-            Das Coding Camp findet 2025 im.
-            <A
-              href='https://www.schlafschloss.ch'
-              target='_blank'
-              rel='noreferrer'
-              Icon={ArrowTopRightOnSquareIcon}
-            >
-              Schlafschloss Sumiswald
-            </A>
-            , in Emmental (Kanton Bern), statt. Als Teilnehmer*in übernachtest
-            du in Zweier- oder Dreierzimmern.
+            {t.rich('info.location-text', {
+              a: (chunks) => (
+                <A href='https://www.schlafschloss.ch' target='_blank' rel='noreferrer' Icon={ArrowTopRightOnSquareIcon}>
+                  {chunks}
+                </A>
+              ),
+            })}
           </p>
         </div>
         <div className='flex-1 text-left'>
           <h2 className='text-2xl font-bold text-left font-display mb-4'>
-            Weitere Fragen (FAQ)
+            {t('info.faq-title')}
           </h2>
           <div className='flex flex-col md:flex-row gap-8'>
             <FAQ />
           </div>
-          <p className='mt-8'>Noch Fragen? Schreib uns auf:</p>
+          <p className='mt-8'>{t('info.faq-contact')}</p>
           <div className='flex gap-8'>
             <a
               href='https://www.instagram.com/queercodingcamp/'

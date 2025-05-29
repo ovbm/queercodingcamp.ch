@@ -3,26 +3,27 @@ import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 import SectionContainer from './Container'
 import A from '../Link'
 import Supporter from '../Supporter'
-
-// Warum besser rauskommen, Texte nehmen, die schon existieren.
+import { useTranslations } from 'next-intl'
 
 const Supporters = ({ id }) => {
+  const t = useTranslations()
   return (
     <SectionContainer id={id}>
       <h2 className='text-6xl font-bold text-left font-display'>
-        Ermöglicht durch
+        {t('supporters.title')}
       </h2>
       <p className='text-left mt-8'>
-        Das Queer Coding Camp kann Dank der finanziellen Untertsützung von
-        Stiftungen und Sponsoring-Beiträgen von Unternehmen stattfinden. Möchte
-        auch dein Unternehmen das Projekt unterstützen? Infos dazu in unserem{' '}
-        <A
-          taget='_blank'
-          Icon={ArrowTopRightOnSquareIcon}
-          href='https://queercodingcamp.notion.site/Queer-Coding-Camp-KMU-Sponsoring-bb0ed022360e445e92abe94238f78646'
-        >
-          Sponsoring Aufruf für KMU&apos;s
-        </A>
+        {t.rich('supporters.text', {
+          a: (chunks) => (
+            <A
+              taget='_blank'
+              Icon={ArrowTopRightOnSquareIcon}
+              href='https://queercodingcamp.notion.site/Queer-Coding-Camp-KMU-Sponsoring-bb0ed022360e445e92abe94238f78646'
+            >
+              {chunks}
+            </A>
+          ),
+        })}
       </p>
       <div className='flex flex-wrap gap-8 justify-start items-center md:gap-12 mt-16'>
         <Supporter
@@ -44,13 +45,6 @@ const Supporters = ({ id }) => {
           name='Hasler Stiftung'
           width={200}
         />
-
-        {/* <Supporter
-          href='https://www.puzzle.ch/de/stellen'
-          imageSrc='/images/puzzle_itc_logo.svg'
-          name='Puzzle ITC'
-          hiring={true}
-        /> */}
         <Supporter
           href='https://www.fanaka.ch'
           imageSrc='/images/fanaka_logo.svg'
