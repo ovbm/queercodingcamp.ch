@@ -13,115 +13,53 @@ import { useTranslations } from 'next-intl'
 
 const FAQ = () => {
   const t = useTranslations()
+
+  const faq = [
+    {
+      question: t('info.faq.who'),
+      answer: t('info.faq.who-text'),
+    },
+    {
+      question: t('info.faq.cost'),
+      answer: t('info.faq.cost-text'),
+    },
+    {
+      question: t('info.faq.skills'),
+      answer: t('info.faq.skills-text'),
+    },
+    {
+      question: t('info.faq.when'),
+      answer: t('info.faq.when-text'),
+    },
+    {
+      question: t('info.faq.accessibility'),
+      answer: t('info.faq.accessibility-text'),
+    },
+    {
+      question: t('info.faq.language'),
+      answer: t('info.faq.language-text'),
+    },
+  ]
   return (
     <div className='w-full'>
-      <div className='w-full p-2 mx-auto bg-slate-900/20 rounded-2xl '>
-        <Disclosure>
-          {({ open }) => (
-            <>
-              <Disclosure.Button className='text-xl font-display flex justify-between w-full px-4 py-2 text-left rounded-lg bg-gray-900/50 hover:bg-gray-700/50 backdrop-blur-sm backdrop-saturate-200 shadow-lg focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
-                <span>{t('info.faq.who')}</span>
-                <ChevronUpIcon
-                  className={`${open ? 'transform rotate-180' : ''} w-5 h-5`}
-                />
-              </Disclosure.Button>
-              <Disclosure.Panel className='px-4 pt-4 pb-2 text-left text-lg'>
-                {t('info.faq.who-text')}
-              </Disclosure.Panel>
-            </>
-          )}
-        </Disclosure>
-        <Disclosure as='div' className='mt-2'>
-          {({ open }) => (
-            <>
-              <Disclosure.Button className='text-xl font-display flex justify-between w-full px-4 py-2 text-left rounded-lg bg-gray-900/50 hover:bg-gray-700/50 backdrop-blur-sm backdrop-saturate-200 shadow-lg focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
-                <span>{t('info.faq.cost')}</span>
-                <ChevronUpIcon
-                  className={`${
-                    open ? 'transform rotate-180' : ''
-                  } w-5 h-5`}
-                />
-              </Disclosure.Button>
-              <Disclosure.Panel className='text-left text-lg px-4 pt-4 pb-2'>
-                {t('info.faq.cost-text')}
-              </Disclosure.Panel>
-            </>
-          )}
-        </Disclosure>
-        <Disclosure as='div' className='mt-2'>
-          {({ open }) => (
-            <>
-              <Disclosure.Button className='text-xl font-display flex justify-between w-full px-4 py-2 text-left rounded-lg bg-gray-900/50 hover:bg-gray-700/50 backdrop-blur-sm backdrop-saturate-200 shadow-lg focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
-                <span>{t('info.faq.skills')}</span>
-                <ChevronUpIcon
-                  className={`${
-                    open ? 'transform rotate-180' : ''
-                  } w-5 h-5`}
-                />
-              </Disclosure.Button>
-              <Disclosure.Panel className='text-left text-lg px-4 pt-4 pb-2'>
-                {t('info.faq.skills-text')}
-              </Disclosure.Panel>
-            </>
-          )}
-        </Disclosure>
-        <Disclosure as='div' className='mt-2'>
-          {({ open }) => (
-            <>
-              <Disclosure.Button className='text-xl font-display flex justify-between w-full px-4 py-2 text-left rounded-lg bg-gray-900/50 hover:bg-gray-700/50 backdrop-blur-sm backdrop-saturate-200 shadow-lg focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
-                <span>{t('info.faq.when')}</span>
-                <ChevronUpIcon
-                  className={`${
-                    open ? 'transform rotate-180' : ''
-                  } w-5 h-5`}
-                />
-              </Disclosure.Button>
-              <Disclosure.Panel className='text-left text-lg px-4 pt-4 pb-2'>
-                {t.rich('info.faq.when-text', {
-                  a: (chunks) => (
-                    <a className='underline' href='#anmelden'>
-                      {chunks}
-                    </a>
-                  ),
-                })}
-              </Disclosure.Panel>
-            </>
-          )}
-        </Disclosure>
-        <Disclosure as='div' className='mt-2'>
-          {({ open }) => (
-            <>
-              <Disclosure.Button className='text-xl font-display flex justify-between w-full px-4 py-2 text-left rounded-lg bg-gray-900/50 hover:bg-gray-700/50 backdrop-blur-sm backdrop-saturate-200 shadow-lg focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
-                <span>{t('info.faq.accessibility')}</span>
-                <ChevronUpIcon
-                  className={`${
-                    open ? 'transform rotate-180' : ''
-                  } w-5 h-5`}
-                />
-              </Disclosure.Button>
-              <Disclosure.Panel className='text-left text-lg px-4 pt-4 pb-2'>
-                {t('info.faq.accessibility-text')}
-              </Disclosure.Panel>
-            </>
-          )}
-        </Disclosure>
-        <Disclosure as='div' className='mt-2'>
-          {({ open }) => (
-            <>
-              <Disclosure.Button className='text-xl font-display flex justify-between w-full px-4 py-2 text-left rounded-lg bg-gray-900/50 hover:bg-gray-700/50 backdrop-blur-sm backdrop-saturate-200 shadow-lg focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
-                <span>{t('info.faq.language')}</span>
-                <ChevronUpIcon
-                  className={`${
-                    open ? 'transform rotate-180' : ''
-                  } w-5 h-5`}
-                />
-              </Disclosure.Button>
-              <Disclosure.Panel className='text-left text-lg px-4 pt-4 pb-2'>
-                {t('info.faq.language-text')}
-              </Disclosure.Panel>
-            </>
-          )}
-        </Disclosure>
+      <div className='w-full p-3 mx-auto bg-slate-900/20 rounded-2xl '>
+        {faq.map((item) => (
+          <Disclosure key={item.question} as='div' className='mt-3 first:mt-0'>
+            {({ open }) => (
+              <>
+                <Disclosure.Button className='text-xl font-display flex justify-between w-full px-4 py-2 text-left rounded-lg bg-gray-900/50 hover:bg-gray-700/50 backdrop-blur-sm backdrop-saturate-200 shadow-lg focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75'>
+                  <span>{item.question}</span>
+                  <ChevronUpIcon
+                    className={`${open ? 'transform rotate-180' : ''} w-5 h-5`}
+                  />
+                </Disclosure.Button>
+                <Disclosure.Panel className='px-4 pt-4 pb-2 text-left text-lg'>
+                  {item.answer}
+                </Disclosure.Panel>
+              </>
+            )}
+          </Disclosure>
+        ))}
       </div>
     </div>
   )
