@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import Layout from '../components/Layout'
 import { NextIntlClientProvider } from 'next-intl'
 import { useRouter } from 'next/router'
+import { Analytics } from '@vercel/analytics/next'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
@@ -14,6 +15,7 @@ function MyApp({ Component, pageProps }) {
     >
       <Layout>
         <Component {...pageProps} />
+        <Analytics />
       </Layout>
     </NextIntlClientProvider>
   )
