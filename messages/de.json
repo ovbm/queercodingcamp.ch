@@ -78,5 +78,23 @@
     "annual-donation": "Jährliche Spende 🎉",
     "donate-with-twint": "Mit Twint spenden",
     "donate-with-paypal": "Mit PayPal spenden"
+  },
+  "seo-meta": {
+    "index": {
+      "title": "Queer Coding Camp - Programmieren lernen für LGBTQ+ Jugendliche",
+      "description": "Lerne Programmieren am Queer Coding Camp! Eine Woche Web- & Game-Development für queere Menschen von 16-23 Jahren. Kostenlos in der Schweiz."
+    },
+    "about": {
+      "title": "Über uns - Queer Coding Camp Team & Mission für Tech-Vielfalt",
+      "description": "Erfahre mehr über das Queer Coding Camp Team und unsere Mission, die Tech-Branche inklusiver für LGBTQ+ Menschen zu gestalten."
+    },
+    "signup": {
+      "title": "Anmeldung - Queer Coding Camp 2025 | Kostenlos teilnehmen",
+      "description": "Melde dich jetzt für das Queer Coding Camp 2025 an! Kostenlose Programmier-Woche für queere Jugendliche in Sumiswald, Schweiz."
+    },
+    "donate": {
+      "title": "Spenden - Unterstütze das Queer Coding Camp",
+      "description": "Unterstütze uns die Tech-Welt zu queeren und ermögliche jungen LGBTQ+ Menschen die Teilnahme am Queer Coding Camp."
+    }
   }
 }

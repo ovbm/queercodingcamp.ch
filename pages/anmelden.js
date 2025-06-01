@@ -5,16 +5,22 @@ import Link from '../components/Link'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import Button from '../components/Button'
 import { useTranslations } from 'next-intl'
+import Meta from '../components/Meta'
 
 const SignUp = () => {
   const t = useTranslations()
   return (
-    <Container>
-      <h2 className='text-4xl font-bold text-left font-display'>
-        {t('signup.title')}
-      </h2>
-      <div className='flex flex-col md:flex-row gap-12 mt-12'>
-        {/* <div className='flex-1 text-left'>
+    <>
+      <Meta
+        title={t('seo-meta.signup.title')}
+        description={t('seo-meta.signup.description')}
+      />
+      <Container>
+        <h2 className='text-4xl font-bold text-left font-display'>
+          {t('signup.title')}
+        </h2>
+        <div className='flex flex-col md:flex-row gap-12 mt-12'>
+          {/* <div className='flex-1 text-left'>
           <Button
             className='w-full block text-center mb-4 font-display font-bold text-indigo-900'
             target='_blank'
@@ -32,20 +38,19 @@ const SignUp = () => {
           Neuigkeiten zum Camp und zukünftigen Aktivitäten des Vereins
           informiert werden? Dann trage dich in unseren Newsletter ein.
         </p>  */}
-        <div className='flex-1 text-left'>
-          <h2 className='text-2xl font-bold text-left font-display'>
-            {t('signup.newsletter')}
-          </h2>
+          <div className='flex-1 text-left'>
+            <h2 className='text-2xl font-bold text-left font-display'>
+              {t('signup.newsletter')}
+            </h2>
 
-          <p className='text-left mb-4'>
-            {t('signup.newsletter-text')}
-          </p>
+            <p className='text-left mb-4'>{t('signup.newsletter-text')}</p>
 
-          <NewlsetterSignup />
+            <NewlsetterSignup />
+          </div>
+          <div className='flex-1 text-left'></div>
         </div>
-        <div className='flex-1 text-left'></div>
-      </div>
-    </Container>
+      </Container>
+    </>
   )
 }
 

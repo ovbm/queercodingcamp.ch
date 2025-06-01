@@ -2,10 +2,16 @@ import React from 'react'
 import Container from '../components/Container'
 import DonationBox from '../components/DonationBox'
 import { useTranslations } from 'next-intl'
+import Meta from '../components/Meta'
 
 const Donate = () => {
   const t = useTranslations()
   return (
+    <>
+      <Meta
+        title={t('seo-meta.donate.title')}
+        description={t('seo-meta.donate.description')}
+      />
     <Container>
       <h2 className='text-4xl font-bold text-left font-display'>
         {t('donate.title')}
@@ -21,9 +27,10 @@ const Donate = () => {
           <p className='mb-8'>
             {t.rich('donate.text-4', { br: () => <br /> })}
           </p>
+          </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </>
   )
 }
 

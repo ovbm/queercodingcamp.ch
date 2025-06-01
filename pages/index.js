@@ -2,13 +2,15 @@ import Meta from '../components/Meta'
 import CampInfoSection from '../components/sections/Info'
 import TopSection from '../components/sections/Top'
 import SupporterSection from '../components/sections/Supporters'
+import { useTranslations } from 'next-intl'
 
 export default function Home() {
+  const t = useTranslations()
   return (
     <>
       <Meta
-        title='Queer Coding Camp'
-        description='Programmieren lernen für junge queere Menschen.'
+        title={t('seo-meta.index.title')}
+        description={t('seo-meta.index.description')}
       />
       <main className='flex flex-col items-center justify-center w-full flex-1 text-center'>
         <TopSection id='top' />

@@ -5,6 +5,7 @@ import {
   HeartIcon,
 } from '@heroicons/react/24/solid'
 import { useTranslations } from 'next-intl'
+import Meta from '../components/Meta'
 
 import Container from '../components/Container'
 import Profile from '../components/Profile'
@@ -18,9 +19,14 @@ import liam from '../public/images/liam-small.png'
 const Ueber = () => {
   const t = useTranslations()
   return (
-    <Container>
-      <h2 className='text-4xl font-bold text-left font-display'>
-        {t('about.title')}
+    <>
+      <Meta
+        title={t('seo-meta.about.title')}
+        description={t('seo-meta.about.description')}
+      />
+      <Container>
+        <h2 className='text-4xl font-bold text-left font-display'>
+          {t('about.title')}
       </h2>
       <div className='flex flex-col md:flex-row gap-16 mt-4'>
         <div className='flex-1 text-left'>
@@ -100,9 +106,10 @@ const Ueber = () => {
               bio={t('about.tabea')}
             />
           </div>
+          </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </>
   )
 }
 
