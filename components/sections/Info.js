@@ -85,7 +85,7 @@ const CampInfo = ({ id }) => {
           </h2>
           <Image
             className='rounded-xl'
-            alt='Cima Citta in Dangio'
+            alt='Schlafschloss in Sumiswald'
             src={LocationImg}
           />
           <p className='mt-4 '>
