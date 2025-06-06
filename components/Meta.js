@@ -104,14 +104,6 @@ const Meta = ({ title, description, type = 'website' }) => {
           __html: JSON.stringify(organizationStructuredData)
         }}
       />
-      {courseStructuredData && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(courseStructuredData)
-          }}
-        />
-      )}
     </Head>
   )
 }
