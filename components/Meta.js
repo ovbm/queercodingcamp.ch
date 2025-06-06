@@ -73,7 +73,54 @@ const Meta = ({ title, description, type = 'website' }) => {
         "addressRegion": "Bern",
         "addressCountry": "CH"
       }
-    }
+    },
+    "offers": [{
+      "@type": "Offer",
+      "category": "Free",
+      "priceCurrency": "CHF",
+      "price": 0,
+      "description": router.locale === 'de' 
+        ? "Kostenlose Teilnahme dank Stiftungsunterstützung"
+        : "Free participation thanks to foundation support"
+    }],
+    "hasCourseInstance": [{
+      "@type": "CourseInstance",
+      "courseMode": "offline",
+      "location": {
+        "@type": "Place",
+        "name": "Schlafschloss Sumiswald",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Sumiswald",
+          "addressRegion": "Bern",
+          "addressCountry": "CH"
+        }
+      },
+      "courseSchedule": {
+        "@type": "Schedule",
+        "duration": "P5D",
+        "startDate": "2025-10-05",
+        "endDate": "2025-10-10"
+      },
+      "instructor": [
+        {
+          "@type": "Person",
+          "name": "Olivier Baumann",
+          "description": router.locale === 'de' 
+            ? "Produkt-Entwickler und Mitgründer des Queer Coding Camps"
+            : "Product Developer and Co-founder of Queer Coding Camp"
+        },
+        {
+          "@type": "Person",
+          "name": "Tabea Iseli", 
+          "description": router.locale === 'de'
+            ? "Game-Designerin und Programmiererin"
+            : "Game Designer and Programmer"
+        }
+      ],
+      "maximumAttendeeCapacity": 16,
+      "eventStatus": "https://schema.org/EventScheduled"
+    }]
   } : null
 
   return (
