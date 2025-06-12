@@ -63,7 +63,9 @@
   "signup": {
     "title": "Sign up",
     "newsletter": "Newsletter",
-    "newsletter-text": "Do you want to be informed about news about the camp and future activities of the association? Then sign up for our newsletter."
+    "newsletter-text": "Do you want to be informed about news about the camp and future activities of the association? Then sign up for our newsletter.",
+    "text": "Register now for Queer Coding Camp 2025 from 5th to 10th October in Sumiswald. Registration deadline: Monday, 30th June at 23:59. Participation is free of charge.",
+    "button": "Sign up now!"
   },
   "donate": {
     "title": "Help us to queer the tech world!",
@@ -97,4 +99,5 @@
       "description": "Help us make tech more diverse and enable young LGBTQ+ people to learn to code. Donate to the non-profit Queer Coding Camp."
     }
   }
+
 }

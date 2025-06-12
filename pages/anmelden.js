@@ -1,8 +1,8 @@
 import React from 'react'
 import Container from '../components/Container'
-import NewlsetterSignup from '../components/NewsletterSignup'
-import Link from '../components/Link'
-import { EnvelopeIcon } from '@heroicons/react/24/solid'
+// import NewlsetterSignup from '../components/NewsletterSignup'
+// import Link from '../components/Link'
+// import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import Button from '../components/Button'
 import { useTranslations } from 'next-intl'
 import Meta from '../components/Meta'
@@ -22,16 +22,14 @@ const SignUp = () => {
         <div className='flex flex-col md:flex-row gap-12 mt-12'>
           <div className='flex-1 text-left'>
             <p className='text-left mb-4'>
-              Melde dich jetzt an für das Queer Coding Camp 2025 vom 5. Oktober
-              bis 10. Oktober in Sumiswald. Anmeldeschluss ist Montag, 30. Juni
-              um 23:59 Uhr. Die Anmeldung ist kostenlos.
+              {t('signup.text')}
             </p>
             <Button
               className='w-full block text-center mb-4 pb-2 font-display font-bold text-indigo-900'
               target='_blank'
               href='https://docs.google.com/forms/d/e/1FAIpQLSfUHe57JQj2MPppoKhDxFAs3-c-2O4fHpMc4DV11guqlNx3Jg/viewform'
             >
-              Jetzt Anmelden
+              {t('signup.button')}
             </Button>
           </div>
           <div className='flex-1 text-left'></div>

@@ -63,7 +63,9 @@
   "signup": {
     "title": "Anmelden",
     "newsletter": "Newsletter",
-    "newsletter-text": "Du möchtest über Neuigkeiten zum Camp und zukünftigen Aktivitäten des Vereins informiert werden? Dann trage dich in unseren Newsletter ein."
+    "newsletter-text": "Du möchtest über Neuigkeiten zum Camp und zukünftigen Aktivitäten des Vereins informiert werden? Dann trage dich in unseren Newsletter ein.",
+    "text": "Melde dich jetzt an für das Queer Coding Camp 2025 vom 5. Oktober bis 10. Oktober in Sumiswald. Anmeldeschluss ist Montag, 30. Juni um 23:59 Uhr. Die Anmeldung ist kostenlos.",
+    "button": "Jetzt Anmelden"
   },
   "donate": {
     "title": "Hilf uns die Tech-Welt zu queeren!",
