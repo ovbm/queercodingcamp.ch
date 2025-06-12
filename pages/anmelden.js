@@ -20,25 +20,23 @@ const SignUp = () => {
           {t('signup.title')}
         </h2>
         <div className='flex flex-col md:flex-row gap-12 mt-12'>
-          {/* <div className='flex-1 text-left'>
-          <Button
-            className='w-full block text-center mb-4 font-display font-bold text-indigo-900'
-            target='_blank'
-            href='https://docs.google.com/forms/d/e/1FAIpQLSe8ERwIG9f01FAJ2leGcpXDv3VrwiVPK1T2PpqiVxx0xpEepQ/viewform?usp=sf_link'
-          >
-            Zum Anmeldeformular
-          </Button>
-          <p className='text-left mb-4'>
-            Für das Camp im Oktober sind noch ein paar wenige Plätze verfügbar.
-          </p>
-        </div>
-        <p className='text-left mb-4'>
-          Die Anmeldungen für das Camp im Oktober 2024 sind geschlossen. Es kann
-          sein, dass im Herbst kurzfristig Plätze frei werden. Willst du
-          Neuigkeiten zum Camp und zukünftigen Aktivitäten des Vereins
-          informiert werden? Dann trage dich in unseren Newsletter ein.
-        </p>  */}
           <div className='flex-1 text-left'>
+            <p className='text-left mb-4'>
+              Melde dich jetzt an für das Queer Coding Camp 2025 vom 5. Oktober
+              bis 10. Oktober in Sumiswald. Anmeldeschluss ist Montag, 30. Juni
+              um 23:59 Uhr. Die Anmeldung ist kostenlos.
+            </p>
+            <Button
+              className='w-full block text-center mb-4 pb-2 font-display font-bold text-indigo-900'
+              target='_blank'
+              href='https://docs.google.com/forms/d/e/1FAIpQLSfUHe57JQj2MPppoKhDxFAs3-c-2O4fHpMc4DV11guqlNx3Jg/viewform'
+            >
+              Jetzt Anmelden
+            </Button>
+          </div>
+          <div className='flex-1 text-left'></div>
+
+          {/* <div className='flex-1 text-left'>
             <h2 className='text-2xl font-bold text-left font-display'>
               {t('signup.newsletter')}
             </h2>
@@ -46,8 +44,7 @@ const SignUp = () => {
             <p className='text-left mb-4'>{t('signup.newsletter-text')}</p>
 
             <NewlsetterSignup />
-          </div>
-          <div className='flex-1 text-left'></div>
+          </div> */}
         </div>
       </Container>
     </>

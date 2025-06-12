@@ -21,15 +21,13 @@ const Top = ({ id }) => {
           <h1 className='text-5xl md:text-7xl font-bold font-display'>
             {t('index.title')}
           </h1>
-          <p className='text-2xl mt-3 font-display'>
-            {t('index.subtitle')}
-          </p>
-          {/* <Button
-            href='#anmelden'
-            className='font-display font-bold mt-4 inline-block'
+          <p className='text-2xl mt-3 font-display'>{t('index.subtitle')}</p>
+          <Button
+            href='https://docs.google.com/forms/d/e/1FAIpQLSfUHe57JQj2MPppoKhDxFAs3-c-2O4fHpMc4DV11guqlNx3Jg/viewform'
+            className='font-display font-bold mt-4 pb-2 inline-block text-indigo-900'
           >
             Anmelden
-          </Button> */}
+          </Button>
         </div>
       </div>
     </SectionContainer>
