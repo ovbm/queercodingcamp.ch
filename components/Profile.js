@@ -34,8 +34,8 @@ const Profile = ({ imageSrc, name, bio, twitter, threads, bsky }) => {
         className='rounded-full grayscale'
         layout='fixed'
         src={imageSrc}
-        width={64}
-        height={64}
+        width={96}
+        height={96}
         alt={name}
       />
       <div className='flex-1 ml-4'>
