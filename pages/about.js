@@ -12,7 +12,7 @@ import Profile from '../components/Profile'
 import Link from '../components/Link'
 import olivier from '../public/images/olivier.jpg'
 import tabea from '../public/images/tabea.jpeg'
-import samuel from '../public/images/SamVonaesch2024.jpeg'
+import skyler from '../public/images/skyler.png'
 import eva from '../public/images/eva.jpeg'
 import liam from '../public/images/liam-small.png'
 
@@ -94,10 +94,9 @@ const Ueber = () => {
               bio={t('about.olivier')}
             />
             <Profile
-              imageSrc={samuel}
-              twitter='elephantatwork'
-              name={t('about.samuel-name')}
-              bio={t('about.samuel')}
+              imageSrc={skyler}
+              name={t('about.skyler-name')}
+              bio={t('about.skyler')}
             />
             <Profile
               imageSrc={tabea}
