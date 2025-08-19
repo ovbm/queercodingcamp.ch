@@ -25,7 +25,7 @@
       "when": "Wo und wann kann ich mich anmelden?",
       "when-text": "Wir öffnen die Anmeldung für das Camp jeweils im Frühsommer. Du kannst dich jetzt schon in unseren Email-Verteiler eintragen, dann melden wir uns bei dir, sobald die Ameldung geöffnet ist.",
       "accessibility": "Ist der Ort rollstuhlgängig?",
-      "accessibility-text": "Das Schlafschloss Sumiswald ist leider nicht rollstuhlgängig. Wir haben bisher keinen barrierefreien Ort gefunden, der für die Durchführung in Frage kommt. Kennst du einen? Schreib uns!",
+      "accessibility-text": "Das Schlafschloss Sumiswald war früher ein Pflegeheim und ist daher potenziell rollstuhlgängig. Wir evaluieren gegenwärtig ob wir in 2026 die Anmeldung für Personen, die einen Rollstuhl benötigen, öffnen können.",
       "language": "Welche Sprachkenntnisse brauche ich?",
       "language-text": "Die Core-Kurse (Web und Game) wurden bisher auf Deutsch durchgeführt. Workshops und Vorträge teils auch auf Englisch. Alle Lehrenden sprechen fliessend Deutsch und Englisch. Eine Teilnahme ist möglich, wenn eine der beiden Sprachen verstanden wird."
     },
@@ -57,8 +57,8 @@
     "olivier": "Olivier ist Produkt-Entwickler beim Online Magazin Republik. Davor hat er in Kopenhagen das Klima-Startup electricityMap mitgegründet. Im Herbst 2021 hat er das Projekt Queer Coding Camp initiiert. ",
     "skyler-name": "Skyler Goldschmid (Sie/They), Programmleitung",
     "skyler": "Skyler ist in Ausbildung zur Betriebliche Mentorin um Menschen in Lern-, Veränderungs- und Entwicklungsprozessen zu Begleiten. Nebst ihrer Tätigkeit als Entwicklungsingenieur, hat Skyler in DEI und Awareness Teams gewirkt. Sie hat selber am QCC im 2022 teilgenommen.",
-    "tabea-name": "Tabea Iseli (she/they), Vorstand",
-    "tabea": "Tabea ist Gründerin des Game-Studios Stardust und seit über zehn Jahren als Game-Designerin und Programmiererin tätig."
+    "beau-name": "Beau Iseli, Vorstand",
+    "beau": "Beau hat das Game-Studio Stardust gegründet und ist seit über zehn Jahren im Game-Design und Programmieren tätig."
   },
   "signup": {
     "title": "Anmelden",

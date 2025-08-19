@@ -11,7 +11,7 @@ import Container from '../components/Container'
 import Profile from '../components/Profile'
 import Link from '../components/Link'
 import olivier from '../public/images/olivier.jpg'
-import tabea from '../public/images/tabea.jpeg'
+import beau from '../public/images/beau.jpg'
 import skyler from '../public/images/skyler.png'
 import eva from '../public/images/eva.jpeg'
 import liam from '../public/images/liam-small.png'
@@ -99,10 +99,9 @@ const Ueber = () => {
               bio={t('about.skyler')}
             />
             <Profile
-              imageSrc={tabea}
-              twitter='ElisaItabe'
-              name={t('about.tabea-name')}
-              bio={t('about.tabea')}
+              imageSrc={beau}
+              name={t('about.beau-name')}
+              bio={t('about.beau')}
             />
           </div>
           </div>
