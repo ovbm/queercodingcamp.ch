@@ -22,12 +22,12 @@ const Top = ({ id }) => {
             {t('index.title')}
           </h1>
           <p className='text-2xl mt-3 font-display'>{t('index.subtitle')}</p>
-          <Button
+          {/* <Button
             href='https://docs.google.com/forms/d/e/1FAIpQLSfUHe57JQj2MPppoKhDxFAs3-c-2O4fHpMc4DV11guqlNx3Jg/viewform'
             className='font-display font-bold mt-4 pb-2 inline-block text-indigo-900'
           >
             {t('signup.button')}
-          </Button>
+          </Button> */}
         </div>
       </div>
     </SectionContainer>

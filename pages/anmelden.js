@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from '../components/Container'
-// import NewlsetterSignup from '../components/NewsletterSignup'
+import NewlsetterSignup from '../components/NewsletterSignup'
 // import Link from '../components/Link'
 // import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import Button from '../components/Button'
@@ -20,7 +20,7 @@ const SignUp = () => {
           {t('signup.title')}
         </h2>
         <div className='flex flex-col md:flex-row gap-12 mt-12'>
-          <div className='flex-1 text-left'>
+          {/* <div className='flex-1 text-left'>
             <p className='text-left mb-4'>
               {t('signup.text')}
             </p>
@@ -31,10 +31,11 @@ const SignUp = () => {
             >
               {t('signup.button')}
             </Button>
-          </div>
-          <div className='flex-1 text-left'></div>
+          </div> */}
 
-          {/* <div className='flex-1 text-left'>
+          <div className='flex-1 text-left'>
+            <p className='text-left mb-4'>{t('signup.text-closed')}</p>
+
             <h2 className='text-2xl font-bold text-left font-display'>
               {t('signup.newsletter')}
             </h2>
@@ -42,7 +43,9 @@ const SignUp = () => {
             <p className='text-left mb-4'>{t('signup.newsletter-text')}</p>
 
             <NewlsetterSignup />
-          </div> */}
+          </div>
+          <div className='flex-1 text-left'></div>
+
         </div>
       </Container>
     </>
