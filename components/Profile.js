@@ -29,16 +29,16 @@ const BlueskyIcon = () => (
 
 const Profile = ({ imageSrc, name, bio, twitter, threads, bsky }) => {
   return (
-    <div className='flex w-full mb-8'>
+    <div className='flex w-full'>
       <Image
         className='rounded-full grayscale'
         layout='fixed'
         src={imageSrc}
-        width={96}
-        height={96}
+        width={112}
+        height={112}
         alt={name}
       />
-      <div className='flex-1 ml-4'>
+      <div className='flex flex-col flex-1 ml-4 gap-2'>
         <p className='text-left font-display font-bold'>{name}</p>
         <p className='text-left leading-tight font-normal'>{bio}</p>
         {twitter && (

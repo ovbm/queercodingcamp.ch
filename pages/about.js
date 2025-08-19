@@ -75,7 +75,7 @@ const Ueber = () => {
           <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
             {t('about.board')}
           </h2>
-          <div className='flex flex-col'>
+          <div className='flex flex-col gap-12'>
             <Profile
               imageSrc={eva}
               name={t('about.eva-name')}
