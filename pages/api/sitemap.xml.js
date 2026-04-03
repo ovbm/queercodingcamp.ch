@@ -31,6 +31,13 @@ export default function handler(req, res) {
     <xhtml:link rel="alternate" hreflang="de" href="https://www.queercodingcamp.ch/spenden" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.queercodingcamp.ch/en/spenden" />
   </url>
+  <url>
+    <loc>https://www.queercodingcamp.ch/sme</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.queercodingcamp.ch/sme" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.queercodingcamp.ch/en/sme" />
+  </url>
   
   <!-- English locale pages -->
   <url>
@@ -60,6 +67,13 @@ export default function handler(req, res) {
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.queercodingcamp.ch/spenden" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.queercodingcamp.ch/en/spenden" />
+  </url>
+  <url>
+    <loc>https://www.queercodingcamp.ch/en/sme</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.65</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.queercodingcamp.ch/sme" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.queercodingcamp.ch/en/sme" />
   </url>
 </urlset>`
 

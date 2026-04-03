@@ -12,8 +12,8 @@
   },
   "supporters": {
     "title": "Supported by",
-    "text": "Queer Coding Camp is made possible with the financial support of foundations and sponsorship contributions from companies. Would you also like to support the project? Find out how in our <a>Sponsorship Call</a>."
-  }, 
+    "text": "Queer Coding Camp is made possible with the financial support of foundations and sponsorship contributions from companies. Would you also like to support the project? Find out how in our <a>SME sponsorship overview</a>."
+  },
   "info": {
     "faq": {
       "who": "Who can attend Queer Coding Camp?",
@@ -25,11 +25,11 @@
       "when": "Where and when can I sign up?",
       "when-text": "We open the registration for the camp in spring. You can subscribe to our newsletter, so you'll be notified as soon as registration opens.",
       "accessibility": "Is the location wheelchair accessible?",
-      "accessibility-text": "The Schlafschloss Sumiswald used to be a nursing home, which is why it's potentially accesible for people using wheelchairs. We are currently in the process of getting an official assessment done, so we can potentially open registration for people using wheelchairs next year (2026).",
+      "accessibility-text": "The Schlafschloss Sumiswald used to be a nursing home, which is why it's accesible for people using wheelchairs. Get in touch with us, to discuss your needs.",
       "language": "What language skills do I need?",
-      "language-text": "Core courses (Web and Game) have so far been held in German while workshops and guest lectures sometimes were conducted in English. All instructors are fluent in German and English. Participants who speak either language should be able to follow the course."  
+      "language-text": "Core courses (Web and Game) have so far been held in German while workshops and guest lectures sometimes were conducted in English. All instructors are fluent in German and English. Participants who speak either language should be able to follow the course."
     },
-    "title": "Info",  
+    "title": "Info",
     "coding-camp": "Coding Camp",
     "coding-camp-text": "Queer Coding Camp is a one-week camp where you can gain your first experience with programming. Queer programmers share their skills and help you with your own projects.",
     "coding-camp-text-2": "You'll learn basic knowledge in web or game development. In addition, there are workshops and inputs on topics such as design and artificial intelligence.",
@@ -73,7 +73,7 @@
     "text-1": "With your donation you enable young queer people to participate in the Queer Coding Camp.",
     "text-2": "The Queer Coding Camp association was recognized as a non-profit association by the canton of Zurich in 2024 and is therefore tax-exempt. Contact us for donation certificates (for donations of CHF 100 or more per year).",
     "text-3": "Donations can also be made via bank transfer:",
-    "text-4": "Name: Queer Coding Camp <br></br> Location: 8003 Zurich <br></br> IBAN: CH25 0900 0000 1584 8382 5", 
+    "text-4": "Name: Queer Coding Camp <br></br> Location: 8003 Zurich <br></br> IBAN: CH25 0900 0000 1584 8382 5",
     "credit-card": "Credit card",
     "twint": "Twint",
     "paypal": "Paypal",
@@ -99,6 +99,42 @@
       "title": "Donate - Support Queer Coding Camp",
       "description": "Help us make tech more diverse and enable young LGBTQ+ people to learn to code. Donate to the non-profit Queer Coding Camp."
     }
+  },
+  "sme": {
+    "seo-title": "SME sponsorship – Queer Coding Camp 2026",
+    "seo-description": "Sponsor from CHF 1,000: visibility on our website and in marketing materials. Support young queer people entering tech. Budget, timeline, and contacts.",
+    "title": "Queer Coding Camp 2026 – SME sponsorship",
+    "summary": "We are looking for IT companies to support the Queer Coding Camp youth camp with at least <strong>CHF 1,000</strong> – and in doing so, help young queer people find their place in the tech world. In return, sponsors are prominently featured and linked on our website and in future promotional materials.",
+    "unified-title": "Queer Coding Camp",
+    "unified-1": "For many queer people, the tech industry still doesn't feel like a place for them. Those who don't fit the default mould rarely feel welcomed, and many talented people are lost before they ever get a foothold. Queer Coding Camp addresses this directly: we bring young LGBTQ+ people together, give them space to take their first steps in programming, and connect them with queer professionals from the industry.",
+    "unified-2": "The one-week youth camp takes place in 2026 from 4–10 October at Schlafschloss Sumiswald. 16 participants aged 16 to 21 learn the basics of web and game development, guided by queer programmers as instructors and mentors. The camp is organised by the non-profit Queer Coding Camp association (founded 2021).",
+    "finance-heading": "Funding",
+    "finance-1": "In 2025 the camp ran for the fourth time thanks to LGBTI Youth Fund, Pro Helvetia, Hasler Foundation, and SME sponsors. For 2026 we still welcome support from the IT sector.",
+    "finance-2": "Questions? <mail>hi@queercodingcamp.ch</mail>",
+    "budget-heading": "2026 budget (as of 3 Apr 2026)",
+    "table": {
+      "costs": "Costs",
+      "amount": "Amount",
+      "row-accommodation": "Group accommodation, travel, food",
+      "row-accommodation-val": "CHF 8,000",
+      "row-staff": "Compensation for instructors & camp leads",
+      "row-staff-val": "CHF 5,000",
+      "row-material": "Materials and other",
+      "row-material-val": "CHF 2,000",
+      "total": "Total",
+      "total-costs-val": "CHF 15,000",
+      "financing-heading": "Funding",
+      "row-prohelvetia": "Pro Helvetia (requested)",
+      "row-prohelvetia-val": "CHF 4,000",
+      "row-kmu": "SME sponsors (planned)",
+      "row-kmu-val": "CHF 6,000",
+      "row-hasler": "Hasler Foundation (requested)",
+      "row-hasler-val": "CHF 5,000",
+      "total-fin-val": "CHF 15,000"
+    },
+    "bank-heading": "Association account & QR bill",
+    "bank-iban": "CH25 0900 0000 1584 8382 5",
+    "bank-address": "Queer Coding Camp, 8003 Zurich",
+    "qr-pdf": "QR payment slip (PDF)"
   }
-
 }

@@ -1,7 +1,6 @@
 import React from 'react'
-import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
+import Link from 'next/link'
 import SectionContainer from './Container'
-import A from '../Link'
 import Supporter from '../Supporter'
 import { useTranslations } from 'next-intl'
 
@@ -15,13 +14,12 @@ const Supporters = ({ id }) => {
       <p className='text-left mt-8'>
         {t.rich('supporters.text', {
           a: (chunks) => (
-            <A
-              taget='_blank'
-              Icon={ArrowTopRightOnSquareIcon}
-              href='https://queercodingcamp.notion.site/Queer-Coding-Camp-KMU-Sponsoring-bb0ed022360e445e92abe94238f78646'
+            <Link
+              href='/sme'
+              className='underline underline-offset-2 hover:opacity-80'
             >
               {chunks}
-            </A>
+            </Link>
           ),
         })}
       </p>
