@@ -35,7 +35,7 @@
     "coding-camp-text-2": "Du lernst Grundkenntnisse in der Programmierung von Webseiten und Games. Ausserdem gibt es Workshops und Inputs zu Themen wie Design und künstliche Intelligenz.",
     "coding-camp-text-3": "Am Abend gibt es Spiele, Pen and Paper, Games oder einfach gemütliches Zusammensein beim Lagerfeuer.",
     "location": "Location",
-    "location-text": "Das Coding Camp findet 2025 im <a>Schlafschloss Sumiswald</a>, in Emmental (Kanton Bern), statt. Als Teilnehner*in übernachtest du in Zweier- oder Dreierzimmern.",
+    "location-text": "Das Coding Camp findet im <a>Schlafschloss Sumiswald</a>, in Emmental (Kanton Bern), statt. Als Teilnehner*in übernachtest du in Zweier- oder Dreierzimmern.",
     "faq-title": "Weitere Fragen (FAQ)",
     "faq-contact": "Noch Fragen? Schreib uns auf:"
   },
@@ -63,9 +63,9 @@
   "signup": {
     "title": "Anmelden",
     "newsletter": "Newsletter",
-    "newsletter-text": "Du möchtest über Neuigkeiten zum Camp und zukünftigen Aktivitäten des Vereins informiert werden? Dann trage dich in unseren Newsletter ein.",
-    "text": "Melde dich jetzt an für das Queer Coding Camp 2025 vom 5. Oktober bis 10. Oktober in Sumiswald. Anmeldeschluss ist Montag, 30. Juni um 23:59 Uhr. Die Anmeldung ist kostenlos.",
-    "text-closed": "Die Anmeldung für die 2025er Ausgabe des Queer Coding Camps ist bereits geschlossen.",
+    "newsletter-text": "Du möchtest informiert werden, wenn die Anmeldung geöffnet wird? Dann trage dich in unseren Newsletter ein.",
+    "text": "Melde dich jetzt an für das Queer Coding Camp vom 4. Oktober bis 10. Oktober in Sumiswald. Anmeldeschluss ist Montag, 30. Juni um 23:59 Uhr. Die Teilnahme ist kostenlos.",
+    "text-closed": "Die Anmeldung für die 2026er Ausgabe des Queer Coding Camps wird im Juni 2026 geöffnet.",
     "button": "Jetzt Anmelden"
   },
   "donate": {

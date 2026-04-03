@@ -4,7 +4,14 @@
   --font-sans: "Funnel Sans", sans-serif;
   --font-display: "Jersey 10", sans-serif;
   --font-title: var(--font-display);
+  --tracking-display: 0.05em;
   --text-shadow-title: 3px 3px 0 rgb(0 0 0 / 0.6);
+}
+
+@layer utilities {
+  .font-display {
+    letter-spacing: var(--tracking-display);
+  }
 }
 
 @layer base {
