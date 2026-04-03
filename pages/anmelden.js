@@ -36,7 +36,7 @@ const SignUp = () => {
           <div className='flex-1 text-left'>
             <p className='text-left mb-4'>{t('signup.text-closed')}</p>
 
-            <h2 className='text-2xl font-bold text-left font-display'>
+            <h2 className='text-3xl font-bold text-left font-display'>
               {t('signup.newsletter')}
             </h2>
 

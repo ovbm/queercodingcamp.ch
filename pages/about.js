@@ -30,7 +30,7 @@ const Ueber = () => {
         </h2>
         <div className='flex flex-col md:flex-row gap-16 mt-4'>
           <div className='flex-1 text-left'>
-            <h3 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
+            <h3 className='text-3xl font-bold text-left font-display mt-12 mb-4'>
               {t('about.title-2')}
             </h3>
             <p className='mb-4'>{t('about.text-1')}</p>
@@ -45,7 +45,7 @@ const Ueber = () => {
               </Link>
             </p>
             <br />
-            <h3 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
+            <h3 className='text-3xl font-bold text-left font-display mt-12 mb-4'>
               {t('about.participate')}
             </h3>
             <p className='mb-4'>
@@ -71,7 +71,7 @@ const Ueber = () => {
             </p>
           </div>
           <div className='flex-1 text-left'>
-            <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
+            <h2 className='text-3xl font-bold text-left font-display mt-12 mb-4'>
               {t('about.board')}
             </h2>
             <div className='flex flex-col gap-12'>

@@ -39,7 +39,7 @@ const Profile = ({ imageSrc, name, bio, twitter, threads, bsky }) => {
         alt={name}
       />
       <div className='flex flex-col flex-1 ml-4 gap-2'>
-        <p className='text-left font-display font-bold'>{name}</p>
+        <h3 className='text-left text-3xl font-display font-bold text-shadow-title'>{name}</h3>
         <p className='text-left leading-tight font-normal'>{bio}</p>
         {twitter && (
           <A

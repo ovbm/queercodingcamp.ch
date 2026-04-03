@@ -21,7 +21,9 @@ const Top = ({ id }) => {
           <h1 className='text-5xl md:text-7xl font-bold font-display'>
             {t('index.title')}
           </h1>
-          <p className='text-2xl mt-3 font-display'>{t('index.subtitle')}</p>
+          <p className='text-3xl mt-3 font-display text-shadow-title'>
+            {t('index.subtitle')}
+          </p>
           {/* <Button
             href='https://docs.google.com/forms/d/e/1FAIpQLSfUHe57JQj2MPppoKhDxFAs3-c-2O4fHpMc4DV11guqlNx3Jg/viewform'
             className='font-display font-bold mt-4 pb-2 inline-block text-indigo-900'

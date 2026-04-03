@@ -74,13 +74,13 @@ const CampInfo = ({ id }) => {
       </h2>
       <div className='flex flex-col gap-12 md:flex-row md:gap-16 mt-12'>
         <div className='flex-1 text-left'>
-          <h2 className='text-2xl font-bold text-left font-display mb-4'>
+          <h2 className='text-3xl font-bold text-left font-display mb-4'>
             {t('info.coding-camp')}
           </h2>
           <p className='mb-4 '>{t('info.coding-camp-text')}</p>
           <p className='mb-4 '>{t('info.coding-camp-text-2')}</p>
           <p className=''>{t('info.coding-camp-text-3')}</p>
-          <h2 className='text-2xl font-bold text-left font-display mt-12 mb-4'>
+          <h2 className='text-3xl font-bold text-left font-display mt-12 mb-4'>
             {t('info.location')}
           </h2>
           <Image
@@ -104,7 +104,7 @@ const CampInfo = ({ id }) => {
           </p>
         </div>
         <div className='flex-1 text-left'>
-          <h2 className='text-2xl font-bold text-left font-display mb-4'>
+          <h2 className='text-3xl font-bold text-left font-display mb-4'>
             {t('info.faq-title')}
           </h2>
           <div className='flex flex-col md:flex-row gap-8'>

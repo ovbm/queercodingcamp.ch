@@ -2,12 +2,24 @@
 
 @theme {
   --font-sans: "Funnel Sans", sans-serif;
-  --font-display: "Funnel Display", sans-serif;
+  --font-display: "Jersey 10", sans-serif;
+  --font-title: var(--font-display);
+  --text-shadow-title: 3px 3px 0 rgb(0 0 0 / 0.6);
 }
 
 @layer base {
   p {
     @apply text-xl;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-title);
+    text-shadow: var(--text-shadow-title);
   }
 }
 

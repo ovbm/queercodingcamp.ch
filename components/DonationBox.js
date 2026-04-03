@@ -100,7 +100,7 @@ export default function Donate() {
         </Tab.List>
         <Tab.Panels className='mt-2'>
           <Tab.Panel className='bg-gray-900/50 backdrop-saturate-200 rounded-xl px-4 py-8 focus:outline-none'>
-            <h3 className='pb-4 font-display text-lg text-center'>
+            <h3 className='pb-4 font-display text-3xl text-center'>
               {t('donate.one-time-donation')}
             </h3>
 
@@ -128,7 +128,7 @@ export default function Donate() {
               </Button>
             </div>
             <hr className='border-white/50 my-6' />
-            <h3 className='pb-4 font-display text-lg text-center'>
+            <h3 className='pb-4 font-display text-3xl text-center'>
               {t('donate.annual-donation')}
             </h3>
             <div className='flex flex-row flex-wrap gap-4 justify-center'>
