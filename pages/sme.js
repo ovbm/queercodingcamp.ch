@@ -91,8 +91,8 @@ export default function SmePage() {
                 </td>
               </tr>
               <tr>
-                <td className={tableClass}>{t('table.row-prohelvetia')}</td>
-                <td className={tableClass}>{t('table.row-prohelvetia-val')}</td>
+                <td className={tableClass}>{t('table.row-stiftungen')}</td>
+                <td className={tableClass}>{t('table.row-stiftungen-val')}</td>
               </tr>
               <tr className='ring-1 ring-indigo-400/60 bg-indigo-500/15'>
                 <td className={`${tableClass} border-indigo-400/60 font-bold`}>

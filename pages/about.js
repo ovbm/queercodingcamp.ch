@@ -57,18 +57,6 @@ const Ueber = () => {
                 ),
               })}
             </p>
-            <p className='mb-4'>
-              {t.rich('about.participate-text-2', {
-                a: (chunks) => (
-                  <Link
-                    Icon={HeartIcon}
-                    href='https://docs.google.com/forms/d/e/1FAIpQLSdI_q8afBbx3V4H7rfawevAbRG9lk2zbi5GFP5K4iwQyJqTLQ/viewform?usp=sf_link'
-                  >
-                    {chunks}
-                  </Link>
-                ),
-              })}
-            </p>
           </div>
           <div className='flex-1 text-left'>
             <h2 className='text-3xl font-bold text-left font-display mt-12 mb-4'>
