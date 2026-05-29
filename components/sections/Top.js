@@ -30,6 +30,25 @@ const Top = ({ id }) => {
           >
             {t('signup.button')}
           </Button> */}
+          <a
+            href='https://www.instagram.com/p/DXPA_McDUp1/'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='mt-6 inline-block w-full shadow-lg rounded-xl p-4 bg-black/20 backdrop-blur-sm hover:bg-black/10 transition-colors text-left'
+          >
+            <p className='font-display font-bold text-xl leading-tight'>
+              {t('index.event.title')}
+            </p>
+            <p className='text-sm mt-1'>
+              {t('index.event.date')}
+            </p>
+            <p className='text-sm mt-2'>
+              {t('index.event.description')}
+            </p>
+            <p className='text-sm mt-2 font-semibold underline underline-offset-2'>
+              {t('index.event.link')}
+            </p>
+          </a>
         </div>
       </div>
     </SectionContainer>

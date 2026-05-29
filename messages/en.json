@@ -8,7 +8,13 @@
   "index": {
     "title": "learn coding, find community",
     "subtitle": "Queer Coding Camp, 4. - 10. October 2026, Sumiswald, Bern",
-    "illustration": "Pixel-Art Illustration that shows a group of queer people programming together in a cozy cabin."
+    "illustration": "Pixel-Art Illustration that shows a group of queer people programming together in a cozy cabin.",
+    "event": {
+      "title": "5 Years QCC 🎉",
+      "date": "📅 4 July from 14:00 · 📍 lago lodge, Biel/Bienne",
+      "description": "Celebrate 5 years of Queer Coding Camp with a free gaming afternoon. Everyone welcome, no registration needed.",
+      "link": "More on Instagram →"
+    }
   },
   "supporters": {
     "title": "Supported by",
