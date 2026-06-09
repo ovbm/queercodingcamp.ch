@@ -31,6 +31,19 @@ const Supporters = ({ id }) => {
           width={180}
         />
         <Supporter
+          href='https://www.pinkcross.ch'
+          imageSrc='/images/pinkcross.svg'
+          name='Pink Cross'
+          height={80}
+          width={180}
+        />
+        <Supporter
+          href='https://www.los.ch'
+          imageSrc='/images/los.svg'
+          name='LOS'
+          width={180}
+        />
+        <Supporter
           href='https://prohelvetia.ch'
           imageSrc='/images/pro_helvetia.svg'
           name='Pro Helvetia'
@@ -62,14 +75,6 @@ const Supporters = ({ id }) => {
           href='https://codesmith.ch'
           imageSrc='/images/codesmith-logo.svg'
           name='Codesmith'
-        />
-        <Supporter
-          href='https://www.liip.ch/jobs'
-          imageSrc='/images/liip-logo.svg'
-          name='Liip'
-          height={34}
-          width={110}
-          hiring
         />
       </div>
     </SectionContainer>
