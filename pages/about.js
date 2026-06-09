@@ -15,6 +15,7 @@ import beau from '../public/images/beau.jpg'
 import skyler from '../public/images/skyler.png'
 import eva from '../public/images/eva.jpeg'
 import liam from '../public/images/liam-small.png'
+import amar from '../public/images/amar.jpg'
 
 const Ueber = () => {
   const t = useTranslations()
@@ -63,6 +64,11 @@ const Ueber = () => {
               {t('about.board')}
             </h2>
             <div className='flex flex-col gap-12'>
+              <Profile
+                imageSrc={amar}
+                name={t('about.amar-name')}
+                bio={t('about.amar')}
+              />
               <Profile
                 imageSrc={beau}
                 name={t('about.beau-name')}
