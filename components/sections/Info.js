@@ -5,6 +5,7 @@ import { Disclosure } from '@headlessui/react'
 import {
   ChevronUpIcon,
   ArrowTopRightOnSquareIcon,
+  EnvelopeIcon,
 } from '@heroicons/react/24/solid'
 import LocationImg from '../../public/images/schlafschloss.jpg'
 import A from '../Link'
@@ -119,7 +120,16 @@ const CampInfo = ({ id }) => {
               className='flex-1 rounded-xl p-4 mt-6 bg-gradient-to-r from-pink-700/80 to-red-600/80 hover:backdrop-brightness-200 flex items-center shadow-md hover:shadow-lg transition-all duration-200'
             >
               <Image src={Instagram} width={32} height={32} alt='Instagram' />
-              <span className='ml-4'>Instagram.</span>
+              <span className='ml-4'>Instagram</span>
+            </a>
+            <a
+              href='mailto:hi@queercodingcamp.ch'
+              target='_blank'
+              rel='noreferrer'
+              className='flex-1 rounded-xl p-4 mt-6 bg-gray-900/50 hover:bg-gray-700/50 backdrop-blur-sm backdrop-saturate-200 shadow-lg flex items-center hover:shadow-lg transition-all duration-200'
+            >
+              <EnvelopeIcon className='w-4 h-4' />
+              <span className='ml-4'>E-mail</span>
             </a>
           </div>
         </div>

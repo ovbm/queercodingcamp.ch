@@ -24,12 +24,12 @@ const Top = ({ id }) => {
           <p className='text-3xl mt-3 font-display text-shadow-title'>
             {t('index.subtitle')}
           </p>
-          {/* <Button
-            href='https://docs.google.com/forms/d/e/1FAIpQLSfUHe57JQj2MPppoKhDxFAs3-c-2O4fHpMc4DV11guqlNx3Jg/viewform'
+          <Button
+            href='https://docs.google.com/forms/d/e/1FAIpQLSdZJVU_Ib6HRPwiQCXklXcE1vu8EV1w8fKAsUtkgrunBfl2MA/viewform'
             className='font-display font-bold mt-4 pb-2 inline-block text-indigo-900'
           >
             {t('signup.button')}
-          </Button> */}
+          </Button>
           <a
             href='https://www.instagram.com/p/DXPA_McDUp1/'
             target='_blank'

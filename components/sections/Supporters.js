@@ -44,6 +44,13 @@ const Supporters = ({ id }) => {
           width={180}
         />
         <Supporter
+          href='https://www.tgns.ch'
+          imageSrc='/images/tgns.png'
+          name='TGNS'
+          width={120}
+          height={120}
+        />
+        <Supporter
           href='https://prohelvetia.ch'
           imageSrc='/images/pro_helvetia.svg'
           name='Pro Helvetia'
