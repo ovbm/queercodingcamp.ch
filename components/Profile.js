@@ -29,40 +29,44 @@ const BlueskyIcon = () => (
 
 const Profile = ({ imageSrc, name, bio, twitter, threads, bsky }) => {
   return (
-    <div className='flex w-full'>
-      <Image
-        className='rounded-full grayscale'
-        layout='fixed'
-        src={imageSrc}
-        width={112}
-        height={112}
-        alt={name}
-      />
-      <div className='flex flex-col flex-1 ml-4 gap-2'>
-        <h3 className='text-left text-3xl font-display font-bold text-shadow-title'>{name}</h3>
-        <p className='text-left leading-tight font-normal'>{bio}</p>
-        {twitter && (
-          <A
-            Icon={TwitterIcon}
-            target='_blank'
-            href={`https://twitter.com/${twitter}`}
-          >{`@${twitter}`}</A>
-        )}
-        {threads && (
-          <A
-            Icon={ThreadsIcon}
-            target='_blank'
-            href={`https://www.threads.net/${threads}`}
-          >{`${threads}`}</A>
-        )}
-        {bsky && (
-          <A
-            Icon={BlueskyIcon}
-            target='_blank'
-            href={`https://bsky.app/profile/${bsky}`}
-          >{`@${bsky}`}</A>
-        )}
+    <div>
+      <div className='flex w-full'>
+        <Image
+          className='rounded-full grayscale'
+          layout='fixed'
+          src={imageSrc}
+          width={112}
+          height={112}
+          alt={name}
+        />
+        <div className='flex flex-col flex-1 ml-4 gap-2'>
+          <h3 className='text-left md:text-3xl text-2xl font-display font-bold text-shadow-title'>
+            {name}
+          </h3>
+          {twitter && (
+            <A
+              Icon={TwitterIcon}
+              target='_blank'
+              href={`https://twitter.com/${twitter}`}
+            >{`@${twitter}`}</A>
+          )}
+          {threads && (
+            <A
+              Icon={ThreadsIcon}
+              target='_blank'
+              href={`https://www.threads.net/${threads}`}
+            >{`${threads}`}</A>
+          )}
+          {bsky && (
+            <A
+              Icon={BlueskyIcon}
+              target='_blank'
+              href={`https://bsky.app/profile/${bsky}`}
+            >{`@${bsky}`}</A>
+          )}
+        </div>
       </div>
+      <p className='text-left leading-tight font-normal mt-2'>{bio}</p>
     </div>
   )
 }
