@@ -4,6 +4,15 @@ module.exports = {
     defaultLocale: 'de',
     localeDetection: false,
   },
+  async redirects() {
+    return [
+      {
+        source: '/datenschutz',
+        destination: 'https://docs.google.com/document/d/1CWwN-LjF45uHFkKDJ0fxm0pOsHHzsWoxUUQmSqrFUZ4/edit?usp=share_link',
+        permanent: false,
+      },
+    ]
+  },
   async rewrites() {
     return [
       {

@@ -31,6 +31,8 @@ export default function Footer() {
             >
               @queercodingcamp
             </Link>
+            <br />
+            <Link href='/datenschutz'>Datenschutz</Link>
           </p>
         </div>
         <div>
