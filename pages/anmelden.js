@@ -20,7 +20,7 @@ const SignUp = () => {
           {t('signup.title')}
         </h2>
         <div className='flex flex-col md:flex-row gap-12 mt-12'>
-          <div className='flex-1 text-left'>
+          {/* <div className='flex-1 text-left'>
             <p className='text-left mb-4'>
               {t('signup.text')}
             </p>
@@ -31,9 +31,9 @@ const SignUp = () => {
             >
               {t('signup.button')}
             </Button>
-          </div>
+          </div> */}
 
-          {/* <div className='flex-1 text-left'>
+          <div className='flex-1 text-left'>
             <p className='text-left mb-4'>{t('signup.text-closed')}</p>
 
             <h2 className='text-3xl font-bold text-left font-display'>
@@ -43,7 +43,7 @@ const SignUp = () => {
             <p className='text-left mb-4'>{t('signup.newsletter-text')}</p>
 
             <NewlsetterSignup />
-          </div> */}
+          </div>
           <div className='flex-1 text-left'></div>
 
         </div>

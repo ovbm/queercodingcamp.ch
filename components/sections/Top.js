@@ -24,31 +24,12 @@ const Top = ({ id }) => {
           <p className='text-3xl mt-3 font-display text-shadow-title'>
             {t('index.subtitle')}
           </p>
-          <Button
+          {/* <Button
             href='https://docs.google.com/forms/d/e/1FAIpQLSdZJVU_Ib6HRPwiQCXklXcE1vu8EV1w8fKAsUtkgrunBfl2MA/viewform'
             className='font-display font-bold mt-4 pb-2 inline-block text-indigo-900'
           >
             {t('signup.button')}
-          </Button>
-          <a
-            href='https://www.instagram.com/p/DXPA_McDUp1/'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='mt-6 inline-block w-full shadow-lg rounded-xl p-4 bg-black/20 backdrop-blur-sm hover:bg-black/10 transition-colors text-left'
-          >
-            <p className='font-display font-bold text-xl leading-tight'>
-              {t('index.event.title')}
-            </p>
-            <p className='text-sm mt-1'>
-              {t('index.event.date')}
-            </p>
-            <p className='text-sm mt-2'>
-              {t('index.event.description')}
-            </p>
-            <p className='text-sm mt-2 font-semibold underline underline-offset-2'>
-              {t('index.event.link')}
-            </p>
-          </a>
+          </Button> */}
         </div>
       </div>
     </SectionContainer>
